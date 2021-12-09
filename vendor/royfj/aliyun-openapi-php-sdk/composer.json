@@ -1,0 +1,23 @@
+{
+    "name": "royfj/aliyun-openapi-php-sdk",
+    "description": "Fork from https://github.com/aliyun/aliyun-openapi-php-sdk",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lgh",
+            "email": "cvtest001@163.com"
+        }
+    ],
+    "require": {
+        "PHP": ">=5.3"
+    },
+    "autoload": {
+        "files": [
+            "aliyun-php-sdk-core/Config.php"
+        ],
+        "psr-4": {
+        }
+    }
+}

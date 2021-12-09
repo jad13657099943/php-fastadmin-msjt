@@ -1,0 +1,214 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+    <div style="display: none;" class="hied_video_type" ><input name="hied_video_val" value="{$row.video_type}"></div>
+    <div class="tabs flex">
+        <div class="tab btn active">
+            基本信息
+        </div>
+        <div class="tab btn">
+            课程信息
+        </div>
+    </div>
+
+    <div class="tabletabs">
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
+            <div class="col-xs-12 col-sm-8">
+                <input id="c-goods_name" data-rule="required" class="form-control form-control" name="row[name]"
+                       type="text" value="{$row.name}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2">{:__('Course_Category')}:</label>
+            <div class="col-xs-12 col-sm-8">
+                <select id="a-pid" data-rule="required" class="form-control selectpicker" name="row[course_category_id]">
+                    {foreach name="course_category_list" item="vo"}
+                    <option data-type="{$vo.name}" value="{$key}" {in name="key" value="$row.course_category_id" }
+                            selected{$row.course_category_id/in}>{$vo.name}</option>
+                    {/foreach}
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2">{:__('Subject_Category')}:</label>
+            <div class="col-xs-12 col-sm-8">
+                <select id="b-pid" data-rule="required" class="form-control selectpicker" name="row[subject_category_id]">
+                    {foreach name="subject_category_list" item="vo"}
+                    <option data-type="{$vo.name}" value="{$key}"
+                            {in name="key" value="$row.subject_category_id" }
+                            selected{$row.subject_category_id/in}>
+                    {$vo.name}</option>
+                    {/foreach}
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2">{:__('Teacher')}:</label>
+            <div class="col-xs-12 col-sm-8">
+                <select id="c-teacher" data-rule="required" class="form-control selectpicker" name="row[teacher_id]">
+                    {foreach name="teacher_list" item="vo"}
+                    <option data-type="{$vo.nickname}" value="{$key}"
+                            {in name="key" value="$row.teacher_id"}
+                            selected="selected"
+                            {/in} >
+                    {$vo.nickname}</option>
+                    {/foreach}
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2">{:__('Image')}:</label>
+            <div class="col-xs-12 col-sm-8">
+                <div class="input-group">
+                    <input id="c-image" data-rule="required" class="form-control form-control" size="50"
+                           name="row[image]" type="text" value="{$row.image}">
+                    <div class="input-group-addon no-border no-padding">
+                        <span><button type="button" id="plupload-image" class="btn btn-danger plupload"
+                                      data-input-id="c-image"
+                                      data-mimetype="video/mp4,image/gif,image/jpeg,image/png,image/jpg,image/bmp"
+                                      data-multiple="true" data-preview-id="p-image"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                        <span><button type="button" id="fachoose-image" class="btn btn-primary fachoose"
+                                      data-input-id="c-image" data-mimetype="image/*,video/mp4" data-multiple="true"><i
+                                class="fa fa-list"></i> {:__('Choose')}</button></span>
+                    </div>
+                    <span class="msg-box n-right" for="c-image"></span>
+                </div>
+                <ul class="row list-inline plupload-preview" id="p-image"></ul>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2">{:__('Upload_type')}:</label>
+            <div class="col-xs-12 col-sm-8">
+                {:build_radios('row[video_type]',['录屏','直播'],$row.video_type)}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2">{:__('Content')}:</label>
+            <div class="col-xs-12 col-sm-8">
+                <textarea id="c-content" class="form-control editor form-control" rows="5" name="row[content]" cols="50">{$row.content}</textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2">{:__('Sort')}:</label>
+            <div class="col-xs-12 col-sm-8">
+                <input id="c-sort" data-rule="required" class="form-control form-control" name="row[sort]"
+                       type="number" value="{$row.sort}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2">{:__('Price')}:</label>
+            <div class="col-xs-12 col-sm-8">
+                <input id="c-goods_price" data-rule="required" class="form-control form-control" name="row[price]"
+                       type="number" value="{$row.price}">
+            </div>
+        </div>
+        <div class="form-group hidden">
+            <label class="control-label col-xs-12 col-sm-2">{:__('status')}:</label>
+            <div class="col-xs-12 col-sm-8">
+
+                <div class="radio">
+                    {:build_select('row[status]',['10'=>__('Normal'),'20'=>__('Aberrant')],$row.status,['data-rule'=>'required'])}
+                </div>
+
+            </div>
+        </div>
+
+        {if condition="$course_id == 0"}
+        <div class="form-group layer-footer">
+            <label class="control-label col-xs-12 col-sm-2"></label>
+            <div class="col-xs-12 col-sm-8">
+                <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+                <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+            </div>
+        </div>
+     {/if}
+
+    </div>
+    <div class="tabletabs" style="display: none;">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Course')}:</label>
+        <div class="form-group row">
+            <div class="col-xs-12 col-sm-8">
+                <dl class="fieldlist" data-template="basictpl" data-name="row[course_list]">
+                    <dd><a href="javascript:;" class="video-Append btn btn-sm btn-success btn-append"><i class="fa fa-plus"></i> {:__('Append')}</a></dd>
+                    <textarea name="row[course_list]" class="hidden form-control" cols="30" rows="5">{$row['course_list']}</textarea>
+                </dl>
+
+                <!-- <input type="datetime" style="width:100px;"  name="<%=name%>[<%=index%>][school_time]" value="" class=" form-control datetimerange">-->
+                <script id="basictpl" type="text/html">
+                    <dd class="form-inline">
+
+                        {:__('Course_title')} : <input type="text" style="width:150px;height: 28px;"  name="<%=name%>[<%=index%>][title]" value="<%=row['title']%>" class="form-control">
+                        {:__('Course_image')} : <div class="input-group input-group-sm" style="width:200px;">
+                        <input id="c-images-l<%=index%>"  class="live form-control form-control" size="50" name="<%=name%>[<%=index%>][images]" type="text" value="<%=row['images']%>">
+                        <span class=" span-p input-group-btn input-group-sm" data-id="c-images-l<%=index%>"><a href="javascript:;"  target="_blank" class="url-p btn btn-default btn-sm"><i class="fa fa-link"></i></a></span>
+                    </div>
+                        <span><button type="button"  id="plupload-images-l<%=index%>" class="live btn btn-danger plupload" data-maxcount="1" data-input-id="c-images-l<%=index%>" data-mimetype="video/mp4,image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-images-l<%=index%>"><i class="fa fa-upload"></i> {:__('上传图片')}</button></span>
+                        <span><button type="button" id="fachoose-images-l<%=index%>" class="live btn btn-primary fachoose"data-input-id="c-images-l<%=index%>" data-mimetype="image/*,video/mp4" data-multiple="true"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+
+                        <p> </p>
+                        <span class="video-a" > {:__('School_time')} :
+                            <input type="text" style="width:150px;height: 28px;" name="<%=name%>[<%=index%>][school_time]" data-date-format="YYYY-MM-DD HH:mm:ss" value="<%=row['school_time']%>" class=" form-control datetimepicker">
+                        </span>
+                        <span class="video-b" > {:__('Course_time')} :
+                            <input type="text" style="width:150px;height: 28px;" name="<%=name%>[<%=index%>][school_time]"  value="<%=row['school_time']%>" class=" form-control ">
+                        </span>
+                        {:__('Course_site')} : <div class="input-group input-group-sm" style="width:200px;">
+                        <input id="c-images-v<%=index%>" class=" video form-control form-control" size="50" name="<%=name%>[<%=index%>][video]" type="text" value="<%=row['video']%>">
+                        <span class="span-v input-group-btn input-group-sm" data-id="c-images-v<%=index%>"><a href="javascript:;" target="_blank" class="url-v btn btn-default btn-sm"><i class="fa fa-link"></i></a></span>
+                    </div>
+                        <span><button type="button" id="plupload-images-v<%=index%>" class="video btn btn-danger plupload" data-maxcount="1" data-input-id="c-images-v<%=index%>" data-mimetype="video/mp4" data-multiple="true" data-preview-id="p-images-v<%=index%>"><i class="fa fa-upload"></i> {:__('上传课程')}</button></span>
+                        <!--                            <div class="col-xs-12 " style="margin-left:50px">-->
+                        <!--                                <p> </p>-->
+                        <!--                            </div>-->
+                        <!--下面的两个按钮务必保留-->
+                        <div class="btn btn-sm btn-danger btn-remove"><i class="fa fa-times"></i></div>
+                        <!--                            <span class="btn btn-sm btn-primary btn-dragsort"><i class="fa fa-arrows"></i></span>-->
+                        <hr style="height:1px;border:none;border-top:1px solid #bdb9b9;" />
+                    </dd>
+                </script>
+            </div>
+        </div>
+    </div>
+</form>
+
+<style>
+    .content {
+        padding: 0;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .tabs {
+        margin-bottom: 20px;
+        padding: 15px;
+        padding-bottom: 0;
+        background: #e8edf0;
+        border-color: #e8edf0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .tab {
+        border: 1px solid #e8edf0;
+        color: #7b8a8b;
+        background-color: #c9d4dc;
+        line-height: 25px;
+        margin-right: 4px;
+        margin-bottom: -3px;
+    }
+
+    .tab:hover {
+        background: #f7f7f7;
+    }
+
+    .tabs .active {
+        background: white;
+        box-shadow: none;
+    }
+
+</style>

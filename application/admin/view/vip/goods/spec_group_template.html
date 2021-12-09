@@ -1,0 +1,39 @@
+<!-- 团购商品规格table模板 -->
+<script id="tpl_groupbuy_spec_table" type="text/template">
+    <tbody>
+    <tr>
+        <% for(var i=0;i< spec_attr.length;i++){ %>
+        <th><%=spec_attr[i].group_name%></th>
+        <% } %>
+        <th>原价</th>
+        <th>拼团价</th>
+        <th>库存(-1隐藏)</th>
+
+    </tr>
+    <% for(var i=0;i<spec_list.length;i++){ %>
+    <tr data-index="<%=i%>" data-sku-id="<%=spec_list[i].spec_sku_id %>">
+
+        <% for(var k=0;k<spec_list[i].rows.length;k++){ %>
+        <td class="td-spec-value am-text-middle" rowspan="<%=spec_list[i].rows[k].rowspan%>">
+            <%=spec_list[i].rows[k].spec_value%>
+        </td>
+        <% } %>
+        <td>
+            <%=spec_list[i].form.goods_price%><input type="hidden" name="spec_list[<%=i%>][goods_price]" value="<%=spec_list[i].form.goods_price%>"/><input type="hidden" name="spec_list[<%=i%>][goods_id]" value="<%=spec_list[i].form.goods_id%>"/><input type="hidden" name="spec_list[<%=i%>][goods_spec_id]" value="<%=spec_list[i].form.goods_spec_id%>"/>
+        </td>
+        <td>
+            <input  <% if(spec_list[i].form.stock_num===-1) {%> disabled <%}else{%>  <%} %>  type="text" name="spec_list[<%=i%>][group_price]" data-rule="required" value="<%=spec_list[i].form.group_price%>" class="am-field-valid ipt-w80"
+            required>
+        </td>
+
+        <td>
+            <%=spec_list[i].form.stock_num%>
+        </td>
+
+
+
+    </tr>
+    <% } %>
+    </tbody>
+</script>
+

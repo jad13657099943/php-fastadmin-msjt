@@ -1,0 +1,112 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Nickname')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-nickname" data-rule="required" class="form-control" name="row[nickname]" type="text" value="{$row.nickname|htmlentities}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Avatar')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-avatar" data-rule="required" class="form-control" size="50" name="row[avatar]" type="text" value="{$row.avatar|htmlentities}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-avatar" class="btn btn-danger plupload" data-input-id="c-avatar" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-avatar"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-avatar" class="btn btn-primary fachoose" data-input-id="c-avatar" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-avatar"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-avatar"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Level_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="radio">
+                {:build_select('row[level_id]',['10'=>'初级','20'=>'中级','30'=>'高级'],$row.level_id,['data-rule'=>'required'])}
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Gender')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[gender]',['男','女'])}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Age')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-age" data-rule="required" class="form-control" name="row[age]" type="number" value="{$row.age|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Native_place')}:</label>
+
+        <div class="form-inline col-xs-12 col-sm-8" data-toggle="cxselect" data-selects="province,city,area">
+            <select class="province form-control" name="province" data-url="ajax/area">
+                <option value="{$row.native_place['0']}" selected></option>
+            </select>
+            <select class="city form-control" name="city" data-url="ajax/area">
+                <option value="{$row.native_place['1']}" selected></option>
+            </select>
+            <select class="area form-control" name="area" data-url="ajax/area">
+                <option value="{$row.native_place['2']}" selected></option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('课程分类')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <select id="a-pid" data-rule="required" class="form-control selectpicker" name="row[course_category_id]">
+                {foreach name="course_category_list" item="vo"}
+                <option data-type="{$vo.name}" value="{$key}" {in name="key" value="$row.category_id" } selected{$vo.course_category_id/in}>
+                {$vo.name}
+                </option>
+                {/foreach}
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('学段年级')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <select id="b-pid" data-rule="required" class="form-control selectpicker" name="row[subject_category_id]">
+                {foreach name="subject_category_list" item="vo"}
+                <option data-type="{$vo.name}" value="{$key}" {in name="key" value="$row.category_id" } selected{$vo.subject_category_id/in}>
+                {$vo.name}
+                </option>
+                {/foreach}
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-content" class="form-control editor form-control" rows="5" name="row[content]" cols="50">{$row.content}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Phone')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-phone" class="form-control" name="row[phone]" type="text" value="{$row.phone|htmlentities}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="radio">
+                {:build_select('row[status]',['10'=>'正常','20'=>'异常'],$row.status,['data-rule'=>'required'])}
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

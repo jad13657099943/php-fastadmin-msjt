@@ -1,0 +1,80 @@
+<div class="panel panel-default panel-intro">
+    <div class="panel-heading">
+        {:build_heading(null, false)}
+        <ul class="nav nav-tabs" data-field="status">
+            <li ><a href="/admin/general/payconfig/index/">支付宝</a></li>
+            <li class="active"><a href="/admin/general/wxpayconfig/index/">微信</a></li>
+        </ul>
+    </div>
+    <div class="panel-body">
+        <form id="update-form"  class="form-horizontal" role="form" data-toggle="validator" method="POST" action="{:url('general.wxpayconfig/edit')}">
+
+            <div class="form-group">
+                <label  for="pay_gateway" class="control-label col-xs-12 col-sm-2">微信支付网关:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" id="pay_gateway" class="form-control" name="row[pay_gateway]" type="text" value="{$row['pay_gateway']}" placeholder="{:__('pay_gateway')}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">AppID:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[app_id]" type="text" value="{$row['app_id']}" placeholder="{:__('app_id')}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">AppSecret:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  class="form-control" name="row[app_secret]" type="text" value="{$row['app_secret']}" placeholder="{:__('app_secret')}">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">mch_id:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[mch_id]" type="text" value="{$row['mch_id']}" placeholder="{:__('mch_id')}">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">key:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[key]" type="text" value="{$row['key']}" placeholder="{:__('key')}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">notify_url:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[notify_url]" type="text" value="{$row['notify_url']}" placeholder="{:__('notify_url')}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">sslcert_path:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[sslcert_path]" type="text" value="{$row['sslcert_path']}" placeholder="{:__('sslcert_path')}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">sslkey_path:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[sslkey_path]" type="text" value="{$row['sslkey_path']}" placeholder="{:__('sslkey_path')}">
+                </div>
+            </div>
+
+
+            <div class="form-group layer-footer">
+                <label class="control-label col-xs-12 col-sm-2"></label>
+                <div class="col-xs-12 col-sm-8">
+                    <button type="submit" class="btn btn-success">{:__('OK')}</button>
+                    <button type="reset" class="btn btn-default">{:__('Reset')}</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

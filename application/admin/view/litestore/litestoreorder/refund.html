@@ -1,0 +1,155 @@
+<form id="send-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+	<style type="text/css">
+		.line-f div{
+			font-size: 14px;
+			line-height: 40px;
+			border-bottom: 1px solid #ededed;
+		}
+		.line-f div:last-child{
+			border-bottom: none;
+		}
+	</style>
+    <fieldset>
+        <legend>
+            订单信息
+        </legend>
+
+        <!-- 订单信息 -->
+        <div class="col-md-10 col-md-offset-1 col-sm-12">
+            <div class="box radius-none">
+                <div class="box-header with-border">
+                    {:__('Order_no')}:{$vo.order_no} ( 下单时间 {$vo.createtime|date="Y-m-d H:i:s",###})
+                </div>
+                <div class="box-body">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">商品详情</div>
+                        <table class="table">
+                            {foreach name="vo.goods" item="item"}
+                            <tr>
+                                <td><input name="checkbox" data-price = "{$item.goods_price}" data-nums = "{$item.total_num}" data-goods_id = "{$item.id}" class="check-box" value="{$item.goods_id}" type="checkbox"/></td>
+                                <td>{$item.goods_name}</td>
+                                <td><img src="{$item.image}" height="70" width="70"></td>
+                                <td>规格:{$item.key_name}</td>
+                                <td class="prices">单价:{$item.goods_price}元</td>
+                                <td class="nums">数量:{$item.total_num}</td>
+                                <td>状态:{switch name="item.is_refund"}
+                                    {case value='0'}正常{/case}
+                                    {case value='1'}退款中{/case}
+                                    {case value='2'}退款完成{/case}
+                                    {case value='3'}退款失败{/case}
+                                    {/switch}
+                                </td>
+                            </tr>
+                            {/foreach}
+                        </table>
+                    </div>
+
+                    <div class="row line-f" style="margin:1em 0;">
+                        <div class="col-md-4 padding">
+                            {:__('Pay_price')} :
+                            {$vo.pay_price}
+                        </div>
+                        <div class="col-md-4 padding">
+
+                            {:__('Freight_status')}:
+                            {$vo.freight_status_text}
+                        </div>
+                        <div class="col-md-4 padding">
+
+                            {:__('Freight_time')}:
+                            {if ($vo.freight_time==0)}
+                            无
+                            {else}
+                            {$vo.freight_time|date="Y-m-d H:i:s",###}
+                            {/if}
+                        </div>
+                        <div class="col-md-4 padding">
+                            {:__('Express_price')} :
+                            {$vo.express_price}
+                        </div>
+                        <div class="col-md-4 padding">
+                            {:__('Express_company')} :
+                            {$vo.express_company}
+                        </div>
+                        <div class="col-md-4 padding">
+                            {:__('Express_no')} :
+                            {$vo.express_no}
+                        </div>
+
+                        <div class="col-md-4 reback padding">
+                            {:__('退款金额')} :
+                            {$vo.order_status_text}
+                            {:__('退款积分')} :
+                            {$vo.use_qrcode}
+                            {:__('退款抵扣金额')} :
+                            {$vo.use_money}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <input type="hidden" name="ids" id="ids" value="{$vo.id}">
+    <input type="hidden" name="status" value="1">
+    <input type="hidden" name="order_id" value="{$vo.id}">
+    <input type="hidden" name="order_goods_id" id="order_goods_id" value="">
+    <fieldset>
+    <div class="form-group">
+        <label for="c-remark" class="control-label col-xs-12 col-sm-2">退款原因:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="" id="c-remark"  class="form-control" name="remark"
+                   type="text" value="">
+        </div>
+    </div>
+
+    </fieldset>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="button" id="send" data-type="send" class="btn btn-success">确认退款</button>
+        </div>
+    </div>
+</form>
+<script src="https://ggzp.0791jr.com/assets/js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		// 退款金额
+		var totalPrice = 0;
+		var goods_ids = [];
+		// 运费
+		var yunfei = '{$vo.express_price}';
+		
+		// 选择要退款的商品
+		$('.check-box').click(function(){
+			if($(this).checked == true){
+				$(this).attr('checked',false);
+				count();
+			}else{
+				$(this).attr('checked',true);
+				count();
+			}
+			
+		})
+		
+		// 计算价格
+		function count(){
+			totalPrice = 0;
+            goods_ids = [];
+			var len = 0,arr = $(".check-box");
+			for(var i=0;i<arr.length;i++){
+				if(arr[i].checked == true){
+					len = len + 1;
+					totalPrice = (Number(totalPrice) + Number(arr[i].getAttribute("data-price")) * Number(arr[i].getAttribute("data-nums"))).toFixed(2)
+                    goods_ids[i] = arr[i].getAttribute("data-goods_id");
+				}
+			}
+			if(Number(len) == Number(arr.length)){
+				totalPrice = (Number(totalPrice) + Number(yunfei)).toFixed(2)
+			}
+			$('.reback').text('退款金额 : '+totalPrice + '元')
+           // console.log(goods_ids.toString());
+			$('#order_goods_id').val(goods_ids.toString())
+		}
+	})
+</script>

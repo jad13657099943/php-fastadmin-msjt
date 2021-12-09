@@ -1,0 +1,328 @@
+<div class="panel panel-default panel-intro">
+    {:build_heading()}
+
+    <div class="panel-body">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="one">
+                <div class="widget-body no-padding">
+                    <div id="toolbar" class="toolbar">
+                        <a href="javascript:;" class="btn btn-primary btn-refresh" title="{:__('Refresh')}" ><i class="fa fa-refresh"></i> </a>
+                        <a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled {:$auth->check('litestore/litestoreorderrefund/del')?'':'hide'}" title="{:__('Delete')}" ><i class="fa fa-trash"></i> {:__('Delete')}</a>
+
+
+                        <div class="dropdown btn-group {:$auth->check('litestore/litestoreorderrefund/multi')?'':'hide'}">
+                            <ul class="dropdown-menu text-left" role="menu">
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> {:__('Set to normal')}</a></li>
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> {:__('Set to hidden')}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
+                           data-operate-review="{:$auth->check('litestore/litestoreorderrefund/review')}"
+                           data-operate-detail="{:$auth->check('litestore/litestoreorderrefund/detail')}"
+                           data-operate-del="{:$auth->check('litestore/litestoreorderrefund/del')}"
+                           width="100%">
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    /*.example {
+        height:100%;position: relative;
+    }
+    .example > span {
+        position:absolute;left:15px;top:15px;
+    }*/
+    .order {
+        width: 93vw;
+        margin: 12px auto;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .red {
+        color: red;
+    }
+
+    .order {
+        min-width: 600px;
+        margin-bottom: 10px;
+    }
+
+    .table-bordered {
+        border: 1px solid rgba(0, 0, 0, .1);
+        padding: 10px 20px;
+    }
+
+    .img-box {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        position: relative;
+        margin: 10px 0;
+        margin-right: 20px;
+    }
+
+    .pic {
+        margin: 10px 0;
+        position: relative;
+    }
+
+    .img-box img {
+        max-height: 150px;
+        max-width: 150px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .guide {
+        padding-top: 10px;
+    }
+
+    .guide .red {
+        margin-right: 10px;
+    }
+
+    .ptitle {
+        align-items: center;
+        color: gray;
+    }
+
+    .black {
+        color: black;
+    }
+
+    .ptitle span {
+        margin-right: 10px;
+    }
+
+    .label {
+        background: darkgray;
+        color: white;
+        line-height: 20px;
+        padding: 6px 8px;
+        border-right: 3px;
+        margin-right: 10px;
+    }
+
+    .pinfo {
+        color: gray;
+    }
+
+    .pinfo .black {
+        margin-right: 15px;
+    }
+
+    .pinfo div {
+        margin-bottom: 10px;
+    }
+
+    .total {
+        position: absolute;
+        top: 50%;
+        /*max-left: 600px;*/
+        left: 50%;
+        /*width: 750px;*/
+        width: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        align-items: center;
+    }
+
+    .totalmoney {
+        width: 48%;
+    }
+
+
+    .labels {
+
+        color: white;
+        line-height: 20px;
+        padding: 6px 8px;
+        border-right: 3px;
+        margin-right: 10px;
+    }
+
+    .dis {
+        width: 30%;
+    }
+
+    .type .flex {
+        align-items: center;
+    }
+
+    .zftype {
+        background: #ccc;
+    }
+
+    .payed {
+        background: #39CCCC;
+    }
+
+    .nosend {
+        background: #0C0C0C;
+    }
+
+    .ps {
+        background: #18bc9c;
+    }
+
+    .zt {
+        background: #2ae300;
+    }
+
+    .type {
+        flex: 1;
+        min-width: 210px;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    .order input {
+
+    }
+
+    .fixed-table-container input[type=checkbox] {
+        margin: 0 10px !important;
+    }
+</style>
+
+<script id="itemtpl" type="text/html">
+    <!--
+    如果启用了templateView,默认调用的是itemtpl这个模板，可以通过设置templateFormatter来修改
+    在当前模板中可以使用三个变量(item:行数据,i:当前第几行,data:所有的行数据)
+    此模板引擎使用的是art-template的native,可参考官方文档
+    -->
+
+    <div>
+        <!--下面四行是为了展示随机图片和标签，可移除-->
+        <% var imagearr = ['https://ws2.sinaimg.cn/large/006tNc79gy1fgphwokqt9j30dw0990tb.jpg',
+        'https://ws2.sinaimg.cn/large/006tNc79gy1fgphwt8nq8j30e609f3z4.jpg',
+        'https://ws1.sinaimg.cn/large/006tNc79gy1fgphwn44hvj30go0b5myb.jpg',
+        'https://ws1.sinaimg.cn/large/006tNc79gy1fgphwnl37mj30dw09agmg.jpg',
+        'https://ws3.sinaimg.cn/large/006tNc79gy1fgphwqsvh6j30go0b576c.jpg']; %>
+        <% var image = imagearr[item.id % 5]; %>
+        <% var labelarr = ['primary', 'success', 'info', 'danger', 'warning']; %>
+        <% var label = labelarr[item.id % 5]; %>
+        <div>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="one">
+
+                    <div class="order table table-striped table-bordered table-hover table-nowrap" id="t-all">
+                        <div style="background-color: #f5f5f5; border-color: #ddd;height:40px;line-height:40px;overflow:hidden;  ">
+
+                            <div class="flex ptitle" style="margin-top: 5px">
+                                <input name="checkbox" data-id="<%=item.id%>" type="checkbox"/>
+                                <span class="porder">ID：<span class="black"><%=item.id%></span></span>
+                                <span class="porder">订单编号：<span class="black"><%=item.order_no%></span></span>
+                                <span class="porder">退款单号：<span class="black"><%=item.refund_no%></span></span>
+                                <span class="username">用户昵称:<span class="black"><%=item.nickname%></span></span>
+                                <span class="username">用户电话:<span class="black"><%=item.mobile%></span></span>
+                                <span class="username">申请时间: <span class="black"><%=Moment(item.create_time*1000).format("YYYY-MM-DD HH:mm:ss")%></span></span>
+
+                            </div>
+                            <hr style="border:0.5px double #e8e8e8"/>
+                        </div>
+                        <div class="pic flex">
+                            <div class="list">
+                                <% for(var i=0;i
+                                <item.goods.length
+                                        ;i++){%>
+                                    <div class="product flex">
+                                        <div class="img-box">
+                                            <img src="<%=item['goods'][i]['images']%>" alt="">
+                                        </div>
+                                        <div class="guide">
+                                            <p><%=item['goods'][i]['goods_name']%></p>
+                                            <%if(item['goods'][i]['key_name']){%><p>规格：<span class="red"><%=item['goods'][i]['key_name']%></span><%}%>
+                                            <span>数量:</span><span class="red"><%=item['goods'][i]['total_num']%>件</span>
+                                        </p>
+                                            <p>小计：<span class="red">￥<%=item['goods'][i]['total_price']%></span>
+                                            </p>
+                                            <p>状态：<span >
+                                                    <%if(item['goods'][i]['is_refund'] == '0'){%>正常
+                                                    <%}else if(item['goods'][i]['is_refund'] == '1'){%>退款中
+                                                    <%}else if(item['goods'][i]['is_refund'] == '2'){%>退款完成
+                                                    <%}else if(item['goods'][i]['is_refund'] == '4'){%>退款被拒
+                                                    <%}else{%>退款失败
+                                                    <%}%>
+
+
+                                                    </span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <%}%>
+
+                            </div>
+                            <div class="total flex">
+
+                                <div class="totalmoney">
+                                    退款金额：<%=item.money%>
+                                    退款抵扣金额：<%=item.use_money%>
+                                    退款积分：<%=item.use_qrcode%>
+                                    （订单总金额<%=item.total_price%>元）
+                                </div>
+                                <div class="dis">
+                                    <span class="label"><%=item.is_status_text%></span>
+                                    <span class="label ps btn-dialog" data-title="查看详情"
+                                          href="/admin/litestore/litestoreorderrefund/detail/ids/<%=item.id%>"
+                                          style="cursor: pointer"><i class="fa fa-eye"></i> 订单详情</span>
+                                </div>
+                                <%if(item.apply_status === 1){%>
+                                <p class="flex">
+                                    <span class="label ps btn-warning btn-dialog"
+                                          href="/admin/litestore/litestoreorderrefund/review/ids/<%=item.id%>"
+                                          style="cursor: pointer">审核</span>
+                                    <span style="color: #18bc9c;" class="labels"><%=item.order_status_text%></span>
+                                </p>
+                                <%}else{%>
+
+                                <%}%>
+                                <!--<p class="flex">
+                                    <a href="/admin/litestore/litestoreorder/del/ids/<%=item.id%>" class="btn btn-danger btn-del btn-delone" data-id="<%=item.id%>"><i class="fa fa-trash"></i> 删除</a>
+                                </p>-->
+                            </div>
+                        </div>
+                        <div class="pinfo">
+                            <div class="flex">
+                                <span class="black">退款原因：<%=item.remark%></span>
+                                <%if(item.description){%><%
+                                <span class="black">退款说明：<%=item.description%> </span>
+                                <%}%>
+                                <%if(item.review_time){%><%
+                                <span class="black">审核时间：<%=Moment(item.review_time*1000).format("YYYY-MM-DD HH:mm:ss")%> </span><%}%>
+                                <%if(item.review_remark){%><%
+                                <span class="black">被拒理由：<%=item.review_remark%> </span><%}%>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!--table-->
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</script>

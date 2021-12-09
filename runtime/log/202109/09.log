@@ -1,0 +1,105 @@
+---------------------------------------------------------------
+[ 2021-09-09T15:20:05+08:00 ] 127.0.0.1 GET www.msjt.com/
+[运行时间：0.945946s] [吞吐率：1.06req/s] [内存消耗：2,967.84kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000261s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006263s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000343s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000431s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => '403',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.msjt.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000431s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-09-09T15:20:15+08:00 ] 127.0.0.1 GET www.msjt.com/user/info
+[运行时间：0.915499s] [吞吐率：1.09req/s] [内存消耗：3,253.59kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004246s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000173s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000281s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.users',
+    2 => 'info',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.msjt.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005439s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000173s ]
+[ info ] [ RUN ] app\api\controller\msjt\Users->info[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Users.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000343s ]
+[ info ] [ LOG ] INIT File
+[ error ] [401]请登录[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\traits\Auth.php:39]
+---------------------------------------------------------------
+[ 2021-09-09T15:20:17+08:00 ] 127.0.0.1 GET www.msjt.com/favicon.ico
+[运行时间：0.905804s] [吞吐率：1.10req/s] [内存消耗：2,967.43kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003742s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000139s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000235s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.msjt.com/user/info',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.msjt.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000436s ]
+[ info ] [ LOG ] INIT File

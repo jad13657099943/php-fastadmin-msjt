@@ -1,0 +1,54 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action=""
+      xmlns="http://www.w3.org/1999/html">
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('优惠券信息')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <select id="c-pid" data-rule="required" class="form-control selectpicker" name="row[coupon_id]">
+                {foreach name="parentList" item="vo"}
+                <option data-type="{$vo.name}" value="{$key}" {in name="key" value=""}selected{/in}>{$vo.name}</option>
+                {/foreach}
+            </select>
+            <!--  <input id="c-category_id" data-rule="required" data-source="litestore/litestorecategory/selectpage" class="form-control selectpage form-control" name="row[category_id]" type="text" value="">-->
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="content" class="control-label col-xs-12 col-sm-2">{:__('赠送方式')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[status]', ['1'=>__('赠送所有人'), '2'=>__('选择用户')])}
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="c-name" class="control-label col-xs-12 col-sm-2">{:__('赠送用户')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <dl class="fieldlist" data-name="row[uid]" data-template="testtpl">
+                <a data-url="coupon/couponrecord/select" href="javascript:;"   class="spec_add_btn btn-primary btn spec_add" data-title="选择用户" >
+                    <i class="fa fa-list"></i>{:__('选择用户')}
+                </a>
+                <span class="week" style="display: none"><%=row['week']%></span>
+                <input type="hidden" class="weekc"  name="row[week]" class="form-control" value="<%=row['week']%>">
+            </dl>
+
+        </div>
+    </div>
+
+<!--    <div class="form-group">-->
+<!--        <label for="number" class="control-label col-xs-12 col-sm-2">{:__('赠送数量')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-4">-->
+<!--            <input id="number" data-rule="required" class="form-control" name="row[number]" type="number" value="1">-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
+

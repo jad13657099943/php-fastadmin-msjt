@@ -1,0 +1,1331 @@
+---------------------------------------------------------------
+[ 2021-09-17T09:10:05+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：0.966687s] [吞吐率：1.03req/s] [内存消耗：3,322.53kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000359s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006600s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000108s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000185s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------437499079037946152929329',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'b1f97fc2-55eb-4dc2-b00c-cb6104775937',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091510297511',
+  'type' => '1',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004624s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000131s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000281s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class 'app\api\services\common\AgencyOrderService' not found[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php:14]
+---------------------------------------------------------------
+[ 2021-09-17T09:11:25+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：1.324625s] [吞吐率：0.75req/s] [内存消耗：4,941.81kb] [文件加载：91]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003192s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000115s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000185s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------749548326894220061673004',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '9a931c37-860f-4344-800b-451f9994b135',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091510297511',
+  'type' => '1',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001664s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000106s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000235s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059217s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` WHERE  `order_no` = 'A2021091510297511' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.039857s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.038551s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.039074s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.045461s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.038662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.037990s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_no' in 'where clause'[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2021-09-17T09:13:19+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：1.188251s] [吞吐率：0.84req/s] [内存消耗：4,945.31kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000077s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003206s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000107s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000180s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------193035578338990297385508',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '9fd306ae-8f60-4db3-93ff-3c53f3053604',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091510297511',
+  'type' => '1',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001760s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000103s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000511s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.048041s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.029877s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` WHERE  `order_no` = 'A2021091510297511' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.028672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.026800s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.026249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.025900s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.025038s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.029317s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_no' in 'where clause'[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2021-09-17T09:14:16+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：1.298055s] [吞吐率：0.77req/s] [内存消耗：4,944.81kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000103s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004614s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000158s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000263s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------666723717982355135508237',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '85ad99a2-2ac5-474c-9b98-254d17ca9c92',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091510297511',
+  'type' => '1',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002119s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000150s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000795s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.052742s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.034220s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` WHERE  `order_no` = 'A2021091510297511' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.035271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.034588s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.032291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.031380s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.031346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.050672s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_no' in 'where clause'[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2021-09-17T09:15:04+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：12.635873s] [吞吐率：0.08req/s] [内存消耗：4,946.50kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000074s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002819s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000199s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000396s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------277338081459704930177442',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '83918a17-a643-4e0c-9530-c3d2971ffe1b',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091510297511',
+  'type' => '1',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002173s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000235s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.001119s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056039s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.035634s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` WHERE  `order_no` = 'A2021091510297511' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.036206s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.034161s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.034758s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.033590s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.032558s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.034382s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_no' in 'where clause'[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2021-09-17T09:16:38+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：56.697034s] [吞吐率：0.02req/s] [内存消耗：4,943.95kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000077s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004209s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000201s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000362s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------826764060691922070595880',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '27a23f1a-8925-4a84-b175-be9c9ec20e3e',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091510297511',
+  'type' => '1',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002210s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000209s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000706s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.052215s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.033679s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` WHERE  `order_no` = 'A2021091510297511' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.034776s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.033852s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.033012s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.031130s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.032647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.035531s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_no' in 'where clause'[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2021-09-17T09:17:55+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：38.939262s] [吞吐率：0.03req/s] [内存消耗：4,948.54kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000079s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003636s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000188s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000341s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------488869285550996991645065',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '502c282f-69b1-4130-8ca0-909b96e9ee0b',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091510297511',
+  'type' => '1',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001843s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000205s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000308s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.050315s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.034319s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` WHERE  `order_no` = 'A2021091510297511' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.034180s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.031686s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.032625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.030879s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.031078s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.031864s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_no' in 'where clause'[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2021-09-17T09:20:09+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：27.753863s] [吞吐率：0.04req/s] [内存消耗：4,943.95kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000098s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004057s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000267s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000492s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------677442584782900372213726',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '454acb84-6462-48fc-b045-496191ceb7fd',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091510297511',
+  'type' => '1',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002855s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000261s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000300s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.051821s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.037378s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` WHERE  `order_no` = 'A2021091510297511' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.041838s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.031207s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.031629s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.034392s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.031708s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.031145s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_no' in 'where clause'[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2021-09-17T09:21:11+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：17.695695s] [吞吐率：0.06req/s] [内存消耗：4,931.88kb] [文件加载：86]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000133s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004469s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000557s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000978s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------167626554879842160137147',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'aa9127fd-3958-46af-92d3-584342febaa6',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091510297511',
+  'type' => '1',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003097s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000339s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000226s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.049454s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.035505s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` WHERE  `order_no` = 'A2021091510297511' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.035018s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.032207s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.032181s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.032185s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.032287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_goods` [ RunTime:0.033410s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_goods` WHERE  `order_no` = 'A2021091510297511'  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.032652s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_agency` [ RunTime:0.031736s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (2 , 1 , 0.03 , 'A2021091510297511' , '[{\"name\":\"\\u5320\\u5fc3\\u63a8\\u8350\",\"simages\":\"\\/uploads\\/20210908\\/94e48e62a7a1f53e8091e663fec83faf.jpg\",\"sku\":\"\\u84dd\\u8272\",\"price\":\"100.00\",\"num\":1}]' , 100 , 3 , 1 , 1 , 1631841667) [ RunTime:0.033181s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.032255s ]
+---------------------------------------------------------------
+[ 2021-09-17T09:22:39+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：43.073539s] [吞吐率：0.02req/s] [内存消耗：4,952.09kb] [文件加载：87]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000091s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003074s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000198s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000364s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------656040111994847636088663',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'f3894b42-4041-453e-ab35-ceda40c5e2f9',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091510297511',
+  'type' => '1',
+  'status' => '2',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002338s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000203s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000283s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.051412s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.035095s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` WHERE  `order_no` = 'A2021091510297511' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.034921s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.033901s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.033105s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.032643s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.031967s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_goods` [ RunTime:0.031685s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_goods` WHERE  `order_no` = 'A2021091510297511'  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.032975s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_agency` [ RunTime:0.031180s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (2 , 1 , 0.03 , 'A2021091510297511' , '[{\"name\":\"\\u5320\\u5fc3\\u63a8\\u8350\",\"simages\":\"\\/uploads\\/20210908\\/94e48e62a7a1f53e8091e663fec83faf.jpg\",\"sku\":\"\\u84dd\\u8272\",\"price\":\"100.00\",\"num\":1}]' , 100 , 3 , 1 , 2 , 1631841755) [ RunTime:0.032755s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+3  WHERE  `id` = 2 [ RunTime:0.035570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_balance` [ RunTime:0.032606s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_balance` (`user_id` , `name` , `money` , `createtime`) VALUES (2 , '分销提成' , 3 , 1631841756) [ RunTime:0.031943s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.035894s ]
+---------------------------------------------------------------
+[ 2021-09-17T09:26:02+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：1.041675s] [吞吐率：0.96req/s] [内存消耗：4,937.25kb] [文件加载：88]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000075s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004746s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000136s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000209s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------379660908233930718175755',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'db3a8cfc-1b9a-4b46-9bce-4adf069ef8e1',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '2',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001751s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000098s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000275s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.048816s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_curriculum_order` [ RunTime:0.032583s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.033021s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.031923s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.031194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.031164s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.029757s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.032194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_agency` [ RunTime:0.030426s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (2 , 1 , 0.03 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 2.4 , 2 , 2 , 1631841961) [ RunTime:0.031210s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+2.4  WHERE  `id` = 2 [ RunTime:0.031493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_balance` [ RunTime:0.031861s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_balance` (`user_id` , `name` , `money` , `createtime`) VALUES (2 , '分销提成' , 2.4 , 1631841962) [ RunTime:0.031760s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.030733s ]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:159]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:159]
+---------------------------------------------------------------
+[ 2021-09-17T09:26:46+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：1.191306s] [吞吐率：0.84req/s] [内存消耗：4,918.52kb] [文件加载：88]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000034s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002226s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000094s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000160s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------362692574450746926370522',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'e9047f8a-04cf-4431-b778-79eebb018d62',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '2',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001391s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000096s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000358s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.052896s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_curriculum_order` [ RunTime:0.040949s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.037538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.033507s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.031692s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.031207s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.031259s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.035371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_agency` [ RunTime:0.030871s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (2 , 1 , 0.03 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 2.4 , 2 , 2 , 1631842005) [ RunTime:0.032370s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+2.4  WHERE  `id` = 2 [ RunTime:0.031266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_balance` [ RunTime:0.031383s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_balance` (`user_id` , `name` , `money` , `createtime`) VALUES (2 , '分销提成' , 2.4 , 1631842005) [ RunTime:0.031313s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.031353s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'two_distribution_rate' LIMIT 1 [ RunTime:0.031183s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.032345s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (3 , 1 , 0.01 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 0.8 , 2 , 2 , 1631842006) [ RunTime:0.031030s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+0.8  WHERE  `id` = 3 [ RunTime:0.030441s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_balance` (`user_id` , `name` , `money` , `createtime`) VALUES (3 , '分销提成' , 0.8 , 1631842006) [ RunTime:0.031796s ]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:159]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:159]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:159]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:159]
+---------------------------------------------------------------
+[ 2021-09-17T09:27:56+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：1.178915s] [吞吐率：0.85req/s] [内存消耗：4,918.52kb] [文件加载：88]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000044s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002787s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000100s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000172s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------157980408255173808066587',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '0157fe79-7a5f-4f6f-be5c-a1701080c14f',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '2',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001883s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000109s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000447s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056049s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_curriculum_order` [ RunTime:0.033734s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.033466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.030981s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.031791s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.032093s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.031934s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.031240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_agency` [ RunTime:0.031454s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (2 , 1 , 0.03 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 2.4 , 2 , 2 , 1631842075) [ RunTime:0.032484s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+2.4  WHERE  `id` = 2 [ RunTime:0.031142s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_balance` [ RunTime:0.031555s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_balance` (`user_id` , `name` , `money` , `createtime`) VALUES (2 , '分销提成' , 2.4 , 1631842075) [ RunTime:0.031304s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.030167s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'two_distribution_rate' LIMIT 1 [ RunTime:0.030324s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.030923s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (3 , 1 , 0.01 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 0.8 , 2 , 2 , 1631842075) [ RunTime:0.030417s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+0.8  WHERE  `id` = 3 [ RunTime:0.030917s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_balance` (`user_id` , `name` , `money` , `createtime`) VALUES (3 , '分销提成' , 0.8 , 1631842075) [ RunTime:0.030988s ]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:159]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:159]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:159]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:159]
+---------------------------------------------------------------
+[ 2021-09-17T09:44:40+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：1.156097s] [吞吐率：0.86req/s] [内存消耗：4,921.49kb] [文件加载：88]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004172s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000152s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000255s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------622967657149294191680767',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '06a519af-fb5b-4b9a-90c4-e416149e421b',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '2',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002243s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000198s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000318s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.044119s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_curriculum_order` [ RunTime:0.029246s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.032687s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.028710s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.028641s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.027328s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.026844s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.030572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_agency` [ RunTime:0.027481s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (2 , 1 , 0.03 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 2.4 , 2 , 2 , 1631843079) [ RunTime:0.028012s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+2.4  WHERE  `id` = 2 [ RunTime:0.028339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_balance` [ RunTime:0.029437s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_balance` (`user_id` , `name` , `money` , `createtime`) VALUES (2 , '分销提成' , 2.4 , 1631843079) [ RunTime:0.026780s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.027229s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'two_distribution_rate' LIMIT 1 [ RunTime:0.027126s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.037746s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (3 , 1 , 0.01 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 0.8 , 2 , 2 , 1631843079) [ RunTime:0.027558s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+0.8  WHERE  `id` = 3 [ RunTime:0.027201s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_balance` (`user_id` , `name` , `money` , `createtime`) VALUES (3 , '分销提成' , 0.8 , 1631843079) [ RunTime:0.026748s ]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:169]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:169]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:169]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:169]
+---------------------------------------------------------------
+[ 2021-09-17T09:46:32+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：1.716328s] [吞吐率：0.58req/s] [内存消耗：4,974.10kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000073s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004287s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000192s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000333s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------614865636302373366281119',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'f5dd94c6-1be4-453e-a9d1-65d72fe2f387',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '2',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002812s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000200s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000421s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.051614s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_curriculum_order` [ RunTime:0.034057s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.034519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.032478s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.032704s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.032394s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.032253s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.033570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_agency` [ RunTime:0.032198s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (2 , 1 , 0.03 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 2.4 , 2 , 2 , 1631843191) [ RunTime:0.032422s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_agency` WHERE  `order_no` = 'A2021091654571005'  AND `status` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.032870s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_order_agency`  SET `status`=2,`updatetime`=1631843191  WHERE  `id` = 3 [ RunTime:0.031635s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+2.4  WHERE  `id` = 2 [ RunTime:0.031677s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_balance` [ RunTime:0.032345s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_balance` (`user_id` , `name` , `money` , `createtime`) VALUES (2 , '分销提成' , 2.4 , 1631843191) [ RunTime:0.031901s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.031916s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'two_distribution_rate' LIMIT 1 [ RunTime:0.031266s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.032663s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (3 , 1 , 0.01 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 0.8 , 2 , 2 , 1631843191) [ RunTime:0.031084s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_agency` WHERE  `order_no` = 'A2021091654571005'  AND `status` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.032763s ]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:169]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:169]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:169]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:169]
+[ error ] [8]Trying to get property 'user_id' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:107]
+[ error ] [8]Trying to get property 'agency' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:108]
+[ error ] [2]Creating default object from empty value[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:109]
+[ error ] [0]致命错误: Call to undefined method stdClass::save()[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:110]
+---------------------------------------------------------------
+[ 2021-09-17T09:47:12+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：1.599721s] [吞吐率：0.63req/s] [内存消耗：4,974.10kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003012s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000125s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000250s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------342984005035103062053318',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '4220e22d-062e-4749-a975-066760c069f2',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '2',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001802s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000284s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000488s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.043281s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_curriculum_order` [ RunTime:0.040937s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.031689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.028237s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.029172s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.029602s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.027384s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.029890s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_agency` [ RunTime:0.027968s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (2 , 1 , 0.03 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 2.4 , 2 , 2 , 1631843230) [ RunTime:0.028307s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_agency` WHERE  `order_no` = 'A2021091654571005'  AND `status` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.029043s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_order_agency`  SET `status`=2,`updatetime`=1631843231  WHERE  `id` = 3 [ RunTime:0.026755s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+2.4  WHERE  `id` = 2 [ RunTime:0.026760s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_balance` [ RunTime:0.026853s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_balance` (`user_id` , `name` , `money` , `createtime`) VALUES (2 , '分销提成' , 2.4 , 1631843231) [ RunTime:0.027258s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.027953s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'two_distribution_rate' LIMIT 1 [ RunTime:0.026657s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.027238s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (3 , 1 , 0.01 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 0.8 , 2 , 2 , 1631843231) [ RunTime:0.026637s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_agency` WHERE  `order_no` = 'A2021091654571005'  AND `status` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.027892s ]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:169]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:169]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:169]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:169]
+[ error ] [8]Trying to get property 'user_id' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:107]
+[ error ] [8]Trying to get property 'agency' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:108]
+[ error ] [2]Creating default object from empty value[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:109]
+[ error ] [0]致命错误: Call to undefined method stdClass::save()[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:110]
+---------------------------------------------------------------
+[ 2021-09-17T09:47:57+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：1.814345s] [吞吐率：0.55req/s] [内存消耗：4,948.48kb] [文件加载：91]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004381s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000174s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000286s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------963587370660976003147420',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'e2908d00-8e76-4eba-a73e-1893bed663cf',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '2',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001435s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000102s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000516s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060157s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_curriculum_order` [ RunTime:0.036101s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.035669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.031758s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.031818s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.031297s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.030737s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.031895s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_agency` [ RunTime:0.031065s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (2 , 1 , 0.03 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 2.4 , 2 , 2 , 1631843275) [ RunTime:0.032765s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_agency` WHERE  `order_no` = 'A2021091654571005'  AND `status` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.031930s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_order_agency`  SET `status`=2  WHERE  `order_no` = 'A2021091654571005' [ RunTime:0.031414s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+2.4  WHERE  `id` = 2 [ RunTime:0.031249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_balance` [ RunTime:0.031853s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_balance` (`user_id` , `name` , `money` , `createtime`) VALUES (2 , '分销提成' , 2.4 , 1631843276) [ RunTime:0.032401s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.031759s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'two_distribution_rate' LIMIT 1 [ RunTime:0.031135s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.032456s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (3 , 1 , 0.01 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 0.8 , 2 , 2 , 1631843276) [ RunTime:0.031563s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_agency` WHERE  `order_no` = 'A2021091654571005'  AND `status` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.031247s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_order_agency`  SET `status`=2  WHERE  `order_no` = 'A2021091654571005' [ RunTime:0.032434s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+0  WHERE  `id` IS NULL [ RunTime:0.031253s ]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+[ error ] [8]Trying to get property 'user_id' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:107]
+[ error ] [8]Trying to get property 'agency' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:108]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2021-09-17T09:48:24+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：1.834467s] [吞吐率：0.55req/s] [内存消耗：4,948.48kb] [文件加载：91]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003479s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000152s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000259s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------726387831850360974084695',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '3efef8e4-ae67-4549-ac2c-8e7791dce1d9',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '2',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002482s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000157s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000513s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.053746s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_curriculum_order` [ RunTime:0.033673s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.034777s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.032374s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.032089s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.031679s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.031278s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.032139s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_agency` [ RunTime:0.031981s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (2 , 1 , 0.03 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 2.4 , 2 , 2 , 1631843303) [ RunTime:0.032741s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_agency` WHERE  `order_no` = 'A2021091654571005'  AND `status` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.031369s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_order_agency`  SET `status`=2  WHERE  `order_no` = 'A2021091654571005' [ RunTime:0.032133s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+2.4  WHERE  `id` = 2 [ RunTime:0.031155s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_balance` [ RunTime:0.031057s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_balance` (`user_id` , `name` , `money` , `createtime`) VALUES (2 , '分销提成' , 2.4 , 1631843303) [ RunTime:0.031367s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.030809s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'two_distribution_rate' LIMIT 1 [ RunTime:0.031378s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.043287s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (3 , 1 , 0.01 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 0.8 , 2 , 2 , 1631843303) [ RunTime:0.031997s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_agency` WHERE  `order_no` = 'A2021091654571005'  AND `status` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.031665s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_order_agency`  SET `status`=2  WHERE  `order_no` = 'A2021091654571005' [ RunTime:0.032329s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+0  WHERE  `id` IS NULL [ RunTime:0.030769s ]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+[ error ] [8]Trying to get property 'user_id' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:107]
+[ error ] [8]Trying to get property 'agency' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:108]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2021-09-17T09:49:55+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：28.604642s] [吞吐率：0.03req/s] [内存消耗：4,947.62kb] [文件加载：91]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000086s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003871s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000417s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000697s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------252155855323997894641194',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '60c88d3b-85b2-4782-9d43-6ac86117f6a2',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '2',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003852s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000293s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000503s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.053490s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_curriculum_order` [ RunTime:0.033392s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.034756s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.031487s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.029879s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.030401s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.030271s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.032541s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_agency` [ RunTime:0.030473s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (2 , 1 , 0.03 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 2.4 , 2 , 2 , 1631843379) [ RunTime:0.031627s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_agency` WHERE  `order_no` = 'A2021091654571005'  AND `status` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.031453s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_order_agency`  SET `status`=2  WHERE  `order_no` = 'A2021091654571005' [ RunTime:0.030725s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+2.4  WHERE  `id` = 2 [ RunTime:0.031268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_balance` [ RunTime:0.030774s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_balance` (`user_id` , `name` , `money` , `createtime`) VALUES (2 , '分销提成' , 2.4 , 1631843382) [ RunTime:0.031163s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.029789s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'two_distribution_rate' LIMIT 1 [ RunTime:0.031674s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.036552s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (3 , 1 , 0.01 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 0.8 , 2 , 2 , 1631843390) [ RunTime:0.030943s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_agency` WHERE  `order_no` = 'A2021091654571005'  AND `status` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.031154s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_order_agency`  SET `status`=2  WHERE  `order_no` = 'A2021091654571005' [ RunTime:0.031028s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+0  WHERE  `id` IS NULL [ RunTime:0.030116s ]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+[ error ] [8]Trying to get property 'user_id' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:107]
+[ error ] [8]Trying to get property 'agency' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:108]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2021-09-17T09:50:29+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：11.271762s] [吞吐率：0.09req/s] [内存消耗：4,928.09kb] [文件加载：88]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000071s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003369s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000197s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000362s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------739494628179824263828861',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '7d716ae8-9abf-4cc6-8c0a-3cd3ba0e7b86',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003265s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000210s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000511s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063293s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_curriculum_order` [ RunTime:0.040914s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.042680s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.040441s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.038518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_config` [ RunTime:0.037945s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'distribution_rate' LIMIT 1 [ RunTime:0.040072s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.044043s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_agency` [ RunTime:0.036960s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (2 , 1 , 0.03 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 2.4 , 2 , 1 , 1631843424) [ RunTime:0.037597s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_agency` WHERE  `order_no` = 'A2021091654571005'  AND `status` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.039541s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_order_agency`  SET `status`=2  WHERE  `order_no` = 'A2021091654571005' [ RunTime:0.040506s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+2.4  WHERE  `id` = 2 [ RunTime:0.038789s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_balance` [ RunTime:0.039093s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_balance` (`user_id` , `name` , `money` , `createtime`) VALUES (2 , '分销提成' , 2.4 , 1631843425) [ RunTime:0.038775s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `jrkj_msjt_users_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.038981s ]
+[ sql ] [ SQL ] SELECT `value` FROM `jrkj_config` WHERE  `name` = 'two_distribution_rate' LIMIT 1 [ RunTime:0.037802s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_curriculum_order` WHERE  `order_no` = 'A2021091654571005' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.038230s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_agency` (`user_id` , `users` , `bl` , `order_no` , `info` , `money` , `agency` , `type` , `status` , `createtime`) VALUES (3 , 1 , 0.01 , 'A2021091654571005' , '[{\"name\":\"1111111\",\"simages\":\"\\/uploads\\/20210913\\/566a8102ff3e30b1b22a5556b20785a7.jpg\",\"sku\":\"\",\"price\":null,\"num\":1}]' , 80 , 0.8 , 2 , 1 , 1631843428) [ RunTime:0.042188s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_agency` WHERE  `order_no` = 'A2021091654571005'  AND `status` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.039032s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_order_agency`  SET `status`=2  WHERE  `order_no` = 'A2021091654571005' [ RunTime:0.037716s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+0.8  WHERE  `id` = 3 [ RunTime:0.039913s ]
+[ sql ] [ SQL ] INSERT INTO `jrkj_msjt_users_order_balance` (`user_id` , `name` , `money` , `createtime`) VALUES (3 , '分销提成' , 0.8 , 1631843429) [ RunTime:0.037968s ]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+[ error ] [8]未定义变量: item[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+[ error ] [8]Trying to get property 'money' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:168]
+---------------------------------------------------------------
+[ 2021-09-17T14:23:51+08:00 ] 127.0.0.1 POST www.msjt.com/user/take
+[运行时间：1.581170s] [吞吐率：0.63req/s] [内存消耗：5,074.70kb] [文件加载：99]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000154s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004218s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000157s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000229s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.users',
+    2 => 'take',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------107762067296619883193138',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'a4025470-7cb9-4c09-9893-2cf9ba1f871b',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'token' => 'eyJhdXRoIjoibXNqdCIsInVpZCI6MSwiZXhwIjoxNjM0MDg4MzIxfQ%3D%3D',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004663s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000121s ]
+[ info ] [ RUN ] app\api\controller\msjt\Users->take[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Users.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000693s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.048735s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.032951s ]
+[ sql ] [ SQL ] SELECT `status` FROM `jrkj_msjt_users_order` WHERE  `user_id` = 1  AND `order_no` = 'A2021091654571005' LIMIT 1 [ RunTime:0.032638s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_order`  SET `status`='6'  WHERE  `user_id` = 1  AND `order_no` = 'A2021091654571005' [ RunTime:0.032111s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_grade` [ RunTime:0.031050s ]
+[ sql ] [ SQL ] SELECT `id`,`money` FROM `jrkj_msjt_users_grade` ORDER BY `id` DESC [ RunTime:0.032025s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `jrkj_msjt_users_order` WHERE  `user_id` = 1  AND `status` = '6' LIMIT 1 [ RunTime:0.030482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_curriculum_order` [ RunTime:0.030808s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `jrkj_msjt_goods_curriculum_order` WHERE  `user_id` = 1  AND `status` = '2' LIMIT 1 [ RunTime:0.031443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.029844s ]
+[ sql ] [ SQL ] SELECT `grade` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.030766s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_agency` [ RunTime:0.030760s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_agency` WHERE  `order_no` = 'A2021091654571005'  AND `status` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.031029s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_order_agency`  SET `status`=2  WHERE  `order_no` = 'A2021091654571005' [ RunTime:0.030189s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+0  WHERE  `id` IS NULL [ RunTime:0.031178s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_balance` [ RunTime:0.031307s ]
+[ error ] [8]Trying to get property 'user_id' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:107]
+[ error ] [8]Trying to get property 'agency' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:108]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2021-09-17T14:24:25+08:00 ] 127.0.0.1 POST www.msjt.com/user/take
+[运行时间：10.628543s] [吞吐率：0.09req/s] [内存消耗：5,073.84kb] [文件加载：99]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000087s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002930s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000201s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000371s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.users',
+    2 => 'take',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------442733762637868876445729',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'bb41fa98-e72f-4a4a-87ac-033bdfad4f2c',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'token' => 'eyJhdXRoIjoibXNqdCIsInVpZCI6MSwiZXhwIjoxNjM0MDg4MzIxfQ%3D%3D',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002007s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000229s ]
+[ info ] [ RUN ] app\api\controller\msjt\Users->take[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Users.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000847s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.064037s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.041513s ]
+[ sql ] [ SQL ] SELECT `status` FROM `jrkj_msjt_users_order` WHERE  `user_id` = 1  AND `order_no` = 'A2021091654571005' LIMIT 1 [ RunTime:0.040618s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_order`  SET `status`='6'  WHERE  `user_id` = 1  AND `order_no` = 'A2021091654571005' [ RunTime:0.040025s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_grade` [ RunTime:0.040641s ]
+[ sql ] [ SQL ] SELECT `id`,`money` FROM `jrkj_msjt_users_grade` ORDER BY `id` DESC [ RunTime:0.038678s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `jrkj_msjt_users_order` WHERE  `user_id` = 1  AND `status` = '6' LIMIT 1 [ RunTime:0.037065s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_curriculum_order` [ RunTime:0.038564s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `jrkj_msjt_goods_curriculum_order` WHERE  `user_id` = 1  AND `status` = '2' LIMIT 1 [ RunTime:0.038656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_users` [ RunTime:0.039236s ]
+[ sql ] [ SQL ] SELECT `grade` FROM `jrkj_msjt_users_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.041168s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_agency` [ RunTime:0.038065s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order_agency` WHERE  `order_no` = 'A2021091654571005'  AND `status` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.038040s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_order_agency`  SET `status`=2  WHERE  `order_no` = 'A2021091654571005' [ RunTime:0.037542s ]
+[ sql ] [ SQL ] UPDATE `jrkj_msjt_users_users`  SET `balance`=`balance`+0  WHERE  `id` IS NULL [ RunTime:0.037561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order_balance` [ RunTime:0.037008s ]
+[ error ] [8]Trying to get property 'user_id' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:107]
+[ error ] [8]Trying to get property 'agency' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\common\AgencyOrderService.php:108]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\db\Connection.php:453]

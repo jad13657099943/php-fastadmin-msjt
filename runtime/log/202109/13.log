@@ -1,0 +1,182 @@
+---------------------------------------------------------------
+[ 2021-09-13T11:16:06+08:00 ] 127.0.0.1 POST www.msjt.com/collection/add
+[运行时间：0.912600s] [吞吐率：1.10req/s] [内存消耗：3,050.48kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000289s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005588s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000114s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000194s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'collection',
+    1 => 'add',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '107',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'a07f6e6d-8d73-4ec7-8f71-2dccc238f6b2',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => 'text/plain',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000291s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-09-13T11:18:35+08:00 ] 127.0.0.1 GET www.msjt.com/collection/lists
+[运行时间：0.933135s] [吞吐率：1.07req/s] [内存消耗：3,338.05kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000113s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002605s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000113s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000189s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.collection',
+    2 => 'lists',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '107',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'a0b89862-d0a5-4bfe-8462-0380b9ee357b',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => 'text/plain',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007560s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000117s ]
+[ info ] [ RUN ] app\api\controller\msjt\Collection->lists[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Collection.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000657s ]
+[ info ] [ LOG ] INIT File
+[ error ] [401]请登录[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\traits\Auth.php:39]
+---------------------------------------------------------------
+[ 2021-09-13T11:19:09+08:00 ] 127.0.0.1 POST www.msjt.com/collection/add
+[运行时间：0.864297s] [吞吐率：1.16req/s] [内存消耗：3,050.49kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000078s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002560s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000108s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000190s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'collection',
+    1 => 'add',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '107',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '192db2e4-09d6-4666-8523-6d37907a982c',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => 'text/plain',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000130s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-09-13T11:19:20+08:00 ] 127.0.0.1 POST www.msjt.com/collection/del
+[运行时间：0.878885s] [吞吐率：1.14req/s] [内存消耗：3,337.36kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002670s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000102s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000173s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.collection',
+    2 => 'del',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '107',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '73ef87e5-6334-4251-aa8b-99dd3aadb3d2',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => 'text/plain',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001411s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000101s ]
+[ info ] [ RUN ] app\api\controller\msjt\Collection->del[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Collection.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000433s ]
+[ info ] [ LOG ] INIT File
+[ error ] [401]请登录[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\traits\Auth.php:39]
+---------------------------------------------------------------
+[ 2021-09-13T11:20:45+08:00 ] 127.0.0.1 POST www.msjt.com/collection/set
+[运行时间：0.888843s] [吞吐率：1.13req/s] [内存消耗：3,050.49kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003774s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000153s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000251s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'collection',
+    1 => 'set',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '107',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '61510753-f179-491e-bc5b-600ccc86b1ad',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => 'text/plain',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000278s ]
+[ info ] [ LOG ] INIT File

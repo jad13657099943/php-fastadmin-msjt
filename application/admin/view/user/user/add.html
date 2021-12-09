@@ -1,0 +1,96 @@
+<form id="add-form" class="form-horizontal form-ajax" role="form" data-toggle="validator" method="POST" action="">
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Username')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="title" name="row[username]" value="" data-rule="required;title"/>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Avatar')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-avatar" data-rule="required" class="form-control form-control" size="50" name="row[avatar]"
+                       type="text">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-avatar" class="btn btn-danger plupload cropper"
+                                  data-input-id="c-avatar"
+                                  data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp"
+                                  data-multiple="false" data-preview-id="p-avatar"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-image" class="btn btn-primary fachoose"
+                                  data-input-id="c-avatar" data-mimetype="image/*" data-multiple="false"><i
+                            class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-image"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-avatar"></ul>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Password')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="password" class="form-control" id="password" name="row[password]" value="" data-rule="required;title"/>
+        </div>
+    </div>
+
+    <!--<div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Email')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="email" name="row[email]" value="" data-rule="required;email"/>
+        </div>
+    </div>-->
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Mobile')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="mobile" name="row[mobile]" value="" data-rule="required;mobile"/>
+        </div>
+    </div>
+
+    <!--<div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Level')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-level_id" data-source="user/level/index" data-field="name" data-params='{"custom[status]":"normal"}', class="form-control selectpage" name="row[level_id]" type="text" value="">
+        </div>
+    </div>-->
+
+
+    <!--<div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Money')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="balance" name="row[balance]" value="" data-rule="required;balance"/>
+        </div>
+    </div>-->
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Level')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_select('row[vip_type]',['0'=>'普通用户','1'=>'普通VIP','2'=>'尊享VIP'],$row.vip_type)}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Score')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="score" name="row[score]" value="" data-rule="required;int"/>
+        </div>
+    </div>
+
+    <!--<div class="form-group">
+        <label for="status" class="control-label col-xs-12 col-sm-2">{:__('Gender')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[gender]', ['1'=>__('Male'), '0'=>__('Female')])}
+        </div>
+    </div>-->
+
+
+    <div class="form-group hidden layer-footer">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,485 @@
+---------------------------------------------------------------
+[ 2021-08-29T02:34:22+08:00 ] 2.57.122.18 GET fywjd.jxsxkeji.com/
+[运行时间：0.303206s] [吞吐率：3.30req/s] [内存消耗：3,230.41kb] [文件加载：82]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004471s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000039s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002778s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 86400,
+)
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000666s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.001073s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-08-29T02:34:23+08:00 ] 2.57.122.18 GET fywjd.jxsxkeji.com/admin/index/login
+[运行时间：0.030811s] [吞吐率：32.46req/s] [内存消耗：3,560.62kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001389s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000025s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'referer' => 'https://fywjd.jxsxkeji.com/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000925s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 86400,
+)
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000446s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000399s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000029s ]
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/fywjd.jxsxkeji.com/application/admin/controller/Index.php ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbg\Loginbg @admin_login_init [ RunTime:0.000397s ]
+[ info ] [ VIEW ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'logo',
+  6 => 'back',
+  7 => 'title',
+  8 => 'background',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000057s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000051s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]ini_set(): A session is active. You cannot change the session module's ini settings at this time[/www/wwwroot/fywjd.jxsxkeji.com/thinkphp/library/think/Cookie.php:49]
+---------------------------------------------------------------
+[ 2021-08-29T02:34:25+08:00 ] 2.57.122.18 GET fywjd.jxsxkeji.com/
+[运行时间：0.019134s] [吞吐率：52.26req/s] [内存消耗：3,230.76kb] [文件加载：82]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001413s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000025s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'referer' => 'http://fywjd.jxsxkeji.com/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; CrOS x86_64 8172.45.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.64 Safari/537.36',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000909s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 86400,
+)
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000046s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000445s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-08-29T02:34:25+08:00 ] 2.57.122.18 GET fywjd.jxsxkeji.com/admin/index/login
+[运行时间：0.022911s] [吞吐率：43.65req/s] [内存消耗：3,560.62kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001623s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000025s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'referer' => 'https://fywjd.jxsxkeji.com/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; CrOS x86_64 8172.45.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.64 Safari/537.36',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000890s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 86400,
+)
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000090s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000060s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000017s ]
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/fywjd.jxsxkeji.com/application/admin/controller/Index.php ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbg\Loginbg @admin_login_init [ RunTime:0.000075s ]
+[ info ] [ VIEW ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'logo',
+  6 => 'back',
+  7 => 'title',
+  8 => 'background',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000044s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000043s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]ini_set(): A session is active. You cannot change the session module's ini settings at this time[/www/wwwroot/fywjd.jxsxkeji.com/thinkphp/library/think/Cookie.php:49]
+---------------------------------------------------------------
+[ 2021-08-29T04:42:22+08:00 ] 47.103.100.5 GET fywjd.jxsxkeji.com/
+[运行时间：0.021346s] [吞吐率：46.85req/s] [内存消耗：3,230.34kb] [文件加载：82]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001495s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000024s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001008s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 86400,
+)
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000054s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000532s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-08-29T04:42:23+08:00 ] 47.103.100.5 GET fywjd.jxsxkeji.com/admin/index/login
+[运行时间：0.021702s] [吞吐率：46.08req/s] [内存消耗：3,560.20kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001393s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000024s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000910s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 86400,
+)
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000092s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000063s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000018s ]
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/fywjd.jxsxkeji.com/application/admin/controller/Index.php ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbg\Loginbg @admin_login_init [ RunTime:0.000081s ]
+[ info ] [ VIEW ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'logo',
+  6 => 'back',
+  7 => 'title',
+  8 => 'background',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000044s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000044s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]ini_set(): A session is active. You cannot change the session module's ini settings at this time[/www/wwwroot/fywjd.jxsxkeji.com/thinkphp/library/think/Cookie.php:49]
+---------------------------------------------------------------
+[ 2021-08-29T06:01:11+08:00 ] 175.24.97.74 POST fywjd.jxsxkeji.com/api/common/getTemplateList
+[运行时间：0.024425s] [吞吐率：40.94req/s] [内存消耗：3,265.59kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001549s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000026s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'getTemplateList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'x-wx-application-proto' => '0',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5 mpcrawler',
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'proxy-connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '7',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'index' => '3',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001010s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000032s ]
+[ info ] [ RUN ] app\api\controller\Common->getTemplateList[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Common.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000037s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-08-29T06:01:11+08:00 ] 175.24.19.47 GET fywjd.jxsxkeji.com/api/Coupon/coupon_list?token=
+[运行时间：0.030566s] [吞吐率：32.72req/s] [内存消耗：3,758.63kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001495s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000024s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Coupon',
+    2 => 'coupon_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'x-wx-application-proto' => '0',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5 mpcrawler',
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'proxy-connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000936s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000036s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_user_token` [ RunTime:0.002216s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000151s ]
+---------------------------------------------------------------
+[ 2021-08-29T06:01:11+08:00 ] 49.235.80.149 GET fywjd.jxsxkeji.com/api/index/index?token=&page=1&pagesize=10
+[运行时间：0.051495s] [吞吐率：19.42req/s] [内存消耗：4,584.41kb] [文件加载：104]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001405s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000024s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'x-wx-application-proto' => '0',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5 mpcrawler',
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'proxy-connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'page' => '1',
+  'pagesize' => '10',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000910s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000029s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000190s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\api\controller\Index::visit() should be compatible with app\common\controller\Api::visit($uid, $goods_id)[/www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php:18]
+[ error ] [8]Trying to get property 'end_time' of non-object[/www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php:267]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000287s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_cms_block` [ RunTime:0.001270s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`image`,`cate_id`,`url`,`jump_status` FROM `jrkj_cms_block` WHERE  `status` = 'normal' ORDER BY `weigh` ASC [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_cms_archives` [ RunTime:0.001292s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `jrkj_cms_archives` WHERE (  `status` = 'normal'  AND `channel_id` = 26 ) AND `jrkj_cms_archives`.`deletetime` IS NULL [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_limit_discount` [ RunTime:0.001067s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_limit_discount` WHERE  `status` = 1  AND `start_time` < 1630188071  AND `end_time` > 1630188071 LIMIT 1 [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods` [ RunTime:0.001117s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_price`,`goods_name`,`image`,`vip_level`,`poster` FROM `jrkj_litestore_goods` WHERE  `is_recommend` = 1  AND `goods_status` = '10'  AND `is_delete` = '0' [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `is_delete` = '0'  AND `is_marketing` = 0  AND `vip_level` = 0  AND `status` = '20'  AND `is_new` <> '2'  AND `is_school` = 10  AND `goods_status` = '10' ORDER BY `goods_sort` DESC LIMIT 0,10 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods_spec` [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 409 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 9 LIMIT 1 [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_category` [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`image`,`classification_image` FROM `jrkj_litestore_category` WHERE  `recommendation` = '1' ORDER BY `weigh` DESC,`weigh` DESC,`id` DESC LIMIT 10 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 50  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 1  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 12  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 9  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 4  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 6  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 3  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 10  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 8  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 5  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 473 LIMIT 1 [ RunTime:0.000074s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 473 LIMIT 1 [ RunTime:0.000069s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 480 LIMIT 1 [ RunTime:0.000069s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 480 LIMIT 1 [ RunTime:0.000073s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 479 LIMIT 1 [ RunTime:0.000068s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 479 LIMIT 1 [ RunTime:0.000064s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 478 LIMIT 1 [ RunTime:0.000066s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 478 LIMIT 1 [ RunTime:0.000070s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 440 LIMIT 1 [ RunTime:0.000071s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 440 LIMIT 1 [ RunTime:0.000064s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 407 LIMIT 1 [ RunTime:0.000066s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 407 LIMIT 1 [ RunTime:0.000065s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 406 LIMIT 1 [ RunTime:0.000072s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 406 LIMIT 1 [ RunTime:0.000066s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `is_new` = '2' [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_coupon` [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_litestore_coupon` WHERE  `is_index` = 1 LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_coupon_data` [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jrkj_litestore_coupon_data` WHERE  `user_id` = null  AND `litestore_coupon_id` = 41 LIMIT 1 [ RunTime:0.000117s ]

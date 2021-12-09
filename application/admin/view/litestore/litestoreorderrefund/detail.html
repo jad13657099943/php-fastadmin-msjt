@@ -1,0 +1,150 @@
+<style type="text/css">
+    fieldset .box .box-header > span {
+        margin: 0px 5px;
+        font-size: 14px;
+    }
+</style>
+<form id="review-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+    <fieldset>
+        <legend>
+            申请退款订单信息
+        </legend>
+        <!-- 订单信息 -->
+        <div class="col-md-10 col-md-offset-1 col-sm-12">
+            <div class="box radius-none">
+                <div class="box-header with-border">
+                    <span>{:__('Order_no')}：{$row.order_no}</span>
+                    <span>下单时间：{$row.lite_store_order.createtime|date="Y-m-d H:i:s",###}</span>
+                    <span>订单总金额：{$row.lite_store_order.pay_price}</span>
+                </div>
+                <div class="box-body">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">售后商品清单</div>
+                        <table class="table">
+                            {foreach name="goodsList" item="item"}
+                            <tr>
+                                <td width="50%">{$item.goods_name}</td>
+                                <td><img src="{$item.images}" height="70" width="70"></td>
+                                <td>规格:{$item.key_name}</td>
+                                <td>单价:{$item.goods_price}元</td>
+                                <td>数量:{$item.total_num}</td>
+                            </tr>
+                            {/foreach}
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 订单信息 -->
+    </fieldset>
+
+    <input type="hidden" name="id" id="id" value="{$row.id}">
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">退款流水号:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input class="form-control" disabled name="row[refund_no]" type="text" value="{$row.refund_no}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">退款金额:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input class="form-control" disabled name="row[money]" type="text" value="{$row.money}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">退款理由:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input class="form-control" disabled name="row[remark]" type="text" value="{$row.remark}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">退款说明:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input class="form-control" disabled name="row[description]" type="text" value="{$row.description}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">退款凭证:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" disabled class="form-control" id="img" name="row[img]" value="{$row.img}">
+            <ul class="list-inline img-preview" style="margin-top: 8px;"></ul>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">申请时间:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input disabled class="form-control" name="row[create_time]" type="text"
+                   value="{$row.create_time|date='Y-m-d H:i:s',###}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">售后状态:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_select('row[apply_status]',['1'=>'申请中','2'=>'已通过','3'=>'已拒绝','4'=>'已取消'],$row['apply_status'],['disabled'=>'disabled'])}
+        </div>
+    </div>
+
+    {in name='row.apply_status' value='2,3'}
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">审核时间:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input disabled class="form-control" name="row[review_time]" type="text"
+                   value="{$row.review_time|date='Y-m-d H:i:s',###}">
+        </div>
+    </div>
+    {/in}
+
+    {eq name='row.apply_status' value='3'}
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">拒绝原因:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input disabled class="form-control" name="row[review_remark]" type="text"
+                   value="{$row.review_remark}">
+        </div>
+    </div>
+    {/eq}
+
+    {eq name='row.apply_status' value='2'}
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">退款状态:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_select('row[status]',['1'=>'退款中','2'=>'退款成功','3'=>'退款失败'],$row['status'],['disabled'=>'disabled'])}
+        </div>
+    </div>
+
+    {eq name='row.status' value='2'}
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">到账金额:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input disabled class="form-control" name="row[refund_money]" type="text"
+                   value="{$row.refund_money}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">到账时间:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input disabled class="form-control" name="row[refund_time]" type="text"
+                   value="{$row.refund_time|date='Y-m-d H:i:s',###}">
+        </div>
+    </div>
+    {/eq}
+    {/eq}
+</form>
+
+<script type="text/html" id="img_preview">
+    <% for(var i=0;i< item.length;i++){%>
+    <li class="col-xs-3"><a href="http://ggzp.0791jr.com/<%=item[i]%>" data-url="<%=item[i]%>" target="_blank"
+                            class="thumbnail" style="margin-bottom: 0px;"><img src="http://ggzp.0791jr.com/<%=item[i]%>" class="img-responsive"
+                                                   onerror="this.src='https://tool.fastadmin.net/icon/'+'http://ggzp.0791jr.com/uploads/20200310/61e58f31a62e508b1f7d9ec8948fe85f.jpg'.split('.').pop()+'.png';this.onerror=null;"
+    ></a>
+    </li>
+    <%}%>
+</script>

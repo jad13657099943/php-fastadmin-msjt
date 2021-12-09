@@ -1,0 +1,98 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="Keywords" content=""/>-->
+<!--    <meta name="Description" content=""/>-->
+<!--    <meta http-equiv="Cache-Control" content="no-cache"/>-->
+<!--    <meta http-equiv="Pragma" content="no-cache"/>-->
+<!--    <meta http-equiv="expires" content="0" />-->
+<!--    <meta name="apple-mobile-web-app-capable" content="yes" />-->
+<!--	<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+<!--	<meta name="format-detection" content="telephone=no" />-->
+<!--    &lt;!&ndash;禁止用户在手机上屏幕页面&ndash;&gt;-->
+<!--    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />-->
+<!--     <link rel="stylesheet" type="text/css" href="__CDN__/assets/layui/css/layui.css"/>-->
+<!--    <script src="__CDN__/assets/js/rem.js"></script>-->
+<!--    <link rel="stylesheet" href="__CDN__/assets/css/download.css" />-->
+<!--    <title>APP下载</title>-->
+<!--</head>  -->
+<!--<body> -->
+<!--	<div class="bj-img flex flexv">-->
+<!--		<div class="top-logo">-->
+<!--			 <img src="__CDN__/assets/img/logoa.png"> -->
+<!--		</div>-->
+<!--		<div class="space"> </div>-->
+<!--		-->
+<!--		&lt;!&ndash;邀请码&ndash;&gt;-->
+<!--        {if condition="$code neq 0"}-->
+<!--		<div class="invite-code flex">-->
+<!--			<input readonly="readonly" class="flexc" type="text" id="demoInput" value="{$code}" />-->
+<!--			<span class="copycode flex1 flexc" id="btn">复制邀请码</span>-->
+<!--		</div>-->
+<!--        {/if}-->
+<!--        <div class="bj-img-inner flex jus-b">-->
+<!--    		<a class="load-link one" id="android">Android下载</a>-->
+<!--    		<a class="load-link two" id="ios">Iphone下载</a>-->
+<!--        </div>-->
+<!--	</div>-->
+<!--	-->
+<!--	<div class="cover">-->
+<!--        <div class="cover-inner">-->
+<!--          <img src="__CDN__/assets/img/live.png">-->
+<!--       </div>-->
+<!--   </div>-->
+<!--    -->
+<!--   <script src="__CDN__/assets/js/jquery-1.8.3.min.js"></script>-->
+<!--   <script src="__CDN__/assets/layui/layui.js" type="text/javascript" charset="utf-8"></script>-->
+<!--    <script>-->
+<!--    	 /*微信下载判断*/-->
+<!--        $(document).ready(function(){-->
+<!--        	layui.use('layer',function(){-->
+<!--        		var layer = layui.layer;-->
+
+<!--        		var code = '{$code}';-->
+<!--        		if(code != 0){-->
+<!--                    // 复制邀请码-->
+<!--                    const btn = document.querySelector('#btn');-->
+<!--                    btn.addEventListener('click', () => {-->
+<!--                        const input = document.querySelector('#demoInput');-->
+<!--                        input.select();-->
+<!--                        if (document.execCommand('copy')) {-->
+<!--                            document.execCommand('copy');-->
+<!--                            layer.msg('复制成功');-->
+<!--                            window.getSelection().removeAllRanges();-->
+<!--                        }-->
+<!--                    })-->
+<!--                }-->
+
+<!--	        	$.ajax({-->
+<!--	                type:"post",-->
+<!--	                url:"http://yanyu.0791jr.com/index/index/getdownloadurl",-->
+<!--	                dataType: 'json',-->
+<!--	                data:{},-->
+<!--	                success:function (data) {-->
+<!--	                    $("#android").attr('href',data.data.android);-->
+<!--	                    $("#ios").attr('href',data.data.ios);-->
+<!--	                }-->
+<!--	            });-->
+<!--	        	-->
+<!--	            function is_weixin() {-->
+<!--	                    var ua = window.navigator.userAgent.toLowerCase();-->
+<!--	                    if (ua.match(/MicroMessenger/i) == "micromessenger") {-->
+<!--	                        return true;-->
+<!--	                    } else {-->
+<!--	                        return false;-->
+<!--	                    }-->
+<!--	                }-->
+<!--	            var isWeixin = is_weixin();-->
+<!--	            if(isWeixin){-->
+<!--                $(".cover").show();-->
+<!--                $("body").on('touchmove',function(event){event.preventDefault();});-->
+<!--            }-->
+<!--            -->
+<!--            })-->
+<!--        })-->
+<!--    </script>-->
+<!--</body>-->
+<!--</html>-->

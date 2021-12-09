@@ -1,0 +1,108 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('层级')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--&lt;!&ndash;            <input id="c-pid" class="form-control" name="row[pid]" type="number">&ndash;&gt;-->
+    <!--            {:build_select('row[type]',['0'=>'省','1'=>'市','2'=>'区县'],null,['class'=>'form-control-->
+    <!--            selectpicker','id'=>'type','data-rule'=>'required'])}-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('省市')}:</label>
+        <div class="col-xs-9">
+            <div class="form-inline" data-toggle="cxselect" data-selects="province,city">
+                <select class="province form-control" name="row[province_id]" id="type" data-url="litestore/litestoregoods/area" data-value="{$row.province_id}"></select>
+                <select class="city form-control" name="row[city_id]" id="types" data-url="litestore/litestoregoods/area" data-value="{$row.city_id}"></select>
+            </div>
+        </div>
+    </div>
+
+    <!--    <div class="form-group seng hidden">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Pid')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--                        <input id="c-pid" class="form-control" name="row[pid]" type="number">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Shortname')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-shortname" class="form-control" name="row[shortname]" type="text">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div class="form-group">
+        <label class="control-label params col-xs-12 col-sm-2">{:__('省名')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-name" class="form-control" name="row[name]" type="text" value="{$row.name}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">状态:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[status]',['0'=>'正常','1'=>'禁用'],$row['status'])}
+            <!--            <input id="c-status" class="form-control" name="row[status]" type="text">-->
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">权重:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-weigh" class="form-control" name="row[weigh]" type="number" value="{$row.weigh}">
+        </div>
+    </div>
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Mergename')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-mergename" class="form-control" name="row[mergename]" type="text">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Level')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-level" class="form-control" name="row[level]" type="number">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Pinyin')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-pinyin" class="form-control" name="row[pinyin]" type="text">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Code')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-code" class="form-control" name="row[code]" type="text">-->
+    <!--        </div>-->
+    <!--    </div>-->
+<!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Zip')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-zip" class="form-control" name="row[zip]" type="text" value="{$row.zip}">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('First')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-first" class="form-control" name="row[first]" type="text">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Lng')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-lng" class="form-control" name="row[lng]" type="text">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Lat')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-lat" class="form-control" name="row[lat]" type="text">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
+

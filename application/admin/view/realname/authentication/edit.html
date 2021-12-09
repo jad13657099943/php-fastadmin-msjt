@@ -1,0 +1,170 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Uid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-uid" class="form-control" name="row[uid]" type="number" value="{$row.uid}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Store_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-store_name" class="form-control" name="row[store_name]" type="text" value="{$row.store_name}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Store_manager')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-store_manager" class="form-control" name="row[store_manager]" type="text" value="{$row.store_manager}">
+            <!--            {:build_select('row[Store_manager]',$manlevel,$row.store_manager)}-->
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Mobile')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-mobile" class="form-control" name="row[mobile]" type="text" value="{$row.mobile}">
+        </div>
+    </div>
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Province_id')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-province_id" data-rule="required" data-source="province/index" class="form-control selectpage" name="row[province_id]" type="text" value="{$row.province_id}">-->
+
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('City_id')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-city_id" data-rule="required" data-source="city/index" class="form-control selectpage" name="row[city_id]" type="text" value="{$row.city_id}">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Area_id')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-area_id" data-rule="required" data-source="area/index" class="form-control selectpage" name="row[area_id]" type="text" value="{$row.area_id}">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Longitude')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-longitude" class="form-control" name="row[longitude]" type="text" value="{$row.longitude}">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Latitude')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-latitude" class="form-control" name="row[latitude]" type="text" value="{$row.latitude}">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Address')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <!--            <input id="c-address" class="form-control" name="row[address]" type="text" value="{$row.address}">-->
+            <textarea id="c-address" readonly="readonly" data-rule="required" class="form-control" rows="5" name="row[address]" cols="50">{$row.address}</textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-idcard_front" class="control-label col-xs-12 col-sm-2">{:__('Idcard_front')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <ul class="row list-inline plupload-preview" >
+                <li class="col-xs-3">
+                    <a href="{$row.idcard_front}" data-url="g715749344331198.jpg" target="_blank" class="thumbnail">
+                        <img src=" {$row.idcard_front}" onerror="this.src='https://tool.fastadmin.net/icon/'+'http://qiniuqcmy.0791jr.com/g715749344331198.jpg'.split('.').pop()+'.png';this.onerror=null;" class="img-responsive"></a>
+                    <!--                    <a href="javascript:;" class="btn btn-danger btn-xs btn-trash"><i class="fa fa-trash"></i></a>-->
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="c-idcard_back" class="control-label col-xs-12 col-sm-2">{:__('Idcard_back')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <ul class="row list-inline plupload-preview" >
+                <li class="col-xs-3">
+                    <a href="{$row.idcard_back}"  target="_blank" class="thumbnail">
+                        <img src=" {$row.idcard_back}" onerror="this.src='https://tool.fastadmin.net/icon/'+'http://qiniuqcmy.0791jr.com/g715749344331198.jpg'.split('.').pop()+'.png';this.onerror=null;" class="img-responsive"></a>
+                    <!--                    <a href="javascript:;" class="btn btn-danger btn-xs btn-trash"><i class="fa fa-trash"></i></a>-->
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="c-store_front_photo" class="control-label col-xs-12 col-sm-2">{:__('store_front_photo')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <ul class="row list-inline plupload-preview" >
+                <li class="col-xs-3">
+                    <a href="{$row.store_front_photo}"  target="_blank" class="thumbnail">
+                        <img src=" {$row.store_front_photo}" onerror="this.src='https://tool.fastadmin.net/icon/'+'http://qiniuqcmy.0791jr.com/g715749344331198.jpg'.split('.').pop()+'.png';this.onerror=null;" class="img-responsive"></a>
+                    <!--                    <a href="javascript:;" class="btn btn-danger btn-xs btn-trash"><i class="fa fa-trash"></i></a>-->
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="c-business_license" class="control-label col-xs-12 col-sm-2">{:__('Business_license')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <ul class="row list-inline plupload-preview" >
+                <li class="col-xs-3">
+                    <a href="{$row.business_license}" target="_blank" class="thumbnail">
+                        <img src=" {$row.business_license}" onerror="this.src='https://tool.fastadmin.net/icon/'+'http://qiniuqcmy.0791jr.com/g715749344331198.jpg'.split('.').pop()+'.png';this.onerror=null;" class="img-responsive"></a>
+                    <!--                    <a href="javascript:;" class="btn btn-danger btn-xs btn-trash"><i class="fa fa-trash"></i></a>-->
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Idcard_front')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-idcard_front" class="form-control" name="row[idcard_front]" type="text" value="{$row.idcard_front}">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Idcard_back')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-idcard_back" class="form-control" name="row[idcard_back]" type="text" value="{$row.idcard_back}">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Store_front_photo')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-store_front_photo" class="form-control" name="row[store_front_photo]" type="text" value="{$row.store_front_photo}">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Business_license')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-business_license" class="form-control" name="row[business_license]" type="text" value="{$row.business_license}">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="form-group">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2">{:__('Store_status')}:</label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <input id="c-store_status" class="form-control" name="row[store_status]" type="number" value="{$row.store_status}">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Audit_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-audit_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[audit_time]" type="text" value="{$row.audit_time|datetime}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Add_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-add_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[add_time]" type="text" value="{$row.add_time|datetime}">
+        </div>
+    </div>
+    <!--    <div class="form-group layer-footer">-->
+    <!--        <label class="control-label col-xs-12 col-sm-2"></label>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>-->
+    <!--            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>-->
+    <!--        </div>-->
+    <!--    </div>-->
+</form>

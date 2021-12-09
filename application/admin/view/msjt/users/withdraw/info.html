@@ -1,0 +1,61 @@
+<style>
+    td {
+        vertical-align: middle !important;
+    }
+
+    .history span {
+        margin-right: 50px;
+    }
+
+    .sh {
+        margin-bottom: 10px;
+    }
+</style>
+
+
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+
+    <table class="table table-bordered history">
+        <tr>
+            <td>
+
+                <span> <b>{:__('用户昵称')}</b>:{$info.user.nickname}</span>
+
+                <span> <b>{:__('手机号')}</b>：{$info.user.mobile}</span>
+
+
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <span> <b>{:__('提现方式')}</b>:{$info.type}</span>
+
+                <span> <b>{:__('提现金额')}</b>：{$info.money}</span>
+
+                <span> <b>{:__('提现状态')}</b>：{$info.status}</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span><b>{$info.title}</b>:{$info.info}</span>
+            </td>
+        </tr>
+    </table>
+
+
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="reset" class="btn btn-success btn-embossed btn-close" onclick="Layer.closeAll();">
+                {:__('OK')}
+            </button>
+
+         <!--   <button type="reset" class="btn btn-primary btn-embossed btn-close" onclick="Layer.closeAll();">
+                {:__('Close')}
+            </button>-->
+        </div>
+    </div>
+
+</form>

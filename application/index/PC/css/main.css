@@ -1,0 +1,142 @@
+﻿/**-----重置样式-----**/
+html,body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select { margin:0; padding:0; }
+em,i { font-style:normal; }
+ul,li { list-style:none; }
+a { text-decoration:none; color: #333;}
+img { border:none; vertical-align:top; }
+table { border-collapse:collapse; }
+input,textarea { outline:none; }
+textarea { resize:none; overflow:auto; }
+body { font-size:14px; font-family:"微软雅黑"; overflow-x: hidden;}
+/* end reset */
+
+.fl{float: left !important;}             
+.fr{float: right !important;}                                         
+
+.clearfix:before,.clearfix:after{content: '';display: table;}  
+.clearfix:after{clear: both;} 
+
+*.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+.overpoints{
+	overflow: hidden;
+	text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.p_overpoints{
+	overflow: hidden;
+	text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.fill-img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+/*===================首页=========================*/
+.header-wrap{
+	width: 1200px;
+	height: 98px;
+	margin: 0 auto;
+}
+.head-logo{
+	width: 170px;
+	height: 48px;
+	margin: 25px 10px;
+}
+.nav-list{
+	padding-right: 112px;
+}
+.nav-list li{
+	line-height: 98px;
+	float: left;
+	margin-left: 156px;
+	position: relative;
+}
+.nav-list li a{
+	font-size: 16px;
+	color: #333333;
+}
+.nav-list .on a{
+	color: #4382ff;
+}
+.nav-list .on a:after{
+	content: '';
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	left: 0;
+	bottom: 32px;
+	background-color: #4382ff;
+}
+.download-wrap{
+	background-color: #4382ff;
+}
+.download-con{
+	width: 1200px;
+	height: 780px;
+	margin: 0 auto;
+}
+.download-left{
+	padding: 90px 0 58px 100px;
+}
+.download-right{
+	padding: 156px 226px 0 0;
+}
+.download-qr{
+	width: 234px;
+	height: 234px;
+	margin-bottom: 36px;
+}
+.download-btn{
+	display: block;
+	width: 234px;
+	height: 64px;
+	margin-bottom: 32px;
+}
+.foot{
+	width: 1200px;
+	margin: 0 auto;
+	height: 80px;
+	font-size: 14px;
+	color: #333333;
+	line-height: 80px;
+	text-align: center;
+}
+/*===================关于我们========================*/
+.about-ad{
+	min-width: 1200px;
+	height: 240px;
+	background: url(../images/about-ad.jpg) center no-repeat;
+	background-size: auto 100%;
+	-webkit-background-size: auto 100%;
+	-moz-background-size: auto 100%;
+	-o-background-size: auto 100%;
+}
+.content{
+	width: 1200px;
+	min-height: 698px;
+	margin: 0 auto;
+}
+.content h2{
+	font-size: 24px;
+	font-weight: normal;
+	margin: 60px 0 44px;
+	text-align: center;
+}
+.content p{
+	font-size: 14px;
+	text-indent: 2em;
+	line-height: 24px;
+	margin-bottom: 26px;
+}
+.bg-grey{
+	background-color: #f0f0f0;
+}

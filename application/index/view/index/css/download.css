@@ -1,0 +1,356 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5, 
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-break: break-all;
+}
+html {
+  font-size: 50px;
+  width: 100%;
+}
+body {
+  width: 100%;
+  max-width: 750px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 0;
+  color: #333;
+  font-family: "PingFang SC", "Lantinghei SC", "Microsoft YaHei", arial, "\5b8b\4f53", sans-serif, tahoma;
+  font-size: 0.26rem;
+  line-height: 122%;
+  word-wrap: break-word;
+  overflow-x: hidden;
+  background: linear-gradient(to right, #f78e88, #f46a60, #f03225);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+main,
+header,
+nav,
+footer,
+article,
+aside,
+section {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: currentcolor;
+}
+img {
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+}
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+em,
+i {
+  font-style: normal;
+}
+/*
+ *	去除按钮的默认样式
+ * */
+input[type="submit"],
+input[type="button"],
+button[type="submit"],
+button[type="button"],
+input[type="reset"],
+button[type="reset"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 0;
+}
+/*
+ *	去除文本框获取焦点时的高亮框
+ * */
+input[type="text"]:focus,
+button[type="text"]:focus {
+  outline: none;
+}
+input[type="text"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 0;
+}
+button,
+input {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+table {
+  border-collapse: collapse;
+}
+textarea {
+  resize: none;
+}
+
+
+
+
+
+
+/* public css */
+/* 清除浮动 */
+.clear {
+  zoom: 1;
+}
+.clear:after {
+  clear: both;
+  content: "";
+  height: 0;
+  visibility: hidden;
+  line-height: 0;
+}
+/*文字一行溢出*/
+.oneline {
+  display: -webkit-box;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+/*文字两行溢出*/
+.twoline {
+  display: -webkit-box;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+/*flex 转换成flex容器*/
+.flex,
+.jus-c,
+.ali-c,
+.flexc,
+.jus-b,
+.jus-a,
+.jus-e,
+.flex-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  display: -ms-flexbox;
+}
+/*flexv 竖直排列*/
+.flexv {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+}
+/*flex1 自动填充*/
+.flex1 {
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+}
+/*flex-wrap 自动换行*/
+.flex-wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/*	jus-c 水平居中
+ * 	flexc 水平垂直居中
+ * */
+.jus-c,
+.flexc {
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+}
+/*jus-b 水平两端对齐*/
+.jus-b {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+}
+/*jus-a 水平相等间距*/
+.jus-a {
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+}
+/*jus-e 水平终端对齐*/
+.jus-e {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+}
+/*ali-c 竖直居中*/
+.ali-c,
+.flexc {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+.box {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+
+
+.bj-img {
+	width: 100%;
+	max-width: 750px;
+ 	min-height: 100vh; 
+	margin: 0 auto;
+	background: url('../img/download-bg.jpg') no-repeat top center;
+	background-size: 100%;
+}
+
+.top-logo {
+	width: 3.12rem;
+	height: 0.74rem;
+	margin: 0.96rem auto 0;
+}
+.top-logo img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.bj-img-inner {
+	width: 100%;
+	padding: 0 0.55rem;
+	position: fixed;
+	z-index: 10;
+	top: 9.6rem;
+}
+a.load-link {
+	width: 2.9rem;
+	height: 0.8rem;
+	display: block;
+	padding-left: 0.9rem;
+	border-radius: 0.4rem;
+	font-size: 0.3rem;
+	line-height: 0.8rem;
+	color: #ed1000;
+	overflow: hidden;
+	cursor: pointer;
+	background-color: #fff;
+	font-weight: bold;
+}
+.one {
+	background: url('../img/download_android.png') no-repeat 0.34rem center #fff;
+	background-size: 0.42rem 0.5rem;
+}
+
+.two {
+	background: url('../img/download_apple.png') no-repeat 0.34rem center #fff;
+	background-size: 0.4rem 0.48rem;
+}
+
+
+.cover {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+.cover-inner {
+    max-width: 750px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgba(0,0,0,0.8);
+}
+.cover-inner img {
+    padding-top: 10%;
+}
+.invite-code{
+	width: 4.36rem;
+	height: 0.86rem;
+	margin: 0 auto;
+	border: 1px solid #fff;
+	position: relative;
+	z-index: 10;
+	top: 8.8rem;
+	border-radius: 0.43rem;
+	background-color: #fff;
+	overflow: hidden;
+}
+.invite-code input{
+	width: 2.48rem;
+	font-size: 0.42rem;
+	line-height: 0.86rem;
+	color: #fff;
+	text-align: center;
+	border-radius: 0.43rem 0 0 0.43rem;
+	background-color: #f78880;
+}
+.invite-code .copycode{
+	height: 100%;
+	font-size: 0.28rem;
+	line-height: 0.86rem;
+	color: #ed1000;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+}

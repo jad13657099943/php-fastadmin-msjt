@@ -1,0 +1,205 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        .container {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+
+        .header-title {
+            height: 20px;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table tr td{
+            border: 1px solid #000;
+        }
+        .table-title {
+            font-size: 14px;
+        }
+        .table-title>div {
+            height: 25px;
+        }
+        /* .table-title>div span:first-child{
+            margin-right: 15px;
+        } */
+        .table-title>div>div {
+            float: left;
+        }
+        .one>div {
+            width: 50%;
+        }
+        .two>div,.three>div {
+            width: 100%;
+        }
+
+        .contract>div{
+            width: 23%;
+            float: left;
+        }
+        .contract>div:nth-of-type(3){
+            width: 31%;
+            float: left;
+        }
+
+        .contract>div span:nth-of-type(1) {
+            margin-right: 5px;
+        }
+        .sign>div span:nth-of-type(1) {
+            width: 25%;
+        }
+        td{
+            padding: 2px 4px;
+        }
+
+    </style>
+</head>
+
+<body link="blue" vlink="purple">
+
+{foreach name="vo" item="value"}
+<div style="margin-top: 20px" id="print-content">
+    <div class="header-title">
+        <td colspan="7">飞燕文具店销售单</td>
+    </div>
+    <div class="table-title">
+        <div class="one">
+            <div><span>客&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;户：</span><span>{$value.name}</span></div>
+            <div><span>下&nbsp;单&nbsp;日&nbsp;期：</span><span>{:date('Y-m-d H:i:s',$value.createtime)}</span></div>
+        </div>
+
+        <div class="one">
+            <div><span>客户电话：</span><span>{$value.phone}</span></div>
+            <div><span>单据编号：</span><span>{$value.order_no}</span></div>
+            <!--            <div><span>经&nbsp;&nbsp;办&nbsp;&nbsp;人：</span><span></span></div>-->
+            <!--            <div><span>客户联系人：</span><span>{$value.addresss.name}</span></div>-->
+        </div>
+
+        <div class="three">
+            <div><span>客户地址：</span><span>{$value.site}</span></div>
+        </div>
+    </div>
+
+
+    <table border="1" cellpadding="0" cellspacing="0"
+           style='border-collapse:collapse;table-layout:fixed;width: 100%;'>
+        <style type="text/css">
+            #red {
+                color: red
+            }
+        </style>
+        <!-- <colgroup>
+            <col width="40">
+            <col width="290">
+            <col width="40">
+            <col width="40">
+            <col width="60">
+            <col width="80">
+            <col width="80">
+        </colgroup> -->
+
+        <tr height="20" style="text-align: center;font-size:14px">
+            <td style="width: 8%">序号</td>
+            <td style="width: 48%">存货名称</td>
+            <td style="width: 6%">数量</td>
+<!--            <td style="width: 6%"></td>-->
+            <td style="width: 8%">单价</td>
+            <!--            <td style="width: 8%">辅助单位</td>-->
+            <td style="width: 10%">金额</td>
+        </tr>
+
+        {foreach name="value['order']" item="v"}
+        <tr height="20" style="text-align: center;font-size:14px">
+            <td >{$key+1}</td>
+            <td align="left">{$v.goods_name}</td>
+            <td >{$v.total_num}</td>
+<!--            <td></td>-->
+            <td>{$v.goods_price}</td>
+            <!--            <td></td>-->
+            <td>{$v.total_price}</td>
+        </tr>
+        {/foreach}
+        <tr height="20" style="text-align: center;font-size:14px">
+            <td>合计：</td>
+            <td colspan="3" align="left" ><b>{$value.stringmoney}</b></td>
+            <!--            <td></td>-->
+            <!--            <td></td>-->
+            <!--            <td></td>-->
+            <!--            <td></td>-->
+            <td>{$value.sum_money}</td>
+        </tr>
+        <!--        <tr height="20" style="text-align: center;font-size:14px ">-->
+        <!--            <td colspan="4"></td>-->
+        <!--            <td colspan="2">收款金额</td>-->
+        <!--            <td colspan="2"></td>-->
+        <!--        </tr>-->
+    </table>
+    <div class="contract" style="margin-top: 10px;height:20px;">
+        <div><span>制单人:</span><span>{$ren}</span></div>
+        <div><span>联系电话:</span><span>{$kf_phone}</span></div>
+        <div><span>打印时间:</span><span>{:date('Y-m-d H:i:s',time())}</span></div>
+        <div><span>客户签收:</span><span></span></div>
+    </div>
+<!--    <div class="sign">-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; 下载方法1.超链接_导出文件&ndash;&gt;-->
+<!--    &lt;!&ndash;    <a id="print-click">超链接_导出表格</a>&ndash;&gt;-->
+</div>
+{/foreach}
+    <div style="margin-top: 20px;">
+        <input type="button" id="test" class="btn btn-success" onclick="printout()" value="打印"></input>
+    </div>
+<script>
+    // 使用outerHTML属性获取整个table元素的HTML代码（包括<table>标签），然后包装成一个完整的HTML文档，设置charset为urf-8以防止中文乱码
+    // var html = "<html><head><meta charset='utf-8' /></head><body>" + document.getElementById("print-content")
+    //     .outerHTML + "</body></html>";
+    // 实例化一个Blob对象，其构造函数的第一个参数是包含文件内容的数组，第二个参数是包含文件类型属性的对象
+    // var blob = new Blob([html], {
+    //     type: "application/vnd.ms-excel"
+    // });
+    // var a = document.getElementById("print-click");
+    // 利用URL.createObjectURL()方法为a元素生成blob URL
+    // a.href = URL.createObjectURL(blob);
+    // 设置文件名，目前只有Chrome和FireFox支持此属性
+    // a.download = "销售单.xls";
+
+    //打印具体实现代码
+    function printout() {
+        $('#test').hide();
+        window.print();
+        $('#test').show();
+        // debugger;
+        // var newWindow;
+        // // //打开一个新的窗口
+        // newWindow = window.open();
+        // // 是新窗口获得焦点
+        // newWindow.focus();
+        // //保存写入内容
+        // var newContent = "<html><head><meta charset='utf-8'/><title>打印</title></head><body>"
+        // newContent += document.getElementById("print-content").outerHTML;
+        // newContent += "</body></html>"
+        // // 将HTML代码写入新窗口中
+        // newWindow.document.write(newContent);
+        // newWindow.print();
+        // // close layout stream
+        // newWindow.document.close();
+        // //关闭打开的临时窗口
+        // newWindow.close();
+        // return false;
+    };
+</script>
+</body>
+
+</html>

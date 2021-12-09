@@ -1,0 +1,111 @@
+<style>
+    td {
+        vertical-align: middle !important;
+    }
+
+    .history span {
+        margin-right: 50px;
+    }
+
+    .sh {
+        margin-bottom: 10px;
+    }
+</style>
+
+
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+
+    <table class="table table-bordered history">
+        <tr>
+            <td>
+                <span> <b>{:__('订单编号')}</b>：{$info.order_no}</span>
+
+                <span> <b>{:__('用户昵称')}</b>:{$info.user.nickname}</span>
+
+                <span> <b>{:__('手机号')}</b>：{$info.user.mobile}</span>
+
+                <span> <b>{:__('真实姓名')}</b>：{$info.user.name}</span>
+
+                <span> <b>{:__('身份证')}</b>：{$info.user.card}</span>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <span> <b>{:__('下单时间')}</b>：{$info.createtime}</span>
+                <span> <b>{:__('订单状态')}</b>：{$info.status}</span>
+                <span> <b>{:__('支付状态')}</b>：{$info.pay_status}</span>
+                <span> <b>{:__('支付时间')}</b>：{$info.pay_time}</span>
+                <span> <b>{:__('支付金额')}</b>：{$info.pay_money}</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="table table-bordered sku-list">
+                    <thead>
+                    <tr>
+                        <th>商品名称</th>
+                        <th>商品主图</th>
+                        <th>购买规格</th>
+                        <th>购买单价</th>
+                        <th>购买数量</th>
+                        <th>合计金额</th>
+                    </tr>
+
+                    {foreach $info[goods] as $vo}
+                    <tr>
+                        <th>{$vo.info.name}</th>
+                        <th><img style="width: 25px;height: 25px" src="{$vo.info.simages}"></th>
+                        <th>{$vo.sku.name}</th>
+                        <th>{$vo.unit_price}</th>
+                        <th>{$vo.num}</th>
+                        <th>{$vo.money}</th>
+                    </tr>
+                    {/foreach}
+
+                    </thead>
+                    <tbody>
+
+                    <tr>
+
+                        <th colspan="10" style="text-align: right;">
+                            <span>商品总价:{$info.goods_num} 运费:{$info.freight} 应付费用:{$info.money}</span>
+                        </th>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="table table-bordered history">
+        <tr>
+            <td>收货人:{$info.site.name}</td>
+        </tr>
+        <tr>
+            <td>收货电话:{$info.site.mobile}</td>
+        </tr>
+        <tr>
+            <td>收货地址:{$info.site.province}{$info.site.city}{$info.site.region}{$info.site.content}</td>
+        </tr>
+        <tr>
+            <td>订单备注:{$info.remarks}</td>
+        </tr>
+
+
+    </table>
+
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="reset" class="btn btn-success btn-embossed btn-close" onclick="Layer.closeAll();">
+                {:__('OK')}
+            </button>
+
+         <!--   <button type="reset" class="btn btn-primary btn-embossed btn-close" onclick="Layer.closeAll();">
+                {:__('Close')}
+            </button>-->
+        </div>
+    </div>
+
+</form>

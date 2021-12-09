@@ -1,0 +1,73 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-title" class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-title" data-rule="required" class="form-control" name="row[title]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Images')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-images" data-rule="required" class="form-control form-control" size="50" name="row[images]" type="text">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-images" class="btn btn-danger plupload" data-input-id="c-images" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-images"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-images" class="btn btn-primary fachoose" data-input-id="c-images" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-images"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-images"></ul>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-coupon_price" class="control-label col-xs-12 col-sm-2">{:__('Couponprice')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-coupon_price" data-rule="required" class="form-control" name="row[coupon_price]" type="number" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-condition" class="control-label col-xs-12 col-sm-2">{:__('Condition')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-condition" data-rule="required" class="form-control" name="row[condition]" type="number" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-number" class="control-label col-xs-12 col-sm-2">{:__('Number')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-number" data-rule="required" class="form-control" name="row[number]" type="number" value="">
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="c-starttime" class="control-label col-xs-12 col-sm-2">{:__('Starttime')}:</label>
+        <div class="col-xs-12 col-sm-4 date">
+            <input id="c-starttime" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" value="{:date('Y-m-d H:i:s')}"  name="row[starttime]" type="text" >
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-endtime" class="control-label col-xs-12 col-sm-2">{:__('Endtime')}:</label>
+        <div class="col-xs-12 col-sm-4 date">
+            <input id="c-endtime" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" value="{:date('Y-m-d H:i:s')}"  name="row[endtime]" type="text">
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="content" class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[status]', ['1'=>__('Normal'), '2'=>__('Hidden')])}
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

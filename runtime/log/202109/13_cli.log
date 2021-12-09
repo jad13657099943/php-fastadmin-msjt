@@ -1,0 +1,53 @@
+[ 2021-09-13T14:26:21+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000293s ]
+[ info ] [ LOG ] INIT File
+[ 2021-09-13T14:26:21+08:00 ][ info ] [ CACHE ] INIT File
+[ 2021-09-13T14:26:21+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006649s ]
+[ 2021-09-13T14:26:21+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000151s ]
+[ 2021-09-13T14:26:21+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000786s ]
+[ 2021-09-13T14:26:21+08:00 ][ info ] [ DB ] INIT mysql
+[ 2021-09-13T14:26:21+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.042779s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ 2021-09-13T14:26:21+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'msjt_goods_curriculum_type' [ RunTime:0.027965s ]
+[ 2021-09-13T14:26:21+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'jrkj_msjt_goods_curriculum_type' [ RunTime:0.027791s ]
+[ 2021-09-13T14:26:21+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'msjt' AND table_name = 'jrkj_msjt_goods_curriculum_type' ORDER BY ORDINAL_POSITION [ RunTime:0.027390s ]
+[ 2021-09-13T14:27:00+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000259s ]
+[ info ] [ LOG ] INIT File
+[ 2021-09-13T14:27:00+08:00 ][ info ] [ CACHE ] INIT File
+[ 2021-09-13T14:27:00+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.007485s ]
+[ 2021-09-13T14:27:00+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000157s ]
+[ 2021-09-13T14:27:00+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000778s ]
+[ 2021-09-13T14:27:00+08:00 ][ info ] [ DB ] INIT mysql
+[ 2021-09-13T14:27:00+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.048813s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ 2021-09-13T14:27:00+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'msjt_goods_curriculum' [ RunTime:0.033940s ]
+[ 2021-09-13T14:27:00+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'jrkj_msjt_goods_curriculum' [ RunTime:0.045858s ]
+[ 2021-09-13T14:27:38+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000251s ]
+[ info ] [ LOG ] INIT File
+[ 2021-09-13T14:27:38+08:00 ][ info ] [ CACHE ] INIT File
+[ 2021-09-13T14:27:38+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006107s ]
+[ 2021-09-13T14:27:38+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000148s ]
+[ 2021-09-13T14:27:38+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000978s ]
+[ 2021-09-13T14:27:38+08:00 ][ info ] [ DB ] INIT mysql
+[ 2021-09-13T14:27:38+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.043629s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ 2021-09-13T14:27:38+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'msjt_goods_curriculum' [ RunTime:0.030027s ]
+[ 2021-09-13T14:27:38+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'jrkj_msjt_goods_curriculum' [ RunTime:0.032513s ]
+[ 2021-09-13T14:27:38+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'msjt' AND table_name = 'jrkj_msjt_goods_curriculum' ORDER BY ORDINAL_POSITION [ RunTime:0.028828s ]
+[ 2021-09-13T14:42:52+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000179s ]
+[ info ] [ LOG ] INIT File
+[ 2021-09-13T14:42:52+08:00 ][ info ] [ CACHE ] INIT File
+[ 2021-09-13T14:42:52+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005474s ]
+[ 2021-09-13T14:42:52+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000155s ]
+[ 2021-09-13T14:42:52+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000794s ]
+[ 2021-09-13T14:42:53+08:00 ][ info ] [ DB ] INIT mysql
+[ 2021-09-13T14:42:53+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.052108s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ 2021-09-13T14:42:53+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'msjt_goods_curriculum_type' [ RunTime:0.035613s ]
+[ 2021-09-13T14:42:53+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'jrkj_msjt_goods_curriculum_type' [ RunTime:0.034828s ]
+[ 2021-09-13T14:43:06+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000183s ]
+[ info ] [ LOG ] INIT File
+[ 2021-09-13T14:43:06+08:00 ][ info ] [ CACHE ] INIT File
+[ 2021-09-13T14:43:06+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006302s ]
+[ 2021-09-13T14:43:06+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000161s ]
+[ 2021-09-13T14:43:06+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000809s ]
+[ 2021-09-13T14:43:06+08:00 ][ info ] [ DB ] INIT mysql
+[ 2021-09-13T14:43:06+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.058524s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ 2021-09-13T14:43:06+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'msjt_goods_curriculum_type' [ RunTime:0.038964s ]
+[ 2021-09-13T14:43:06+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'jrkj_msjt_goods_curriculum_type' [ RunTime:0.040400s ]
+[ 2021-09-13T14:43:06+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'msjt' AND table_name = 'jrkj_msjt_goods_curriculum_type' ORDER BY ORDINAL_POSITION [ RunTime:0.040745s ]

@@ -1,0 +1,120 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Order_sn')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order_sn" class="form-control" name="row[order_sn]" type="text" value="{$row.order_sn}" disabled="disabled">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Order_status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[order_status][]', ['0'=>__('待发货'), '1'=>__('待收货'), '2'=>__('已完成')], $row['order_status'])}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Image')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <img src="{$site.qiniu_url}{$row.image}" width="120px" height="100px">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Num')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-num" class="form-control" name="row[num]" type="number" value="{$row.num}" disabled="disabled">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pay_integral')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pay_integral" class="form-control" name="row[pay_integral]" type="number" value="{$row.pay_integral}" disabled="disabled">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Add_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-add_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[add_time]" type="text" value="{$row.add_time|datetime}" disabled="disabled">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Receiver_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-receiver_name" class="form-control" name="row[receiver_name]" type="text" value="{$row.receiver_name}" disabled="disabled">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Receiver_phone')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-receiver_phone" class="form-control" name="row[receiver_phone]" type="text" value="{$row.receiver_phone}" disabled="disabled">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Receiver_site')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-receiver_site" class="form-control" name="row[receiver_site]" type="text" value="{$row.receiver_site}" disabled="disabled">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-title" class="form-control" name="row[title]" type="text" value="{$row.title}" disabled="disabled">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Integral')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-integral" class="form-control" name="row[integral]" type="number" value="{$row.integral}" disabled="disabled">
+        </div>
+    </div>
+
+
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('备注')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-remark" class="form-control" name="row[remark]" type="text" value="{$row.remark}" disabled="disabled">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Delivery_company')}:</label>
+        <div class="col-xs-12 col-sm-8">
+        <select id="virtual_name"  class="form-control selectpicker" name="virtual_name">
+            {foreach name="companyList" item="vo"}
+            <option data-type="{$vo.company}" value="{$key}" {in name="key" value=""  }selected{/in}>{$vo.company}</option>
+            {/foreach}
+        </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('快递号')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-express_no" class="form-control" name="express_no" type="text" value="{$row.express_no}">
+        </div>
+    </div>
+
+    {in name="$row['order_status']" value='1,2'}
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Receipt_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-receipt_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[receipt_time]" type="text" value="{$row.receipt_time|datetime}">
+        </div>
+    </div>
+   {/in}
+    {in name="$row['order_status']" value='0'}
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled" >{:__('立即发货')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+    {/in}
+</form>

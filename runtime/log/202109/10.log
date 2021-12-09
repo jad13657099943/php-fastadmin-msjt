@@ -1,0 +1,637 @@
+---------------------------------------------------------------
+[ 2021-09-10T10:32:37+08:00 ] 127.0.0.1 POST www.msjt.com/order/set
+[运行时间：0.666978s] [吞吐率：1.50req/s] [内存消耗：4,805.52kb] [文件加载：88]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000615s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.007835s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000141s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000223s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.order',
+    2 => 'set',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'dd4ec952-eefa-4db9-b225-7bad91f84742',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005102s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000118s ]
+[ info ] [ RUN ] app\api\controller\msjt\Order->set[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000192s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.049007s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.032454s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_goods` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.032508s ]
+[ error ] [8]Trying to get property 'shop_price' of non-object[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\OrderService.php:22]
+---------------------------------------------------------------
+[ 2021-09-10T10:33:27+08:00 ] 127.0.0.1 POST www.msjt.com/order/set
+[运行时间：0.629356s] [吞吐率：1.59req/s] [内存消耗：4,756.14kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002787s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000101s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000173s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.order',
+    2 => 'set',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '1d492356-5105-4267-858a-8395c4c4b4ef',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001898s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000106s ]
+[ info ] [ RUN ] app\api\controller\msjt\Order->set[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000332s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058178s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.039361s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_goods` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.039564s ]
+---------------------------------------------------------------
+[ 2021-09-10T10:35:01+08:00 ] 127.0.0.1 POST www.msjt.com/order/set
+[运行时间：0.645571s] [吞吐率：1.55req/s] [内存消耗：4,756.14kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004428s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000105s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000177s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.order',
+    2 => 'set',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'b27d172e-8c9f-4ce6-b2b2-6b663c6b4e4f',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002553s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000107s ]
+[ info ] [ RUN ] app\api\controller\msjt\Order->set[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000284s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.049985s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.034566s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_goods` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.033385s ]
+---------------------------------------------------------------
+[ 2021-09-10T10:36:32+08:00 ] 127.0.0.1 POST www.msjt.com/order/set
+[运行时间：0.670421s] [吞吐率：1.49req/s] [内存消耗：4,756.45kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000097s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005316s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000196s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000347s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.order',
+    2 => 'set',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '790a0c03-dfa2-4522-8cec-6ee41542e1d6',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003100s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000226s ]
+[ info ] [ RUN ] app\api\controller\msjt\Order->set[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000282s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.064508s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.038931s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_goods` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.039064s ]
+---------------------------------------------------------------
+[ 2021-09-10T10:37:47+08:00 ] 127.0.0.1 POST www.msjt.com/order/set
+[运行时间：0.660253s] [吞吐率：1.51req/s] [内存消耗：4,756.45kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003424s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000096s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000163s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.order',
+    2 => 'set',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '75029a2c-0506-4ea6-ba68-ba85d7a61128',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002511s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000107s ]
+[ info ] [ RUN ] app\api\controller\msjt\Order->set[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000296s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060270s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.040805s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_goods` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.040037s ]
+---------------------------------------------------------------
+[ 2021-09-10T10:38:06+08:00 ] 127.0.0.1 POST www.msjt.com/order/set
+[运行时间：1.047208s] [吞吐率：0.95req/s] [内存消耗：4,809.63kb] [文件加载：87]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003119s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000105s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000179s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.order',
+    2 => 'set',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '73aff6e3-e8bb-4f39-a37c-02be1e293d4f',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002218s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000254s ]
+[ info ] [ RUN ] app\api\controller\msjt\Order->set[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000750s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.052494s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.035138s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_goods` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.033489s ]
+[ error ] [0]variable type error： array[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\Response.php:316]
+---------------------------------------------------------------
+[ 2021-09-10T10:38:23+08:00 ] 127.0.0.1 POST www.msjt.com/order/set
+[运行时间：0.638592s] [吞吐率：1.57req/s] [内存消耗：4,756.45kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005568s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000152s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000264s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.order',
+    2 => 'set',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '9e59beb2-a9b6-44f1-83fd-e614884d00da',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002324s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000177s ]
+[ info ] [ RUN ] app\api\controller\msjt\Order->set[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000371s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.049601s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.033612s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_goods` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.034219s ]
+---------------------------------------------------------------
+[ 2021-09-10T10:38:33+08:00 ] 127.0.0.1 POST www.msjt.com/order/set
+[运行时间：1.021378s] [吞吐率：0.98req/s] [内存消耗：4,809.88kb] [文件加载：87]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000095s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004357s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000112s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000185s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.order',
+    2 => 'set',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'd33e1e1c-44ab-4c87-8057-11296567421a',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001835s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000106s ]
+[ info ] [ RUN ] app\api\controller\msjt\Order->set[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000191s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.042081s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.030172s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_goods` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.029398s ]
+[ error ] [0]variable type error： object[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\Response.php:316]
+---------------------------------------------------------------
+[ 2021-09-10T10:39:40+08:00 ] 127.0.0.1 POST www.msjt.com/order/set
+[运行时间：0.612695s] [吞吐率：1.63req/s] [内存消耗：4,805.83kb] [文件加载：88]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003088s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000107s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000180s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.order',
+    2 => 'set',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '172d1ad5-6655-4230-8d06-655ea823eaa2',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002147s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000178s ]
+[ info ] [ RUN ] app\api\controller\msjt\Order->set[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000286s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.053726s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.034048s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_goods` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.034956s ]
+[ error ] [4096]Object of class stdClass could not be converted to string[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\CommonService.php:24]
+---------------------------------------------------------------
+[ 2021-09-10T10:40:42+08:00 ] 127.0.0.1 POST www.msjt.com/order/set
+[运行时间：0.658996s] [吞吐率：1.52req/s] [内存消耗：4,805.52kb] [文件加载：88]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005696s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000190s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000325s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.order',
+    2 => 'set',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'eb4fb472-93c9-41e3-9f3f-ad22a157481f',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003305s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000193s ]
+[ info ] [ RUN ] app\api\controller\msjt\Order->set[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000312s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058930s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.039397s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_goods` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.040309s ]
+[ error ] [4096]Object of class stdClass could not be converted to string[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\CommonService.php:24]
+---------------------------------------------------------------
+[ 2021-09-10T10:41:01+08:00 ] 127.0.0.1 POST www.msjt.com/order/set
+[运行时间：1.021281s] [吞吐率：0.98req/s] [内存消耗：4,809.58kb] [文件加载：87]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000045s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004656s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000141s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000226s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.order',
+    2 => 'set',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'a9f782f8-9328-4908-92c1-98aa401e0420',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002995s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000191s ]
+[ info ] [ RUN ] app\api\controller\msjt\Order->set[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000702s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.050930s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.035618s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_goods` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.034210s ]
+[ error ] [0]variable type error： object[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\Response.php:316]
+---------------------------------------------------------------
+[ 2021-09-10T10:41:13+08:00 ] 127.0.0.1 POST www.msjt.com/order/set
+[运行时间：0.662776s] [吞吐率：1.51req/s] [内存消耗：4,756.14kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000082s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002855s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000102s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000185s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.order',
+    2 => 'set',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'a1f391a8-e2f5-4d97-a8c1-0fab7e2f4e3b',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001835s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000102s ]
+[ info ] [ RUN ] app\api\controller\msjt\Order->set[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000226s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061789s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.039327s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_goods` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.039803s ]
+---------------------------------------------------------------
+[ 2021-09-10T10:41:47+08:00 ] 127.0.0.1 POST www.msjt.com/order/set
+[运行时间：1.051777s] [吞吐率：0.95req/s] [内存消耗：4,809.58kb] [文件加载：87]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002800s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000151s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000255s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.order',
+    2 => 'set',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'bcf663bb-7d90-4d6c-bcc3-24ff503c335b',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003310s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000265s ]
+[ info ] [ RUN ] app\api\controller\msjt\Order->set[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000777s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059513s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.040912s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_goods` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.039173s ]
+[ error ] [0]variable type error： object[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\Response.php:316]
+---------------------------------------------------------------
+[ 2021-09-10T10:47:03+08:00 ] 127.0.0.1 POST www.msjt.com/order/set
+[运行时间：0.626344s] [吞吐率：1.60req/s] [内存消耗：4,756.65kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003718s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000102s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000172s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.order',
+    2 => 'set',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'e10e1698-254d-40c4-b719-f70ac07da230',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002980s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000106s ]
+[ info ] [ RUN ] app\api\controller\msjt\Order->set[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000421s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.043527s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.029216s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_goods` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.029445s ]
+---------------------------------------------------------------
+[ 2021-09-10T10:47:18+08:00 ] 127.0.0.1 POST www.msjt.com/order/set
+[运行时间：0.673925s] [吞吐率：1.48req/s] [内存消耗：4,756.40kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000061s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005008s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000170s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000281s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.order',
+    2 => 'set',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '1535b575-eafb-44d3-bd48-941a24a0dbbc',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003533s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000117s ]
+[ info ] [ RUN ] app\api\controller\msjt\Order->set[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000194s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058928s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_goods_goods` [ RunTime:0.039416s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_goods_goods` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.038505s ]

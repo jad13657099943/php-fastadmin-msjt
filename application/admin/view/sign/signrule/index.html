@@ -1,0 +1,350 @@
+<style type="text/css">
+    @media (max-width: 375px) {
+        .edit-form tr td input {
+            width: 100%;
+        }
+
+        .edit-form tr th:first-child, .edit-form tr td:first-child {
+            width: 20%;
+        }
+
+        .edit-form tr th:nth-last-of-type(-n+2), .edit-form tr td:nth-last-of-type(-n+2) {
+            display: none;
+        }
+    }
+
+    .edit-form table > tbody > tr td a.btn-delcfg {
+        /*visibility: hidden;*/
+        display: none;
+    }
+
+    .edit-form table > tbody > tr:hover td a.btn-delcfg {
+        /*visibility: visible;*/
+        display: none;
+    }
+
+</style>
+<div class="panel panel-default panel-intro">
+    <div class="panel-heading">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#sign_basic" data-toggle="tab">基础设置</a></li>
+            <li><a href="#sign_rule" data-toggle="tab">积分规则</a></li>
+            <!--            <li ><a href="#special_sign" data-toggle="tab">特殊奖励</a></li>-->
+            <!--            <li ><a href="#even_sign" data-toggle="tab">连签奖励</a></li>-->
+            <!--            <li ><a href="#always_sign" data-toggle="tab">总签奖励</a></li>-->
+        </ul>
+    </div>
+
+    <form id="form" class="edit-form form-horizontal" role="form" method="POST"
+          action="{:url('/admin/sign/signrule/edit')}">
+        <div class="panel-body">
+            <div id="myTabContent" class="tab-content">
+
+                <div class="tab-pane fade active in" id="sign_basic">
+                    <div class="widget-body no-padding">
+                        <table class="table table-striped">
+                            <tbody>
+<!--                            <tr>-->
+<!--                                <td>开启积分签到</td>-->
+<!--                                <td>-->
+<!--                                    <div class="row">-->
+<!--                                        <div class="col-sm-8 col-xs-12">-->
+<!--                                            <label class="radio radio-inline" for="row[is_open_sign]-0"><input-->
+<!--                                                    id="row[is_open_sign]-0" name="row[is_open_sign]" type="radio"-->
+<!--                                                    value="0" data-tip="" {in name="is_open_sign" value="0" }checked{/in}>-->
+<!--                                                关闭</label>-->
+<!--                                            <label class="radio radio-inline" for="row[is_open_sign]-1"><input-->
+<!--                                                    id="row[is_open_sign]-1" name="row[is_open_sign]" type="radio"-->
+<!--                                                    value="1" data-tip="" {in name="is_open_sign" value="1" }checked{/in}>-->
+<!--                                                开启</label>-->
+<!--                                        </div>-->
+<!--                                        <div class="col-sm-4"></div>-->
+<!--                                    </div>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+
+                            <!--<tr>
+                                <td>签到周期</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-sm-9 col-xs-12">
+                                            <label class="radio radio-inline" ><input type="radio" value="0" class="change valid" name="row[sign_cycle]" {in name="sign_cycle" value="0"}checked{/in} aria-invalid="false"> 不限</label>
+                                            <label class="radio radio-inline" ><input type="radio" value="1" class="change valid" name="row[sign_cycle]" {in name="sign_cycle" value="1"}checked{/in} aria-invalid="false"> 自然月</label>
+                                            <div class="help-block">不限制签到周期则统计时间为平台上线至今日，自然月统计周期则为本月，下月清空</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>首次签到奖励</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-sm-9 col-xs-12">
+                                            <input type="text" name="row[sing_reward_default_first]" value="{$sing_reward_default_first}" class="form-control" data-rule="" data-tip="">
+                                            <div class="help-block">0,  不设置则不开启, 将取日常奖励</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>-->
+
+<!--                            <tr>-->
+<!--                                <td>日常签到奖励</td>-->
+<!--                                <td>-->
+<!--                                    <div class="row">-->
+<!--                                        <div class="col-sm-9 col-xs-12">-->
+<!--                                            <div class="input-group">-->
+<!--                                                <input type="text" name="row[sign_reward_default_day]"-->
+<!--                                                       value="{$sign_reward_default_day}" class="form-control"-->
+<!--                                                       data-rule="" data-tip="">-->
+<!--                                                <span class="input-group-addon">积分</span>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>代理商邀请会员注册奖励</td>-->
+<!--                                <td>-->
+<!--                                    <div class="row">-->
+<!--                                        <div class="col-sm-9 col-xs-12">-->
+<!--                                            <div class="input-group">-->
+<!--                                                <input type="text" name="row[register_member_score]"-->
+<!--                                                       value="{$register_member_score}" class="form-control"-->
+<!--                                                       data-rule="" data-tip="">-->
+<!--                                                <span class="input-group-addon">积分</span>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+                            <tr>
+                                <td>消费积分转换率</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-sm-9 col-xs-12">
+                                            <input type="text" name="row[score_ratio]"
+                                                   value="{$score_ratio}" class="form-control"
+                                                   data-rule="" data-tip="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+<!--                            <tr>-->
+<!--                                <td>消费代理商获得积分比率</td>-->
+<!--                                <td>-->
+<!--                                    <div class="row">-->
+<!--                                        <div class="col-sm-9 col-xs-12">-->
+<!--                                            <input type="text" name="row[distribution_score_ratio]"-->
+<!--                                                   value="{$distribution_score_ratio}" class="form-control"-->
+<!--                                                   data-rule="" data-tip="">-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+                            <tr>
+                                <td>用户抵扣积分转换率</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-sm-9 col-xs-12">
+                                            <input type="text" name="row[product_points]"
+                                                   value="{$product_points}" class="form-control"
+                                                   data-rule="" data-tip="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!--<tr>
+                                <td>补签规则设置</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-sm-9 col-xs-12">
+                                            <div class="input-group" style="width: 450px;">
+                                                <span class="form-control" style="width: 120px;">
+                                                    <label class="checkbox-inline" style="padding-top: 0;"><input type="checkbox" value="1" name="row[sign_old]" aria-invalid="false"  {in name="sign_old" value="1"}checked{/in} class="valid"> 开启补签</label>
+                                                </span>
+                                                <span class="input-group-addon" style="border-left: 0; border-right: 0;">补签扣除(每天/次)</span>
+                                                <input class="form-control valid" type="number" style="width: 100px;" name="row[sign_old_price]" value="{$sign_old_price}" aria-invalid="false" >
+                                                <span class="input-group-addon" style="border-left: 0;">
+                                                    <label class="radio-inline" style="padding-top: 0;"><input type="radio" value="0" checked="" name="row[sign_old_type]" {in name="sign_old_type" value="0"}checked{/in}  class="valid" aria-invalid="false"> 余额</label>
+                                                    <label class="radio-inline" style="padding-top: 0;"><input  type="radio" value="1" name="row[sign_old_type]" {in name="sign_old_type" value="1"}checked{/in} aria-invalid="false" class="valid"> 积分</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>-->
+
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button type="submit" class="btn btn-success btn-embossed">确定</button>
+                                    <!--                                    <button type="reset" class="btn btn-default btn-embossed">重置</button>-->
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="sign_rule">
+                    <div class="widget-body no-padding">
+                        <table class="table table-striped">
+                            <tbody>
+                            <tr>
+                                <td>签到规则说明</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-sm-9 col-xs-12">
+                                            <textarea id="c-sign_rule" class="form-control editor" rows="5"
+                                                      name="row[sign_rule]" cols="50">{$sign_rule}</textarea>
+                                        </div>
+                                        <div class="col-sm-4"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+
+                            <tfoot>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button type="submit" class="btn btn-success btn-embossed">确定</button>
+                                    <!--                                    <button type="reset" class="btn btn-default btn-embossed">重置</button>-->
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="even_sign">
+                    <div class="widget-body no-padding">
+                        <table class="table table-striped">
+                            <tfoot>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button type="submit" class="btn btn-success btn-embossed">确定</button>
+                                    <button type="reset" class="btn btn-default btn-embossed">重置</button>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="always_sign">
+                    <div class="widget-body no-padding">
+                        <table class="table table-striped">
+
+
+                            <tfoot>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button type="submit" class="btn btn-success btn-embossed">确定</button>
+                                    <button type="reset" class="btn btn-default btn-embossed">重置</button>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="special_sign">
+                    <div class="widget-body no-padding">
+                        <table class="table table-striped">
+                            <tbody>
+                            <tr>
+                                <td>开启特殊奖励</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-sm-9 col-xs-12">
+                                            <label class="radio radio-inline" for="row[is_open_special_sign]-0"><input
+                                                    id="row[is_open_special_sign]-0" name="row[is_open_special_sign]"
+                                                    type="radio" value="0" data-tip="" {in name="is_open_special_sign"
+                                                    value="0" }checked{/in} > 关闭</label>
+                                            <label class="radio radio-inline" for="row[is_open_special_sign]-1"><input
+                                                    id="row[is_open_special_sign]-1" name="row[is_open_special_sign]"
+                                                    type="radio" value="1" data-tip="" {in name="is_open_special_sign"
+                                                    value="1" }checked{/in} > 开启</label>
+                                        </div>
+                                        <div class="col-sm-4"></div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>奖励活动期限</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-sm-9 col-xs-12">
+                                            <input id="c-special_sign_limit_date" class="form-control datetimerange"
+                                                   data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="false"
+                                                   name="row[special_sign_limit_date]" type="text"
+                                                   value="{$special_sign_limit_date}">
+                                            <div class="help-block">不设置则不限制活动期限</div>
+                                            <!--                                            {:date('Y-m-d H:i:s')}-->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>奖励方式</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-sm-9 col-xs-12">
+                                            <label class="radio radio-inline"
+                                                   for="row[special_sign_reward_type]-coupon"><input
+                                                    id="row[special_sign_reward_type]-coupon"
+                                                    name="row[special_sign_reward_type]" type="radio" value="coupon"
+                                                    data-tip="" checked> 奖励优惠券</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>奖励优惠券</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-sm-9 col-xs-12">
+                                            <input id="c-special_sign_reward_data"
+                                                   data-source="coupon/litestorecoupon/index"
+                                                   class="form-control selectpage" name="row[special_sign_reward_data]"
+                                                   type="text" value="{$special_sign_reward_data}">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            </tbody>
+
+                            <tfoot>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button type="submit" class="btn btn-success btn-embossed">确定</button>
+                                    <button type="reset" class="btn btn-default btn-embossed">重置</button>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>

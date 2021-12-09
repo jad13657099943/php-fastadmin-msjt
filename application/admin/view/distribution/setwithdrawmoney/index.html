@@ -1,0 +1,146 @@
+<div class="panel panel-default panel-intro">
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="one">
+            <div class="widget-body no-padding">
+                <form id="setting-form" action="distribution/setwithdrawmoney/index" method="post"
+                      class="form-horizontal" role="form"
+                      data-toggle="validator">
+                    <h3 style="padding: 10px 0px 0px 10px;">通用设置:</h3>
+                    <table class="table table-striped" style="width: 100%;padding: 30px 0px 0px 30px;">
+                        <tr>
+                            <td style="width: 15%;" align="right"><label class="form-label" style="padding-top: 7px;">设置银行卡最小提现金额:</label>
+                            </td>
+                            <td style="width: 15%;">
+                                <div class="input-group">
+                                    <input data-rule="required" class="form-control"
+                                           name="row[min_money]"
+                                           type="number" value="{:config('site.min_money')}">
+                                    <span class="input-group-addon">元</span>
+                                    <span class="msg-box n-right" for="c-consumption" data-value="银行卡最小提现金额不能为空!"></span>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 15%;" align="right"><label class="form-label" style="padding-top: 7px;">设置微信最小提现金额:</label>
+                            </td>
+                            <td style="width: 15%;">
+                                <div class="input-group">
+                                    <input data-rule="required" class="form-control"
+                                           name="row[wx_min_money]"
+                                           type="number" value="{:config('site.wx_min_money')}">
+                                    <span class="input-group-addon">元</span>
+                                    <span class="msg-box n-right" for="c-consumption" data-value="微信最小提现金额不能为空!"></span>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                      <!--  <tr>
+                            <td align="right"><label class="form-label" style="padding-top: 7px;">申请代理费:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="row[distribution_apply_money]" class="form-control" value="{:config('site.distribution_apply_money')}">
+                            </td>
+                            <td></td>
+                        </tr>-->
+                        <!--<tr>
+                            <td style="width: 15%;" align="right"><label class="form-label" style="padding-top: 7px;">普通套餐分销佣金:</label>
+                            </td>
+                            <td style="width: 15%;">
+                                <div class="input-group">
+                                    <input data-rule="required" class="form-control"
+                                           name="row[ordinary_commission]"
+                                           type="number" value="{:config('site.ordinary_commission')}">
+                                    <span class="input-group-addon">元</span>
+                                    <span class="msg-box n-right" for="c-consumption" data-value="普通套餐分销佣金不能为空!"></span>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>-->
+                       <!-- <tr>
+                            <td style="width: 15%;" align="right"><label class="form-label" style="padding-top: 7px;">是否启用二级分销:</label>
+                            </td>
+                            <td style="width: 15%;">
+                                <div class="input-group">
+                                        <input id="c-dealer_switch" name="row[dealer_switch]" type="hidden" value="{:config('site.dealer_switch')}}">
+                                        <a href="javascript:;" data-toggle="switcher" class="btn-switcher {if condition="config('site.dealer_switch')"}disabled{/if}" data-input-id="c-dealer_switch" data-yes="1" data-no="0">
+                                        {if condition="config('site.dealer_switch')"}<i class="fa fa-toggle-on text-success fa-2x"></i>
+                                        {else /}
+                                        <i class="fa fa-toggle-on text-success  fa-2x fa-flip-horizontal text-gray"></i>
+                                        {/if}
+                                        </a>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>-->
+                    </table>
+                    <h3 style="padding: 10px 0px 0px 10px;">一级分销:</h3>
+                    <table class="table table-striped" style="width: 100%;padding: 30px 0px 0px 30px;">
+                        <tr>
+                            <td align="right" style="width: 15%;"><label class="form-label" style="padding-top: 7px;">分佣率:</label>
+                            </td>
+                            <td style="width: 15%;">
+                                <input type="text" name="row[distribution_rate]" class="form-control" value="{:config('site.distribution_rate')}">
+                            </td>
+                            <td></td>
+                        </tr>
+                        <!--<tr>
+                            <td align="right"><label class="form-label" style="padding-top: 7px;">限时商品分佣率:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="row[spike_distribution_rate]" class="form-control" value="{:config('site.spike_distribution_rate')}">
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label class="form-label" style="padding-top: 7px;">拼团商品分佣率:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="row[group_distribution_rate]" class="form-control" value="{:config('site.group_distribution_rate')}">
+                            </td>
+                            <td></td>
+                        </tr>-->
+                    </table>
+                    <h3 style="padding: 10px 0px 0px 10px;">二级分销:</h3>
+                    <table class="table table-striped" style="width: 100%;padding: 30px 0px 0px 30px;">
+                        <tr>
+                            <td align="right" style="width: 15%;"><label class="form-label" style="padding-top: 7px;">分佣率:</label>
+                            </td>
+                            <td style="width: 15%;">
+                                <input type="text" name="row[two_distribution_rate]" class="form-control" value="{:config('site.two_distribution_rate')}">
+                            </td>
+                            <td></td>
+                        </tr>
+                       <!-- <tr>
+                            <td align="right"><label class="form-label" style="padding-top: 7px;">限时商品分佣率:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="row[two_spike_distribution_rate]" class="form-control" value="{:config('site.two_spike_distribution_rate')}">
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label class="form-label" style="padding-top: 7px;">拼团商品分佣率:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="row[two_group_distribution_rate]" class="form-control" value="{:config('site.two_group_distribution_rate')}">
+                            </td>
+                            <td></td>
+                        </tr>-->
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <button type="submit" class="btn btn-success">{:__('OK')}
+                                </button>
+                                <button type="reset" class="btn btn-default">{:__('Reset')}</button>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

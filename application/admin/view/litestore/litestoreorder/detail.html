@@ -1,0 +1,244 @@
+<form id="send-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <fieldset>
+        <legend>
+            订单信息
+        </legend>
+
+        <!-- 订单信息 -->
+        <div class="col-md-10 col-md-offset-1 col-sm-12">
+            <div>
+                <div class="box-header with-border">
+                    {:__('Order_no')}:{$vo.order_no}
+                </div>
+                <div class="box-body">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">商品详情</div>
+                        <table class="table table-bordered">
+                            <tr>
+                                <td>商品名字</td>
+                                <td>商品图片</td>
+                                <td>商品单价</td>
+                                <td>商品数量</td>
+                            </tr>
+                            {foreach name="vo.goods" item="item"}
+                            <tr>
+                                <td>{$item.goods_name}</td>
+                                <td><img src="{$item.image}" height="70" width="70"></td>
+                                <td>{$item.goods_price}元</td>
+                                <td>{$item.total_num}</td>
+                            </tr>
+                            {/foreach}
+                        </table>
+                    </div>
+
+                    <div class="row" style="margin:1em 0;">
+
+
+                        <div class="col-md-4 padding">
+                            下单时间 ： {$vo.createtime|date="Y-m-d H:i:s",###}
+                        </div>
+                        <div class="col-md-4 padding">
+                            {:__('Pay_status')} ：
+                            {$vo.pay_status_text}
+                        </div>
+                        <div class="col-md-4 padding">
+                            <!-- <span class="label label-warning">{:__('Pay_time')}</span>-->
+                            {:__('Pay_time')} ：
+                            {if ($vo.pay_time==0)}
+                            无
+                            {else}
+                            {$vo.pay_time|date="Y-m-d H:i:s",###}
+                            {/if}
+                        </div>
+                        <div class="col-md-4 padding">
+                            {:__('Pay_price')} ：
+                            {$vo.pay_price}
+                        </div>
+                        <div class="col-md-4 padding">
+                            {:__('Express_price')} ：
+                            {$vo.express_price}
+                        </div>
+                    </div>
+
+                    <!--                    <div class="row" style="margin:1em 0;">-->
+                    <!--                        <div class="col-md-4 padding">-->
+
+                    <!--                            {:__('Freight_status')}:-->
+                    <!--                            {$vo.freight_status_text}-->
+                    <!--                        </div>-->
+                    <!--                        <div class="col-md-4 padding">-->
+
+                    <!--                            {:__('Freight_time')}:-->
+                    <!--                            {if ($vo.freight_time==0)}-->
+                    <!--                            无-->
+                    <!--                            {else}-->
+                    <!--                            {$vo.freight_time|date="Y-m-d H:i:s",###}-->
+                    <!--                            {/if}-->
+                    <!--                        </div>-->
+
+                    <!--                        <div class="col-md-4 padding">-->
+                    <!--                            {:__('Express_company')} :-->
+                    <!--                            {$vo.express_company}-->
+                    <!--                        </div>-->
+                    <!--                        <div class="col-md-4 padding">-->
+                    <!--                            {:__('Express_no')} :-->
+                    <!--                            {$vo.express_no}-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+
+                    <div class="row" style="margin:1em 0;">
+                        <!--                        <div class="col-md-4 padding">-->
+                        <!--                           {:__('Receipt_status')} :-->
+                        <!--                            {$vo.receipt_status_text}-->
+                        <!--                        </div>-->
+                        <!--                        <div class="col-md-4 padding">-->
+                        <!--                            {:__('Receipt_time')} :-->
+                        <!--                            {if ($vo.receipt_time==0)}-->
+                        <!--                            无-->
+                        <!--                            {else}-->
+                        <!--                            {$vo.receipt_time|date="Y-m-d H:i:s",###}-->
+                        <!--                            {/if}-->
+                        <!--                        </div>-->
+                        <div class="col-md-4 padding">
+                            {:__('Order_status')} ：
+                            {$vo.order_status_text}
+                        </div>
+                        <div class="col-md-4 padding">
+                            {:__('用户备注')} ：
+                            {$vo.remark}
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin:1em 0;">
+                        <fieldset>
+                            <!--<legend><h4>{:__('consignee user info')}</h4></legend>
+
+                            <label class="control-label col-xs-12 col-sm-2">{:__('收货地址')}:</label>
+                            <div class="col-md-6 padding">
+                                <input id="c-address.site" data-rule="required" class="form-control form-control" name="address.site" type="text" value="{$vo.address.site}">
+                            </div>
+                            <label class="control-label col-xs-12 col-sm-2">{:__('Address.name')}:</label>
+                            <div class="col-md-6 padding">
+                                <input id="c-address.name" data-rule="required" class="form-control form-control" name="address.name" type="text" value="{$vo.address.name}">
+                            </div>
+                            <label class="control-label col-xs-12 col-sm-2">{:__('mobile')}:</label>
+                            <div class="col-md-6 padding">
+                                <input id="c-address.phone" data-rule="required" class="form-control form-control" name="address.phone" type="text" value="{$vo.address.phone}">
+                            </div>-->
+
+                            <div class="col-md-4 padding">
+                                {:__('收货地址')}： {$vo.address.site}
+                            </div>
+                            <div class="col-md-4 padding">
+                                {:__('Address.name')}：{$vo.address.name}
+                            </div>
+                            <div class="col-md-4 padding">
+                                {:__('mobile')}： {$vo.address.phone}
+                            </div>
+                        </fieldset>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 订单信息 -->
+    </fieldset>
+
+    <input type="hidden" name="ids" id="ids" value="{$vo.id}">
+
+    {in name="$vo.is_status" value="1"}
+    <!--    <fieldset>-->
+    <!--        <legend><h4>{:__('consignee user info')}</h4></legend>-->
+
+    <!--        <div class="form-group">-->
+    <!--            <label for="c-virtual_sn" class="control-label col-xs-12 col-sm-2">联系人:</label>-->
+    <!--            <div class="col-xs-12 col-sm-8">-->
+    <!--                <input placeholder="" id="c-address.name"  class="form-control" name="name"-->
+    <!--                       type="text" value="{$vo.address.name}">-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class="form-group">-->
+    <!--            <label for="c-virtual_sn" class="control-label col-xs-12 col-sm-2">联系电话:</label>-->
+    <!--            <div class="col-xs-12 col-sm-8">-->
+    <!--                <input placeholder="" id="c-address.phone"  class="form-control" name="phone"-->
+    <!--                       type="text" value="{$vo.address.phone}">-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+    <!--        <div class="form-group">-->
+    <!--            <label for="c-virtual_sn" class="control-label col-xs-12 col-sm-2">收货地址:</label>-->
+    <!--            <div class="col-xs-12 col-sm-8">-->
+    <!--                <input placeholder="" id="c-address.site"  class="form-control" name="site"-->
+    <!--                       type="text" value="{$vo.address.site}">-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </fieldset>-->
+
+
+    <!--{if condition="($type == 2) OR ($vo.order_status == 30) "}
+    <fieldset>
+        <legend><h4>发货信息</h4></legend>
+        <div class="form-group">
+
+            <label for="c-virtual_name" class="control-label col-xs-12 col-sm-2">快递公司:</label>
+            <div class="col-xs-12 col-sm-8">
+                <select id="virtual_name"  class="form-control selectpicker" name="virtual_name">
+                    {foreach name="companyList" item="vo"}
+                    <option data-type="{$vo.company}" value="{$key}" {in name="key" value=""  }selected{/in}>{$vo.company}</option>
+                    {/foreach}
+                </select>
+                &lt;!&ndash;<input placeholder="" id="c-virtual_name" data-rule="required" class="form-control" name="virtual_name"
+                       type="text" value="">&ndash;&gt;
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="c-virtual_sn" class="control-label col-xs-12 col-sm-2">快递单号:</label>
+            <div class="col-xs-12 col-sm-8">
+                <input placeholder="" id="c-virtual_sn" data-rule="required" class="form-control" name="virtual_sn"
+                       type="text" value="">
+            </div>
+        </div>
+    </fieldset>-->
+
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="button" id="send" data-type="send" class="btn btn-success btn-embossed">确认发货</button>
+        </div>
+    </div>
+    {/if}
+
+    {/in}
+    {if condition="$vo.order_status == 10"}
+    <fieldset>
+        <legend><h4>订单总价修改信息</h4></legend>
+
+        <div class="form-group">
+            <label for="c-virtual_sn" class="control-label col-xs-12 col-sm-2">订单原始金额:</label>
+            <div class="col-xs-12 col-sm-8">
+                <input placeholder="" id="pay_price" data-rule="required" class="form-control" name=""
+                       type="text" value="{$vo.pay_price}" readonly>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="c-virtual_sn" class="control-label col-xs-12 col-sm-2">订单总金额:</label>
+            <div class="col-xs-12 col-sm-8">
+                <input placeholder="" id="c-pay_price"  class="form-control" name="pay_price"
+                       type="text" value="">
+            </div>
+        </div>
+    </fieldset>
+
+    {/if}
+
+    {if condition="($vo.order_status != 40) AND ($vo.order_status != 2) "}
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="button"  id="send" data-type="send" class="btn btn-success btn-embossed">确认提交</button>
+        </div>
+    </div>
+    {/if}
+</form>

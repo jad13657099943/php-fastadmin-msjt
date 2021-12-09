@@ -1,0 +1,81 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('School_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-school_name" data-rule="required" class="form-control" name="row[school_name]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('School_image')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-school_image" data-rule="required" class="form-control" size="50" name="row[school_image]" type="text" value="">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-school_image" class="btn btn-danger plupload" data-input-id="c-school_image" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-school_image"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-school_image" class="btn btn-primary fachoose" data-input-id="c-school_image" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-school_image"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-school_image"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('联系人')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-school_desc" data-rule="required" class="form-control" name="row[school_contacts]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('联系电话')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-school_mobile" data-rule="required" class="form-control" name="row[school_mobile]" type="number">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('School_address')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-school_address" data-rule="required" class="form-control" name="row[school_address]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('School_freight')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+            <input id="c-school_freight" data-rule="required" class="form-control" name="row[school_freight]" type="number">
+            <span class="input-group-addon">元</span>
+            </div>
+        </div>
+    </div>
+
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('School_pwd')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-school_pwd" data-rule="required" class="form-control" name="row[school_pwd]" autocomplete="new-password" type="text">-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+    <div class="form-group">
+      <label for="status" class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+      <div class="col-xs-12 col-sm-8">
+          {:build_radios('row[status]', ['10'=>__('Status 10'), '20'=>__('Status 20')])}
+      </div>
+  </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Weigh')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-weigh" class="form-control" name="row[weigh]" type="number">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

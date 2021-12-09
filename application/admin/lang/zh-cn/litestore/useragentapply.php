@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'Uid'  =>  '用户id',
+    'Identity_front'  =>  '身份证正面',
+    'Identity_reverse'  =>  '身份证反面',
+    'Status'  =>  '审核状态',
+    'Create_time'  =>  '申请时间',
+    'Msg'  =>  '审核拒绝消息',
+    'Review_time'  =>  '审核时间',
+    'Username'  =>  '用户名称',
+    'Mobile'  =>  '手机号',
+    'Latitude'  =>  '纬度',
+    'Longitude'  =>  '经度',
+    'Address'  =>  '详细地址',
+    'Business_license'  =>  '营业执照',
+    'Store_status'  =>  '申请状态',
+    'Id_card'  =>  '身份证号',
+    'Business_hours'  =>  '营业时间',
+    'Site'  =>  '省市区',
+    'Store_name'  =>  '店铺名称',
+    'Opening_hours'  =>  '开始营业时间',
+    'Closing_hours'  =>  '结束营业时间',
+    'Holding_id_card'  =>  '手持身份证证件照',
+    'Apply_money'  =>  '申请费用',
+    'Pay_money'  =>  '支付金额',
+    'Order_no'  =>  '订单号',
+    'Pay_time'  =>  '支付时间',
+    'Is_message'  =>  '是否需要消息提醒'
+];

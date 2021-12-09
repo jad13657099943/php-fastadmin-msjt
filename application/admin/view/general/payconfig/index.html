@@ -1,0 +1,103 @@
+<div class="panel panel-default panel-intro">
+    <div class="panel-heading">
+        {:build_heading(null, false)}
+        <ul class="nav nav-tabs" data-field="status">
+            <li class="active"><a href="/admin/general/payconfig/index/">支付宝</a></li>
+            <li><a href="/admin/general/wxpayconfig/index/">微信</a></li>
+        </ul>
+    </div>
+    <div class="panel-body">
+        <form id="update-form"  class="form-horizontal" role="form" data-toggle="validator" method="POST" action="{:url('general.payconfig/edit')}">
+
+            <div class="form-group">
+                <label  for="service" class="control-label col-xs-12 col-sm-2">Service:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" id="service" class="form-control" name="row[service]" type="text" value="{$row['service']}" placeholder="{:__('service')}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">合作者身份ID:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[partner]" type="text" value="{$row['partner']}" placeholder="{:__('partner')}">
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">App_Id:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[app_id]" type="text" value="{$row['app_id']}" placeholder="{:__('app_id')}">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">sign_type:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[sign_type]" type="text" value="{$row['sign_type']}" placeholder="{:__('sign_type')}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">seller_id:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[seller_id]" type="text" value="{$row['seller_id']}" placeholder="{:__('seller_id')}">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">payment_type:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[payment_type]" type="text" value="{$row['payment_type']}" placeholder="{:__('payment_type')}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">_input_charset:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[_input_charset]" type="text" value="{$row['_input_charset']}" placeholder="{:__('_input_charset')}">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">notify_url:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[notify_url]" type="text" value="{$row['notify_url']}" placeholder="{:__('notify_url')}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">private_key:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[private_key]" type="text" value="{$row['private_key']}" placeholder="{:__('private_key')}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">public_key:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[public_key]" type="text" value="{$row['public_key']}" placeholder="{:__('public_key')}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label  class="control-label col-xs-12 col-sm-2">return_url:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  data-rule="required" class="form-control" name="row[return_url]" type="text" value="{$row['return_url']}" placeholder="{:__('return_url')}">
+                </div>
+            </div>
+
+            <div class="form-group layer-footer">
+                <label class="control-label col-xs-12 col-sm-2"></label>
+                <div class="col-xs-12 col-sm-8">
+                    <button type="submit" class="btn btn-success">{:__('OK')}</button>
+                    <button type="reset" class="btn btn-default">{:__('Reset')}</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

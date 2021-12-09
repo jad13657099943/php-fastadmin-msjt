@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'Id'                  => '订单ID',
+    'Order_on'            => '订单编号',
+    'Uid'                 => '用户ID',
+    'Transaction_id'      => '支付ID',
+    'Course_id'           => '课程',
+    'Course_image'        => '课程图片',
+    'Subject_category_id' => '段位年纪',
+    'Course_category_id'  => '课程分类',
+    'Teacher_id'          => '教师',
+    'Type'                => '类型',
+    'Type 0'              => '录屏',
+    'Type 1'              => '直播',
+    'Course_price'        => '价格',
+    'Pay_price'           => '支付金额',
+    'Zf_type'             => '支付方式',
+    'Zf_type 10'          => '支付宝',
+    'Zf_type 20'          => '微信',
+    'Zf_type 30'          => '未支付',
+    'Order_status'        => '订单状态',
+    'Order_status  0'     => '已取消',
+    'Order_status 10'     => '待付款',
+    'Order_status 20'     => '已付款',
+    'Remake'              => '备注',
+    'Detail'              => '详情',
+    'Createtime'          => '创建时间',
+    'Updatetime'          => '更新时间',
+    'Deletetime'          => '删除时间'
+];

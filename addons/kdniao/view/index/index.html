@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>快递鸟物流即时信息查询 - {$site.name}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="__CDN__/assets/libs/bootstrap/dist/css/bootstrap.min.css">
+
+    <style>
+        .track_list {
+            padding: 10px;
+            list-style: none;
+        }
+
+        .track_list li {
+            font-size: 14px;
+            border-left: 1px solid #dcdcdc;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            position: relative
+        }
+
+        .track_list li p.time {
+            font-size: 11px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e7e7e7
+        }
+
+        .track_list li p:first-child {
+            padding-bottom: 5px
+        }
+
+        .track_list li.now p {
+            color: #00bb42
+        }
+
+        .track_list li.old p {
+            color: #9d9d9d
+        }
+
+        .track_list li.now .ico {
+            display: block;
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background-color: #b0ffd4;
+            border-radius: 8px
+        }
+
+        .track_list li.now .ico i {
+            display: block;
+            width: 12px;
+            height: 12px;
+            background-color: #00aa2c;
+            border-radius: 6px;
+            position: absolute;
+            left: 2px;
+            top: 2px
+        }
+
+        .track_list li.old .ico {
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: #dcdcdc;
+            border-radius: 5px;
+            position: absolute;
+            left: -5px;
+            top: 4px
+        }
+
+        .track_list li:last-child {
+            border-left: 0
+        }
+
+        .track_list li:last-child .time {
+            border-bottom: 0
+        }
+
+        .track_list li:last-child.old .ico {
+            left: -4px;
+            top: 0
+        }
+
+        .logistics_track .nofound {
+            padding: 30px 10px;
+            line-height: 20px;
+            font-size: 12px;
+            color: #9b9b9b
+        }
+
+        .track_list li p a {
+            color: #0d90ff
+        }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="container">
+    <h2>快递鸟物流即时信息查询</h2>
+    <hr>
+    <form action="" class="form-horizontal">
+        <fieldset>
+            <div class="form-group">
+                <label class="col-lg-1 control-label">物流公司</label>
+                <div class="col-lg-11">
+                    <select id="company" name="company" class="form-control">
+                        <option value="">--请选择--</option>
+                        {volist name="data" id="vo"}
+                        <option value="{$vo.code}">{$vo.company}</option>
+                        {/volist}
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-lg-1 control-label">快递编号</label>
+                <div class="col-lg-11">
+                    <input type="text" class="form-control" id="code" name="code" placeholder="快递编号">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-11 col-lg-offset-1">
+                    <button type="button" id="btnsend" name="btnsend" class="btn btn-primary">发送</button>
+                    <button type="reset" class="btn btn-default">重置</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+    <div class="well">
+        <div class="row">
+            <blockquote>物流数据：</blockquote>
+            <ul class="track_list">
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- jQuery -->
+<script src="__CDN__/assets/libs/jquery/dist/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $("#btnsend").click(function () {
+        $.ajax({
+            type: "post",
+            url: "{:addon_url('kdniao/index/index')}",
+            data: {company: $("#company").val(), code: $("#code").val(), r: Math.random()},
+            success: function (data) {
+                console.log(data);
+                $('.track_list').html('');
+
+                if (data.code) {
+                    $.each(data.data, function (i, n) {
+                        var $li = $('<li class="' + (i == 0 ? 'now' : 'old') + '">' +
+                            '<p>' + n.AcceptStation + '</p>' +
+                            '<p>' + n.AcceptTime + '</p>' +
+                            '<span class="ico"><i></i></span>' +
+                            '</li>');
+                        $('.track_list').append($li);
+                    });
+                } else {
+                    var $li = $('<li>' +
+                        '<b>' + data.msg + '</b>' +
+                        '</li>');
+                    $('.track_list').append($li);
+                }
+
+            },
+            error: function () {
+                alert('查询失败');
+            },
+            complete: function () {
+
+            }
+        });
+    });
+</script>
+</body>
+</html>

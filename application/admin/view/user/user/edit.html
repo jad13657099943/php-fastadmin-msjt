@@ -1,0 +1,134 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-username" class="control-label col-xs-12 col-sm-2">{:__('Username')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-username" data-rule="required" class="form-control" name="row[username]" type="text" value="{$row.username}">
+        </div>
+    </div>
+
+ 
+   <!-- <div class="form-group">
+        <label for="c-email" class="control-label col-xs-12 col-sm-2">{:__('Email')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-email" data-rule="" class="form-control" name="row[email]" type="text" value="{$row.email}">
+        </div>
+    </div>-->
+    <div class="form-group">
+        <label for="c-mobile" class="control-label col-xs-12 col-sm-2">{:__('Mobile')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-mobile" data-rule="mobile" class="form-control" name="row[mobile]" type="text" value="{$row.mobile}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-avatar" class="control-label col-xs-12 col-sm-2">{:__('Avatar')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-avatar" data-rule="" class="form-control" size="50" name="row[avatar]" type="text" value="{$row.avatar}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button"
+                                  id="plupload-avatar"
+                                  class="btn btn-danger plupload cropper"
+                                  data-input-id="c-avatar"
+                                  data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp"
+                                  data-multiple="false"
+                                  data-preview-id="p-avatar">
+                                 <i class="fa fa-upload"></i>
+                        {:__('Upload')}
+                          </button>
+                    </span>
+
+                    <span><button type="button" id="fachoose-avatar" class="btn btn-primary fachoose"
+                                  data-input-id="c-avatar" data-mimetype="image/*" data-multiple="false">
+                        <i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-avatar"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-avatar"></ul>
+        </div>
+    </div>
+    <!--<div class="form-group">
+        <label for="c-level" class="control-label col-xs-12 col-sm-2">{:__('Level')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-level_id" data-source="user/level/index" data-field="name" data-params='{"custom[status]":"normal"}', class="form-control selectpage" name="row[level_id]" type="text" value="{$row['level_id']}">
+        </div>
+    </div>-->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Level')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            {:build_select('row[vip_type]',['0'=>'普通用户','1'=>'普通VIP','2'=>'尊享VIP'],$row.vip_type)}
+        </div>
+    </div>
+<!--    <div class="form-group">-->
+<!--        <label for="c-score" class="control-label col-xs-12 col-sm-2">{:__('Score')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-4">-->
+<!--            <input id="c-score" data-rule="required" class="form-control" name="row[score]" type="number" value="{$row.score}">-->
+<!--        </div>-->
+<!--    </div>-->
+   <!-- <div class="form-group">
+        <label for="c-gender" class="control-label col-xs-12 col-sm-2">{:__('Gender')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[gender]', ['1'=>__('Male'), '2'=>__('Female')], $row['gender'])}
+        </div>
+    </div>-->
+
+
+<!--    <div class="form-group">-->
+<!--        <label for="c-money" class="control-label col-xs-12 col-sm-2">{:__('Money')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-4">-->
+<!--            <input id="c-money" data-rule="required" class="form-control" name="row[balance]" type="number" value="{$row.balance}">-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="form-group">-->
+<!--        <label for="c-successions" class="control-label col-xs-12 col-sm-2">{:__('Successions')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-4">-->
+<!--            <input id="c-successions" data-rule="required" class="form-control" name="row[successions]" type="number" value="{$row.successions}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label for="c-maxsuccessions" class="control-label col-xs-12 col-sm-2">{:__('Maxsuccessions')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-4">-->
+<!--            <input id="c-maxsuccessions" data-rule="required" class="form-control" name="row[maxsuccessions]" type="number" value="{$row.maxsuccessions}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label for="c-maxsuccessions" class="control-label col-xs-12 col-sm-2">{:__('SignSum')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-4">-->
+<!--            <input id="c-SignSum" data-rule="required" class="form-control" name="row[sign_sum]" type="number" value="{$row.sign_sum}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label for="c-prevtime" class="control-label col-xs-12 col-sm-2">{:__('Prevtime')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-4">-->
+<!--            <input id="c-prevtime" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[prevtime]" type="text" value="{$row.prevtime|datetime}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label for="c-logintime" class="control-label col-xs-12 col-sm-2">{:__('Logintime')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-4">-->
+<!--            <input id="c-logintime" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[logintime]" type="text" value="{$row.logintime|datetime}">-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+<!--    <div class="form-group">-->
+<!--        <label for="c-jointime" class="control-label col-xs-12 col-sm-2">{:__('Jointime')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-4">-->
+<!--            <input id="c-jointime" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[jointime]" type="text" value="{$row.jointime|datetime}">-->
+<!--        </div>-->
+<!--    </div>&ndash;&gt;-->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[status]', ['normal'=>__('Normal'), 'hidden'=>__('Hidden')], $row['status'])}
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

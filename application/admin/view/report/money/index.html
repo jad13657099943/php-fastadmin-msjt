@@ -1,0 +1,32 @@
+<div class="row filter">
+    <div class="col-sm-3">
+        <div class="btn-group">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> 日视图 <span
+                        class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#" class="mode active" data-mode="day" data-row="7">一周</a></li>
+                    <li><a href="#" class="mode" data-mode="day" data-row="30">一月</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">月视图 <span
+                        class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#" class="mode" data-mode="month" data-row="3">一季</a></li>
+                    <li><a href="#" class="mode" data-mode="month" data-row="12">一年</a></li>
+                </ul>
+            </div>
+            <button type="button" data-row_title="年" data-row="0" data-mode="year" class="btn btn-default mode">年视图
+            </button>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <input type="text" class="datetimerange" data-min-date="2020-02-25" data-max-date="{$cuDate}">
+    </div>
+</div>
+<div style="padding-top: 30px;width: 1000px;height:400px;">
+    <div id="test" style="width: 100%;height:100%;"></div>
+</div>

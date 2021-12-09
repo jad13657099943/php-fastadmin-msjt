@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'Title'                                                    => '团购标题',
+    'Starttime'                                                => '开始时间',
+    'Endtime'                                                  => '结束时间',
+    'Uppernum'                                                 => '限购数量',
+    'Goodsname'                                                => '商品名称',
+    'Goodsprice'                                               => '商品价格',
+    'Groupprice'                                               => '团购价格',
+    'Goodsimage'                                               => '商品图片',
+    'Goodsid'                                                  => '商品ID',
+    'Images'                                                   => '商品图片',
+    'Keyname'                                                  => '规格键名',
+    'Ordernum'                                                 => '已参团',
+    'Groupnum'                                                 => '几人团购',
+    'Stock'                                                    => '活动库存',
+    'Stock_num'                                                => '商品总库存',
+    'Group_price'                                              => '活动价格',
+    'Images'                                                   => '商品图片',
+    'Keyname'                                                  => '规格键名',
+    'Image'                                                    => '活动图片',
+    'Images'                                                   => '活动轮播图',
+    'Status'                                                   => '活动状态',
+    'Hidden'                                                   => '关闭',
+    'Start'                                                    => '进行中',
+    'End'                                                      => '已结束',
+    'Nostart'                                                  => '未开始',
+    'Hour' => '拼团成功倒计时(小时)',
+    'Stocknum' =>'商品库存',
+    'Groupnums'=> '已团数量',
+    'IDS'=> '活动ID'
+];

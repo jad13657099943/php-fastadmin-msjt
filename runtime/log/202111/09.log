@@ -1,0 +1,1822 @@
+---------------------------------------------------------------
+[ 2021-11-09T10:15:43+08:00 ] 127.0.0.1 GET www.msjt222.com/
+[运行时间：0.957311s] [吞吐率：1.04req/s] [内存消耗：3,148.96kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000289s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006910s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000118s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000194s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => '403',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.msjt222.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000315s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T10:15:56+08:00 ] 127.0.0.1 GET www.msjt222.com/qny/upload
+[运行时间：0.475844s] [吞吐率：2.10req/s] [内存消耗：3,344.22kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003415s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000104s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000204s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.msjt222.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.006517s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000121s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000131s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T10:15:57+08:00 ] 127.0.0.1 GET www.msjt222.com/favicon.ico
+[运行时间：0.888949s] [吞吐率：1.12req/s] [内存消耗：3,148.66kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003064s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000102s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000172s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.msjt222.com/qny/upload',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.msjt222.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000433s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T10:29:40+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：1.348428s] [吞吐率：0.74req/s] [内存消耗：3,813.23kb] [文件加载：86]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003880s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000098s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000167s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '883',
+  'content-type' => 'multipart/form-data; boundary=--------------------------310952134725165313921315',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => 'f6cd8b44-191b-4a5a-95a6-f53e289d1f5c',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003728s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000117s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000541s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]hash() expects parameter 2 to be string, array given[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\functions.php:33]
+[ error ] [2]unpack(): Type N: not enough input, need 4, have 0[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\functions.php:34]
+[ error ] [8]Array to string conversion[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Http\Client.php:64]
+[ error ] [0]variable type error： array[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\Response.php:316]
+---------------------------------------------------------------
+[ 2021-11-09T10:31:03+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.599063s] [吞吐率：1.67req/s] [内存消耗：3,828.87kb] [文件加载：86]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005337s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000105s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000179s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '883',
+  'content-type' => 'multipart/form-data; boundary=--------------------------803034184345607228868939',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => 'c14a38d3-2892-442a-8243-0d94a242760a',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001756s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000092s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000342s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]hash() expects parameter 2 to be string, array given[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\functions.php:33]
+[ error ] [2]unpack(): Type N: not enough input, need 4, have 0[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\functions.php:34]
+[ error ] [8]Array to string conversion[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Http\Client.php:64]
+---------------------------------------------------------------
+[ 2021-11-09T10:32:00+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.662490s] [吞吐率：1.51req/s] [内存消耗：3,828.87kb] [文件加载：86]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006280s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000110s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000181s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '883',
+  'content-type' => 'multipart/form-data; boundary=--------------------------864399435004693438621029',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '4d2bdacf-ddfc-47f4-a525-40b8924381e8',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002726s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000314s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000299s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]hash() expects parameter 2 to be string, array given[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\functions.php:33]
+[ error ] [2]unpack(): Type N: not enough input, need 4, have 0[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\functions.php:34]
+[ error ] [8]Array to string conversion[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Http\Client.php:64]
+---------------------------------------------------------------
+[ 2021-11-09T10:34:33+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.601517s] [吞吐率：1.66req/s] [内存消耗：3,831.79kb] [文件加载：86]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003801s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000099s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000173s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '883',
+  'content-type' => 'multipart/form-data; boundary=--------------------------561260023181551035239610',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => 'e72d22e6-ce35-44a0-aecf-300d1f15eac5',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002659s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000114s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000119s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]md5() expects parameter 1 to be string, array given[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\qiniu\UploadService.php:19]
+[ error ] [2]hash() expects parameter 2 to be string, array given[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\functions.php:33]
+[ error ] [2]unpack(): Type N: not enough input, need 4, have 0[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\functions.php:34]
+[ error ] [8]Array to string conversion[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Http\Client.php:64]
+---------------------------------------------------------------
+[ 2021-11-09T10:36:06+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.897836s] [吞吐率：1.11req/s] [内存消耗：3,732.49kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000045s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003985s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000105s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000174s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '883',
+  'content-type' => 'multipart/form-data; boundary=--------------------------125055161016193562588072',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => 'c0ce69e0-eeb8-42c5-a1c2-ee7de6a3204c',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001806s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000099s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000747s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]md5() expects parameter 1 to be string, array given[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\qiniu\UploadService.php:19]
+[ error ] [2]fopen() expects parameter 1 to be a valid path, array given[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Storage\UploadManager.php:96]
+[ error ] [1]file can not open[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Storage\UploadManager.php:98]
+---------------------------------------------------------------
+[ 2021-11-09T10:36:21+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.662572s] [吞吐率：1.51req/s] [内存消耗：3,831.79kb] [文件加载：86]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000038s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002827s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000093s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000159s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '883',
+  'content-type' => 'multipart/form-data; boundary=--------------------------752038873871286458716787',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '9f488a3d-5688-4252-bc46-1ea73b97c540',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003357s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000135s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000269s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]md5() expects parameter 1 to be string, array given[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\qiniu\UploadService.php:19]
+[ error ] [2]hash() expects parameter 2 to be string, array given[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\functions.php:33]
+[ error ] [2]unpack(): Type N: not enough input, need 4, have 0[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\functions.php:34]
+[ error ] [8]Array to string conversion[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Http\Client.php:64]
+---------------------------------------------------------------
+[ 2021-11-09T10:40:13+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.811211s] [吞吐率：1.23req/s] [内存消耗：3,831.79kb] [文件加载：86]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000131s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.014015s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000960s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001337s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '883',
+  'content-type' => 'multipart/form-data; boundary=--------------------------467849591158025039634415',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '90a5d632-819c-420d-9aca-f5db883cbaa8',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.009856s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000353s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000597s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]md5() expects parameter 1 to be string, array given[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\qiniu\UploadService.php:19]
+[ error ] [2]hash() expects parameter 2 to be string, array given[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\functions.php:33]
+[ error ] [2]unpack(): Type N: not enough input, need 4, have 0[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\functions.php:34]
+[ error ] [8]Array to string conversion[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Http\Client.php:64]
+---------------------------------------------------------------
+[ 2021-11-09T10:42:17+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.906042s] [吞吐率：1.10req/s] [内存消耗：3,683.20kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003714s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000094s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000159s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '883',
+  'content-type' => 'multipart/form-data; boundary=--------------------------190503578885669166910709',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '1a08c663-6236-484a-be90-ad51971f01b2',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003787s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000120s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000727s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error： array[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\Response.php:316]
+---------------------------------------------------------------
+[ 2021-11-09T10:43:17+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.751914s] [吞吐率：1.33req/s] [内存消耗：3,769.55kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000044s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006644s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000161s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000253s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '883',
+  'content-type' => 'multipart/form-data; boundary=--------------------------639488753645066701623534',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '3a17fa39-11fa-45ff-989b-68922ba3e9ad',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004528s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000123s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000249s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: file[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php:16]
+---------------------------------------------------------------
+[ 2021-11-09T10:45:09+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.643466s] [吞吐率：1.55req/s] [内存消耗：3,769.23kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000045s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.007055s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000103s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000175s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '883',
+  'content-type' => 'multipart/form-data; boundary=--------------------------909995634116544553192887',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => 'de6194fa-18a5-48bb-af7b-9383d59a5945',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002508s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000184s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000354s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: file[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php:15]
+---------------------------------------------------------------
+[ 2021-11-09T10:45:32+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.588566s] [吞吐率：1.70req/s] [内存消耗：3,769.23kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000038s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005300s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000109s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000182s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '883',
+  'content-type' => 'multipart/form-data; boundary=--------------------------503066042101741988015386',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '85c29c98-1fea-4fb9-b5a3-77aa6cdbcab9',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002111s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000107s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000118s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: file[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php:15]
+---------------------------------------------------------------
+[ 2021-11-09T10:53:23+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.661719s] [吞吐率：1.51req/s] [内存消耗：3,769.23kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000186s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005468s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000113s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000184s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '77040',
+  'content-type' => 'multipart/form-data; boundary=--------------------------344030830976252665722403',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '3605b5c5-bf8c-413a-a3e9-a90590e2bc56',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002807s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000107s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000320s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: file[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php:15]
+---------------------------------------------------------------
+[ 2021-11-09T10:56:37+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.674140s] [吞吐率：1.48req/s] [内存消耗：3,769.23kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003581s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000092s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000158s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '7129249',
+  'content-type' => 'multipart/form-data; boundary=--------------------------364108816256447287521786',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => 'a11d5306-1bc5-43dc-ac96-9e775a91e243',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002549s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000133s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000120s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: file[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php:15]
+---------------------------------------------------------------
+[ 2021-11-09T10:57:33+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.469610s] [吞吐率：2.13req/s] [内存消耗：3,409.95kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003079s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000133s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000235s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '7129249',
+  'content-type' => 'multipart/form-data; boundary=--------------------------285952869948163067396790',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '1eca8802-3010-4fb0-bcda-13dcc65ee72b',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001840s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000176s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000107s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T10:58:32+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.532005s] [吞吐率：1.88req/s] [内存消耗：3,410.08kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000076s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005307s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000193s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000325s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '7129249',
+  'content-type' => 'multipart/form-data; boundary=--------------------------079311445536027244058792',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '6283cf15-fe01-4e30-9194-b17f84bee7f5',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003520s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000231s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000121s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T10:58:44+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.521094s] [吞吐率：1.92req/s] [内存消耗：3,410.08kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003628s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000131s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000206s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '7129249',
+  'content-type' => 'multipart/form-data; boundary=--------------------------834341948001375801728336',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '4abc64eb-7207-488c-a351-e11eef573c89',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002599s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000098s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000101s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T10:59:19+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：1.112377s] [吞吐率：0.90req/s] [内存消耗：3,682.95kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000073s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005481s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000716s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000856s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '7129249',
+  'content-type' => 'multipart/form-data; boundary=--------------------------582568249677620451524180',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '20d6b65c-461e-4411-abc4-421134945fec',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003427s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000858s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000310s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error： array[C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\library\think\Response.php:316]
+---------------------------------------------------------------
+[ 2021-11-09T10:59:38+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.505780s] [吞吐率：1.98req/s] [内存消耗：3,409.94kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000063s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005464s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000351s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000517s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '7129249',
+  'content-type' => 'multipart/form-data; boundary=--------------------------922985623949849957639880',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '51be19a3-0f91-4a0a-873d-dba1430a9266',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002984s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000366s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000218s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:01:53+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.534416s] [吞吐率：1.87req/s] [内存消耗：3,410.01kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000066s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006488s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000152s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000256s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '7129249',
+  'content-type' => 'multipart/form-data; boundary=--------------------------471164107252394173904440',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '754471e7-fcb5-4b59-bbb5-404b6d625732',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004250s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000167s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000111s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:03:03+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.493141s] [吞吐率：2.03req/s] [内存消耗：3,410.01kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004025s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000140s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000241s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '7129249',
+  'content-type' => 'multipart/form-data; boundary=--------------------------557518460722592852254004',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '0a47d2e8-fa39-4a6b-b035-93fd6c31eaeb',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002582s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000145s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000165s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:03:14+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.474743s] [吞吐率：2.11req/s] [内存消耗：3,410.01kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003478s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000105s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000176s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '7129249',
+  'content-type' => 'multipart/form-data; boundary=--------------------------109835111030366010454695',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '2b6acaf4-1a7b-4440-9077-415b1afec9a2',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001924s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000104s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000118s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:05:26+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.926733s] [吞吐率：1.08req/s] [内存消耗：3,412.05kb] [文件加载：78]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000068s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004991s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000117s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000192s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '7129249',
+  'content-type' => 'multipart/form-data; boundary=--------------------------825569312300501629254894',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '8317ed8e-7c2d-4199-8ad7-25c1519f3e4c',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002556s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000103s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000764s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: file[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php:15]
+[ error ] [0]致命错误: Call to a member function getExtension() on null[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\qiniu\UploadService.php:13]
+---------------------------------------------------------------
+[ 2021-11-09T11:07:21+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.499265s] [吞吐率：2.00req/s] [内存消耗：3,405.85kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004244s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000157s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000260s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '7129249',
+  'content-type' => 'multipart/form-data; boundary=--------------------------062763988460621623558338',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => 'e6f04981-98af-466b-ab56-b22061871dc3',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002701s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000193s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000157s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:07:55+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.497177s] [吞吐率：2.01req/s] [内存消耗：3,405.85kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000046s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003820s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000118s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000206s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '883',
+  'content-type' => 'multipart/form-data; boundary=--------------------------847295398396472671285344',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => 'a45ca10d-7e55-4817-ba6b-054d64d188a4',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003589s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000116s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000333s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:08:16+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.484309s] [吞吐率：2.06req/s] [内存消耗：3,405.85kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002758s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000127s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000206s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '77040',
+  'content-type' => 'multipart/form-data; boundary=--------------------------284870294738902359128799',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '619b028e-420b-4e54-9b21-94784bd99f28',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001893s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000122s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000114s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:11:17+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.957446s] [吞吐率：1.04req/s] [内存消耗：3,769.27kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000077s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.007419s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005817s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005976s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '77040',
+  'content-type' => 'multipart/form-data; boundary=--------------------------536888659122981952517742',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => 'c735c398-cd5c-4300-bde8-c2c9334bfe74',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.009177s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000224s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000540s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: file[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php:15]
+---------------------------------------------------------------
+[ 2021-11-09T11:11:24+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.580993s] [吞吐率：1.72req/s] [内存消耗：3,769.27kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000074s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003020s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000101s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000181s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '7129249',
+  'content-type' => 'multipart/form-data; boundary=--------------------------722902517453913132229353',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '9f779b18-7337-4c8a-a0da-5e77f9ef285e',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001913s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000107s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000249s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: file[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php:15]
+---------------------------------------------------------------
+[ 2021-11-09T11:14:58+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.770530s] [吞吐率：1.30req/s] [内存消耗：3,767.14kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005539s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000109s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000179s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '7129249',
+  'content-type' => 'multipart/form-data; boundary=--------------------------659797074430283043116132',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '17d98814-3126-4e32-becc-ac6c491bbab7',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004477s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000131s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000125s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: file[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php:15]
+---------------------------------------------------------------
+[ 2021-11-09T11:24:12+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.491315s] [吞吐率：2.04req/s] [内存消耗：3,473.06kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000047s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003880s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000100s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000170s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '883',
+  'content-type' => 'multipart/form-data; boundary=--------------------------875099972071420546708300',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '9f654bdc-fd74-4b75-ad67-7cd7215beb52',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004311s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000122s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000120s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:25:46+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.484860s] [吞吐率：2.06req/s] [内存消耗：3,473.60kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000047s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003508s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000105s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000174s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '77040',
+  'content-type' => 'multipart/form-data; boundary=--------------------------414185884410161562902983',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '5c0fdc42-4339-4e6a-98fe-eb4e609370aa',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001961s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000104s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000409s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:26:29+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.518133s] [吞吐率：1.93req/s] [内存消耗：3,473.60kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000038s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003785s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000095s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000161s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '77040',
+  'content-type' => 'multipart/form-data; boundary=--------------------------219535589976713115284337',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '13c9415e-11e5-4a81-8cad-94ed2eefd44e',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003155s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000167s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000130s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:29:08+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.937616s] [吞吐率：1.07req/s] [内存消耗：3,731.26kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006265s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000108s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000179s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '77040',
+  'content-type' => 'multipart/form-data; boundary=--------------------------900501720151930194419528',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '6f8c5bf5-fa88-43d8-a215-ec5d6ef3a573',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002569s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000104s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000409s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]fopen(20211109\7f6e2dff38c92521e2b8c0cd26645636.jpg): failed to open stream: No such file or directory[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Storage\UploadManager.php:96]
+[ error ] [1]file can not open[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Storage\UploadManager.php:98]
+---------------------------------------------------------------
+[ 2021-11-09T11:29:51+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.938728s] [吞吐率：1.07req/s] [内存消耗：3,731.77kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000088s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.008831s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000328s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000492s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '77040',
+  'content-type' => 'multipart/form-data; boundary=--------------------------470764970280292860070792',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '7cff51b3-394c-4ca5-ba76-35dabcc2a759',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001867s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000109s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000810s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]fopen(C:\Users\JAD\Desktop\project\fastadmin\msjt\public20211109\43998bb37a409c84691af2341a74eb4a.jpg): failed to open stream: No such file or directory[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Storage\UploadManager.php:96]
+[ error ] [1]file can not open[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Storage\UploadManager.php:98]
+---------------------------------------------------------------
+[ 2021-11-09T11:30:21+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.925691s] [吞吐率：1.08req/s] [内存消耗：3,731.80kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000065s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003670s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000134s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000229s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '77040',
+  'content-type' => 'multipart/form-data; boundary=--------------------------637304220246054251505309',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '7805d6d1-b7be-4e99-b45f-0bfa9e1d5787',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001780s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000102s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000610s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]fopen(C:\Users\JAD\Desktop\project\fastadmin\msjt\public/20211109\4fe6ca4e0b7135683dd64c0a0d7d1b2b.jpg): failed to open stream: No such file or directory[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Storage\UploadManager.php:96]
+[ error ] [1]file can not open[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Storage\UploadManager.php:98]
+---------------------------------------------------------------
+[ 2021-11-09T11:30:48+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.473796s] [吞吐率：2.11req/s] [内存消耗：3,473.36kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002841s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000099s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000168s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '77040',
+  'content-type' => 'multipart/form-data; boundary=--------------------------836418093449918370026226',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '8be3e673-aa43-4adf-81ea-96ce9dd10e00',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001954s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000100s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000127s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:32:03+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.501385s] [吞吐率：1.99req/s] [内存消耗：3,473.33kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005704s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000107s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000184s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '77040',
+  'content-type' => 'multipart/form-data; boundary=--------------------------226794139646511955679806',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => 'cb872f88-37fc-4ce9-9371-7c712813b4a9',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002738s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000115s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000137s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:32:21+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.908508s] [吞吐率：1.10req/s] [内存消耗：3,731.78kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000069s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002805s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000101s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000172s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '77040',
+  'content-type' => 'multipart/form-data; boundary=--------------------------157320728110902167718013',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '2476f289-a0a7-4099-b7b9-5591b299f900',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003289s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000112s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000827s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]fopen(C:\Users\JAD\Desktop\project\fastadmin\msjt\public\20211109\39de63c1ab4e3e1e5da1024ed3f33636.jpg): failed to open stream: No such file or directory[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Storage\UploadManager.php:96]
+[ error ] [1]file can not open[C:\Users\JAD\Desktop\project\fastadmin\msjt\vendor\qiniu\php-sdk\src\Qiniu\Storage\UploadManager.php:98]
+---------------------------------------------------------------
+[ 2021-11-09T11:32:48+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.520256s] [吞吐率：1.92req/s] [内存消耗：3,473.33kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000107s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004536s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000155s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000260s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '77040',
+  'content-type' => 'multipart/form-data; boundary=--------------------------142147687384661174726887',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '3a8f2387-bc85-4fd8-ab1f-cd925132ea9a',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003620s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000167s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000172s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:33:58+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.487652s] [吞吐率：2.05req/s] [内存消耗：3,473.62kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002928s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000103s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000172s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '77040',
+  'content-type' => 'multipart/form-data; boundary=--------------------------743707899957621871929683',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '7b3875c2-3d8b-49c7-8939-671bf1ba4c24',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002468s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000177s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000221s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:34:12+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.768990s] [吞吐率：1.30req/s] [内存消耗：3,781.59kb] [文件加载：82]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005829s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000162s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000235s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '77040',
+  'content-type' => 'multipart/form-data; boundary=--------------------------622713065973049105072520',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '4a93099d-45c5-47b3-8760-49b53548f9a1',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002771s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000117s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000266s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:36:25+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.786925s] [吞吐率：1.27req/s] [内存消耗：3,782.13kb] [文件加载：82]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003817s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000101s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000174s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '77040',
+  'content-type' => 'multipart/form-data; boundary=--------------------------234604337762361002357082',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '577d0166-42e9-47f5-875f-e9bcac2cf8f3',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002840s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000108s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000298s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:36:58+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：1.885756s] [吞吐率：0.53req/s] [内存消耗：3,837.05kb] [文件加载：82]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003094s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000113s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000185s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '7129249',
+  'content-type' => 'multipart/form-data; boundary=--------------------------258689167314891978397812',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => 'a20eebe3-b8f5-4440-a6cc-b173845f0f78',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002955s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000113s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000260s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T11:38:38+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.747231s] [吞吐率：1.34req/s] [内存消耗：3,782.43kb] [文件加载：82]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000066s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005365s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000165s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000309s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '883',
+  'content-type' => 'multipart/form-data; boundary=--------------------------398893598390852002845706',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => 'a1215f73-9a27-49d4-91a0-679a1c7240da',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004430s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000185s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000316s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-09T13:55:35+08:00 ] 127.0.0.1 POST www.msjt222.com/qny/upload
+[运行时间：0.922485s] [吞吐率：1.08req/s] [内存消耗：3,421.85kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000048s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005357s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000436s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000667s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.upload',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '172',
+  'content-type' => 'multipart/form-data; boundary=--------------------------023910299372945385490496',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt222.com',
+  'postman-token' => '35642cc8-feec-4978-bcde-88431479fd12',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002772s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000119s ]
+[ info ] [ RUN ] app\api\controller\msjt\Upload->upload[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Upload.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000337s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\services\msjt\qiniu\UploadService.php:13]

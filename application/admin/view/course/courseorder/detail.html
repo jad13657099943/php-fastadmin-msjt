@@ -1,0 +1,111 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Order_on')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order_on" readonly="readonly" data-rule="required" class="form-control" name="row[order_on]"
+                   type="text" value="{$row.order_on|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Uid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-uid" readonly="readonly" data-rule="required" class="form-control" name="row[uid]"
+                   type="number" value="{$row.uid|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Username')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-username" readonly="readonly" class="form-control" name="row[username]" type="text"
+                   value="{$row.username}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Course_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-course_id" readonly="readonly" data-rule="required" data-source="course/index"
+                   class="form-control" name="row[course_id]" type="text" value="{$row.course['name']|htmlentities}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Course_image')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-avatar" readonly="readonly" data-rule="required" class="form-control" size="50" name="row[avatar]" type="text" value="{$row.Course['image']|htmlentities}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-avatar" class="hidden btn btn-danger plupload" data-input-id="c-avatar" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-course"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-avatar" class="hidden btn btn-primary fachoose" data-input-id="c-avatar" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-avatar"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-course"></ul>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Subject_category_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-subject_category_id" readonly="readonly" data-rule="required"
+                   data-source="subject/category/index" class="form-control " name="row[subject_category_id]"
+                   type="text" value="{$row.subjectcateaory['name']|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Course_category_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-course_category_id" readonly="readonly" data-rule="required"
+                   data-source="course/category/index" class="form-control " name="row[course_category_id]" type="text"
+                   value="{$row.coursecateaory['name']|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Teacher_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-teacher_id" readonly="readonly" data-rule="required" data-source="teacher/index"
+                   class="form-control" name="row[teacher_id]" type="text"
+                   value="{$row.teacher['nickname']|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Course_price')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-course_price" readonly="readonly" data-rule="required" class="form-control" step="0.01"
+                   name="row[course_price]" type="number" value="{$row.course_price|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pay_price')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pay_price" readonly="readonly" class="form-control" step="0.01" name="row[pay_price]"
+                   type="number" value="{$row.pay_price|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Remake')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-remake" readonly="readonly" class="form-control " rows="5" name="row[remake]" cols="50">{$row.remake|htmlentities}</textarea>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Createtime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-createtime" readonly="readonly" class="form-control" name="row[createtime]" type="text"
+                   value="{$row.createtime}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Updatetime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-updatetime" readonly="readonly" class="form-control" name="row[createtime]" type="text"
+                   value="{$row.updatetime}">
+        </div>
+    </div>
+
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+    </div>
+</form>

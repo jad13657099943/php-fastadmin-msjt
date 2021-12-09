@@ -1,0 +1,43 @@
+<div class="panel panel-default panel-intro">
+    <!--<div class="panel-heading">
+        {:build_heading(null,FALSE)}
+        <ul class="nav nav-tabs" data-field="status">
+            <ul class="nav nav-tabs" data-field="status">
+                <li class="active"><a href="#t-all" data-value="" data-toggle="tab">{:__('All')}({$row['total_number']})</a></li>
+                <li><a href="#t-waitreceipt" data-order_status="10" data-toggle="tab">待付款({$row['no_pay_number']})</a></li>
+                <li><a href="#t-waitreceipt" data-order_status="20" data-toggle="tab">待发货({$row['no_send_goods_number']})</a></li>
+                <li><a href="#t-waitpay" data-order_status="30" data-toggle="tab">待收货({$row['no_take_over_number']})</a></li>
+                <li><a href="#t-waitpay" data-order_status="40" data-toggle="tab">待评价({$row['no_evaluate_number']})</a></li>
+                <li><a href="#t-finish" data-order_status="50" data-toggle="tab">已完成({$row['finish_number']})</a></li>
+                <li><a href="#t-cancel" data-order_status="0" data-toggle="tab">已取消({$row['cancel_number']})</a></li>
+            </ul>
+        </ul>
+    </div>-->
+
+    <div class="panel-body">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="one">
+                <div class="widget-body no-padding">
+                    <div id="toolbar" class="toolbar">
+<!--                        <a href="comboorder/out"  class="btn btn-danger btn-import spec_add_btn"-->
+<!--                           data-title="导出订单"   data-multiple="false" initialized="true"-->
+<!--                           style="position: relative; z-index: 1;">-->
+<!--                            <i class="fa fa-download"></i> 导出订单 </a>-->
+                        {:build_toolbar('refresh')}
+                        <a href="javascript:;" class="btn btn-success  btn-export {:$auth->check('litestore/comboorder/out')?'':'hide'}" title="{:__('Export')}" id="btn-export-file"><i class="fa fa-upload"></i> {:__('Export')}</a>
+
+                    </div>
+                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
+                           data-operate-edit="{:$auth->check('litestore/comboorder/edit')}"
+                           data-operate-del="{:$auth->check('litestore/comboorder/del')}"
+                           data-operate-ship="{:$auth->check('litestore/comboorder/ship')}"
+                           data-operate-write_off="{:$auth->check('litestore/comboorder/write_off')}"
+                           data-operate-detail="{:$auth->check('litestore/comboorder/detail')}"
+                           width="100%">
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

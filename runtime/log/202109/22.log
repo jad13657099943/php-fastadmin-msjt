@@ -1,0 +1,420 @@
+---------------------------------------------------------------
+[ 2021-09-22T17:39:55+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：0.200378s] [吞吐率：4.99req/s] [内存消耗：4,860.39kb] [文件加载：83]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000178s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003595s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000198s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000359s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------469482532682896866067423',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'f5857582-7b8c-4a62-9820-948d0d68753e',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'token' => 'eyJhdXRoIjoibXNqdCIsInVpZCI6MSwiZXhwIjoxNjM0MDg4MzIxfQ%3D%3D',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002867s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000204s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000409s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8192]Non-static method app\api\model\Kernel::getCondition() should not be called statically[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\model\Kernel.php:30]
+[ error ] [8192]Non-static method app\api\model\Kernel::getEnding() should not be called statically[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\model\Kernel.php:31]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.048182s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.032392s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` LIMIT 1 [ RunTime:0.032393s ]
+---------------------------------------------------------------
+[ 2021-09-22T17:40:29+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：14.177853s] [吞吐率：0.07req/s] [内存消耗：4,862.96kb] [文件加载：83]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000076s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002985s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000229s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000426s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------753778723589277928680639',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '0d4b7551-9bfb-496a-a8d6-b546c61813ed',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'token' => 'eyJhdXRoIjoibXNqdCIsInVpZCI6MSwiZXhwIjoxNjM0MDg4MzIxfQ%3D%3D',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001937s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000194s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000294s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8192]Non-static method app\api\model\Kernel::getCondition() should not be called statically[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\model\Kernel.php:30]
+[ error ] [8192]Non-static method app\api\model\Kernel::getEnding() should not be called statically[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\model\Kernel.php:31]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065038s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.040396s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` LIMIT 1 [ RunTime:0.039200s ]
+---------------------------------------------------------------
+[ 2021-09-22T17:41:49+08:00 ] 127.0.0.1 GET www.msjt.com/test/test
+[运行时间：0.088880s] [吞吐率：11.25req/s] [内存消耗：3,104.92kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000169s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006673s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000200s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000361s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => '504',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------366287252715144391278348',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '096d49a5-3f71-4771-ac0a-fea67aa011b9',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'token' => 'eyJhdXRoIjoibXNqdCIsInVpZCI6MSwiZXhwIjoxNjM0MDg4MzIxfQ%3D%3D',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000296s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-09-22T17:42:20+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：93.309760s] [吞吐率：0.01req/s] [内存消耗：4,866.20kb] [文件加载：83]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000068s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002593s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000266s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000448s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------366287252715144391278348',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '096d49a5-3f71-4771-ac0a-fea67aa011b9',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'token' => 'eyJhdXRoIjoibXNqdCIsInVpZCI6MSwiZXhwIjoxNjM0MDg4MzIxfQ%3D%3D',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001824s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000226s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000313s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8192]Non-static method app\api\model\Kernel::getCondition() should not be called statically[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\model\Kernel.php:30]
+[ error ] [8192]Non-static method app\api\model\Kernel::getEnding() should not be called statically[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\model\Kernel.php:31]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.053577s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.035117s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` LIMIT 1 [ RunTime:0.037790s ]
+---------------------------------------------------------------
+[ 2021-09-22T17:43:21+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：15.121383s] [吞吐率：0.07req/s] [内存消耗：4,866.20kb] [文件加载：83]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000157s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.009072s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000448s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000792s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------279650280132329956434984',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '49d60f66-bec4-4d0f-a4ca-ef95c541e4bd',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'token' => 'eyJhdXRoIjoibXNqdCIsInVpZCI6MSwiZXhwIjoxNjM0MDg4MzIxfQ%3D%3D',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.006463s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.002209s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000435s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8192]Non-static method app\api\model\Kernel::getCondition() should not be called statically[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\model\Kernel.php:30]
+[ error ] [8192]Non-static method app\api\model\Kernel::getEnding() should not be called statically[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\model\Kernel.php:31]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.041179s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.028240s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` LIMIT 1 [ RunTime:0.027544s ]
+---------------------------------------------------------------
+[ 2021-09-22T17:46:34+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：9.664343s] [吞吐率：0.10req/s] [内存消耗：4,866.20kb] [文件加载：83]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000089s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003681s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000208s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000366s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------437924534593767444352287',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => '5ce90d73-ab8b-4aba-b03a-3a75caa78750',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'token' => 'eyJhdXRoIjoibXNqdCIsInVpZCI6MSwiZXhwIjoxNjM0MDg4MzIxfQ%3D%3D',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002751s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000225s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.001311s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8192]Non-static method app\api\model\Kernel::getCondition() should not be called statically[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\model\Kernel.php:30]
+[ error ] [8192]Non-static method app\api\model\Kernel::getEnding() should not be called statically[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\model\Kernel.php:31]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.049877s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.033290s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` LIMIT 1 [ RunTime:0.034170s ]
+---------------------------------------------------------------
+[ 2021-09-22T17:47:42+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：6.538987s] [吞吐率：0.15req/s] [内存消耗：4,869.05kb] [文件加载：83]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000163s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006296s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000207s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000419s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------235585955540597908451468',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'c7d1a26d-16e4-4f51-a146-bdde395ad8c7',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'token' => 'eyJhdXRoIjoibXNqdCIsInVpZCI6MSwiZXhwIjoxNjM0MDg4MzIxfQ%3D%3D',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002990s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000200s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.001141s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8192]Non-static method app\api\model\Kernel::getCondition() should not be called statically[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\model\Kernel.php:30]
+[ error ] [8192]Non-static method app\api\model\Kernel::getEnding() should not be called statically[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\model\Kernel.php:31]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.051858s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.033141s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.033100s ]
+---------------------------------------------------------------
+[ 2021-09-22T17:48:13+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：5.624175s] [吞吐率：0.18req/s] [内存消耗：4,868.20kb] [文件加载：83]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000092s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002934s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000190s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000343s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------319308900440842703957150',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'bffcd1db-204f-410f-b561-035279711ac6',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'token' => 'eyJhdXRoIjoibXNqdCIsInVpZCI6MSwiZXhwIjoxNjM0MDg4MzIxfQ%3D%3D',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002008s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000184s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000292s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8192]Non-static method app\api\model\Kernel::getCondition() should not be called statically[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\model\Kernel.php:30]
+[ error ] [8192]Non-static method app\api\model\Kernel::getEnding() should not be called statically[C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\model\Kernel.php:31]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.052986s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_msjt_users_order` [ RunTime:0.035521s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_msjt_users_order` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.034656s ]
+---------------------------------------------------------------
+[ 2021-09-22T17:49:39+08:00 ] 127.0.0.1 POST www.msjt.com/test/test
+[运行时间：3.568691s] [吞吐率：0.28req/s] [内存消耗：3,229.09kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000062s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002971s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000193s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000354s ]
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'msjt.test',
+    2 => 'test',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '390',
+  'content-type' => 'multipart/form-data; boundary=--------------------------119326266497914509100503',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'www.msjt.com',
+  'postman-token' => 'af9aa03b-a6b6-4dd0-adba-f4036e59c8a5',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.28.4',
+  'token' => 'eyJhdXRoIjoibXNqdCIsInVpZCI6MSwiZXhwIjoxNjM0MDg4MzIxfQ%3D%3D',
+  'authorization' => 'OGEyMTZkYTg3YmE1OTkzNzAxN2JjNGQ0OWMwNjA2NzA6MjAyMTA5MTAxNTI0MjQ=',
+)
+[ info ] [ PARAM ] array (
+  'order_no' => 'A2021091654571005',
+  'type' => '2',
+  'status' => '1',
+)
+[ info ] [ LANG ] C:\Users\JAD\Desktop\project\fastadmin\msjt\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002138s ]
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000190s ]
+[ info ] [ RUN ] app\api\controller\msjt\Test->test[ C:\Users\JAD\Desktop\project\fastadmin\msjt\application\api\controller\msjt\Test.php ]
+[ info ] [ LOG ] INIT File

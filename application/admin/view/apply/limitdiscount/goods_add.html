@@ -1,0 +1,35 @@
+<form id="add-form" class="form-horizontal form-ajax" role="form" data-toggle="validator" method="POST" action="">
+    <input type="hidden" name="row[limit_discount_id]" value="{$limit_discount_id}"/>
+    <input type="hidden" name="row[goods_id]" value="{$goods_id}"/>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Goodsname')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" readonly id="title" name="row[goods_name]" value="{$row.goods_name}" data-rule="required;goods_name"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Goodsprice')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" readonly  name="row[goods_price]" value="{$row.goods_price}" data-rule="required;goods_price"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Stocknum')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" readonly  name="row[stock_num]" value="{$row.stock_num}" data-rule="required;stock_num"/>
+        </div>
+    </div>
+
+
+
+    <div class="form-group hidden layer-footer">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

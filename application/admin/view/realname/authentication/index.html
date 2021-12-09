@@ -1,0 +1,67 @@
+<div class="panel panel-default panel-intro">
+    <div class="panel-heading">
+        {:build_heading(null,FALSE)}
+        <ul class="nav nav-tabs" data-field="store_status">
+            <li class="active"><a href="#" data-value="" data-toggle="tab">{:__('All')}</a></li>
+            {foreach name="storeStatus" item="vo"}
+            <li><a href="#" data-value="{$key}" data-toggle="tab" id="tab{$key}">{$vo}</a></li>
+            {/foreach}
+        </ul>
+    </div>
+    {:build_heading()}
+    <div class="panel-body">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="one">
+                <div class="widget-body no-padding">
+                    <div id="toolbar" class="toolbar">
+                        <a href="javascript:;" class="btn btn-primary btn-refresh" title="{:__('Refresh')}"><i
+                                class="fa fa-refresh"></i> </a>
+                        <!--                        <a href="javascript:;" class="btn btn-success btn-add {:$auth->check('realname/authentication/add')?'':'hide'}" title="{:__('Add')}" ><i class="fa fa-plus"></i> {:__('Add')}</a>-->
+                        <!--                        <a href="javascript:;" class="btn btn-success btn-edit btn-disabled disabled {:$auth->check('realname/authentication/edit')?'':'hide'}" title="{:__('Edit')}" ><i class="fa fa-pencil"></i> {:__('Edit')}</a>-->
+                        <!--                        <a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled {:$auth->check('realname/authentication/del')?'':'hide'}" title="{:__('Delete')}" ><i class="fa fa-trash"></i> {:__('Delete')}</a>-->
+                        <!--                        <a href="javascript:;" class="btn btn-danger btn-import {:$auth->check('realname/authentication/import')?'':'hide'}" title="{:__('Import')}" id="btn-import-file" data-url="ajax/upload" data-mimetype="csv,xls,xlsx" data-multiple="false"><i class="fa fa-upload"></i> {:__('Import')}</a>-->
+                        <!--                        <a class="btn btn-success btn-change btn-by btn-disabled {:$auth->check('/authentication/by')?'':'hide'}" title="通过"-->
+                        <!--                           data-url="/admin/realname/Authentication/by" data-confirm="你确定要通过审核?" href="javascript:;"><i-->
+                        <!--                                class="fa fa-check"></i> 通过</a>-->
+                        <a class="btn btn-info btn-disabled disabled btn-refuse btn-selected" data-title="通过详情" data-url="/admin/realname/Authentication/refuse"  title="通过" href="javascript:;"><i
+                                class="fa fa-leaf"></i> 一键审核</a>
+                        <!--                        <a class="btn btn-danger btn-change btn-refuse btn-disabled {:$auth->check('/authentication/btn-refuse')?'':'hide'}"-->
+                        <!--                           title="填写拒绝理由"-->
+                        <!--                           data-url="/admin/realname/Authentication/refuse" data-title="填写拒绝理由" href="javascript:;"><i-->
+                        <!--                                class="fa fa-close"></i> 拒绝</a>-->
+                        <div class="dropdown btn-group {:$auth->check('realname/authentication/multi')?'':'hide'}">
+                            <!--                            <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> {:__('More')}</a>-->
+                            <ul class="dropdown-menu text-left" role="menu">
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;"
+                                       data-params="status=normal"><i class="fa fa-eye"></i> {:__('Set to normal')}</a>
+                                </li>
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;"
+                                       data-params="status=hidden"><i class="fa fa-eye-slash"></i> {:__('Set to
+                                    hidden')}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
+                           data-operate-edit="{:$auth->check('realname/authentication/edit')}"
+                           data-operate-del="{:$auth->check('realname/authentication/del')}"
+                           width="100%">
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script id="categorytpl" type="text/html">
+    <div class="row">
+        <div class="col-xs-9">
+            <div class="form-inline" data-toggle="cxselect" data-selects="province,city,area">
+                <select class="province form-control" name="province_id" data-url="realname/authentication/area"></select>
+                <select class="city form-control" name="city_id" data-url="realname/authentication/area"></select>
+                <select class="area form-control" name="area_id" data-url="realname/authentication/area"></select>
+            </div>
+            <input type="hidden" class="form-control operate" name="city_id-operate" data-name="city_id" value="=" readonly="">
+            <input type="hidden" class="form-control operate" name="area_id-operate" data-name="area_id" value="=" readonly="">
+        </div>
+    </div>
+</script>

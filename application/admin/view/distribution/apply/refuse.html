@@ -1,0 +1,79 @@
+<form id="refuse-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <input type="hidden" name="row[id]" value="{$row.id}">
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Uid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-uid" disabled class="form-control" name="row[uid]" type="number" value="{$row.uid}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Identity_front')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-images" data-rule="required" class="form-control form-control" disabled size="50"
+                   name="row[identity_front]"
+                   type="text" value="{$row.identity_front}">
+            <div class="input-group-addon no-border no-padding hidden">
+                    <span><button type="button" id="plupload-images" class="btn btn-danger plupload"
+                                  data-input-id="c-images"
+                                  data-mimetype="video/mp4,image/gif,image/jpeg,image/png,image/jpg,image/bmp"
+                                  data-multiple="true" data-preview-id="p-identity_front"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-identity_front" data-template="customtpl"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Identity_reverse')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-identity_reverse" data-rule="required" class="form-control form-control" disabled size="50"
+                   name="row[identity_reverse]"
+                   type="text" value="{$row.identity_reverse}">
+            <div class="input-group-addon no-border no-padding hidden">
+                    <span><button type="button" id="plupload-identity_reverse" class="btn btn-danger plupload"
+                                  data-input-id="c-images"
+                                  data-mimetype="video/mp4,image/gif,image/jpeg,image/png,image/jpg,image/bmp"
+                                  data-multiple="true" data-preview-id="p-identity_reverse"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-identity_reverse" data-template="customtpl"></ul>
+        </div>
+    </div>
+    <!--<div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-status" data-rule="required" class="form-control" name="row[status]" type="number" value="{$row.status}">
+        </div>
+    </div>-->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Create_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-create_time" disabled class="form-control datetimepicker"
+                   data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[create_time]" type="text"
+                   value="{$row.create_time|datetime}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Msg')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-msg" class="form-control" name="row[msg]" data-rule="required" type="text"></textarea>
+        </div>
+    </div>
+    <!--<div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Review_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-review_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[review_time]" type="text" value="{$row.review_time|datetime}">
+        </div>
+    </div>-->
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
+<script type="text/html" id="customtpl">
+    <li class="col-xs-3">
+        <a href="<%=fullurl%>" data-url="<%=url%>" target="_blank" class="thumbnail"><img src="<%=fullurl%>"
+                                                                                          class="img-responsive"></a>
+    </li>
+</script>

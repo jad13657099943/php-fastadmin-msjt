@@ -1,0 +1,114 @@
+<!--<div class="statsit">-->
+<!--    <div class="shop-car">-->
+<!--        商品销售情况-->
+<!--    </div>-->
+<!--    <div class="shop-table">-->
+<!--        <table>-->
+<!--            <thead>-->
+<!--            <tr>-->
+<!--                <th>-->
+<!--                    商品名称-->
+<!--                </th>-->
+<!--                <th>-->
+<!--                    分类-->
+<!--                </th>-->
+<!--                <th>-->
+<!--                    点击量-->
+<!--                </th>-->
+<!--                <th>-->
+<!--                    商品库存-->
+<!--                </th>-->
+<!--                <th>-->
+<!--                    销售数量-->
+<!--                </th>-->
+<!--            </tr>-->
+<!--            </thead>-->
+<!--            {foreach name="list" item="vo"}-->
+<!--            <tr>-->
+<!--                <td>-->
+<!--                    {$vo.goods_name}-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    {$vo.category.name}-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    {$vo.hits}-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    {$vo.stock_num}-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    {$vo.sales_actual}-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            {/foreach}-->
+<!--        </table>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<style>-->
+<!--    table{-->
+
+<!--        margin-bottom: 50px;-->
+<!--        width: 100%;-->
+<!--    }-->
+<!--    .shop-table{-->
+<!--        padding: 0 20px;-->
+<!--    }-->
+<!--    thead{-->
+<!--        width: 100%;-->
+<!--        text-align: center;-->
+<!--    }-->
+<!--    tr{-->
+<!--        width: 100%;-->
+<!--        text-align: center;-->
+<!--    }-->
+<!--    th{-->
+<!--        background-color:#f1f4f6;-->
+<!--        font-size: 16px;-->
+<!--        padding: 14px 20px;-->
+<!--        text-align: center;-->
+<!--        border: 1px solid #ddd;-->
+<!--    }-->
+<!--    td{-->
+<!--        background-color:#f9f9f9;-->
+<!--        padding: 14px 20px;-->
+<!--        border: 1px solid #ddd;-->
+<!--    }-->
+<!--    .statsit{-->
+<!--        background-color:#f9f9f9;-->
+<!--        border: 1px solid #ddd;-->
+<!--    }-->
+<!--    .shop-car{-->
+<!--        background-color:#f1f4f6;-->
+<!--        font-weight: bold;-->
+<!--        line-height: 50px;-->
+<!--        padding: 0 20px;-->
+<!--        border-bottom: 1px solid #ddd;-->
+<!--        margin-bottom: 40px;-->
+<!--    }-->
+<!--</style>-->
+
+
+<div class="panel panel-default panel-intro">
+    {:build_heading()}
+    <div class="panel-body">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="one">
+                <div class="widget-body no-padding">
+                    <div id="toolbar" class="toolbar">
+                        <a href="javascript:;" class="btn btn-primary btn-refresh" title="{:__('Refresh')}" ><i class="fa fa-refresh"></i> </a>
+                        <a href="javascript:;"
+                           class="btn btn-success  btn-export {:$auth->check('Statistics/goods_out')?'':'hide'}"
+                           title="{:__('Export')}" id="btn-export-file"><i class="fa fa-upload"></i> {:__('Export')}</a>
+                    </div>
+                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
+                           data-operate-edit="{:$auth->check('test/edit')}"
+                           data-operate-del="{:$auth->check('test/del')}"
+                           width="100%">
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

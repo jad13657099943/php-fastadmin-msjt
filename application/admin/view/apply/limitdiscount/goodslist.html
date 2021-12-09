@@ -1,0 +1,34 @@
+<div class="panel panel-default panel-intro">
+    <div class="panel-heading">
+        {:build_heading(null,FALSE)}
+        <ul class="nav nav-tabs" data-field="status">
+            <li><a href="/admin/apply/limitdiscount/manage/ids/{$ids}">已经加入</a></li>
+            <li class="active"><a href="/admin/apply/limitdiscount/goodslist/ids/{$ids}">添加商品</a></li>
+         </ul>
+    </div>
+
+    <div class="panel-body">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="one">
+                <div class="widget-body no-padding">
+                    <div id="toolbar" class="toolbar">
+                        <a href="javascript:;" class="btn btn-primary btn-refresh" title="{:__('Refresh')}" ><i class="fa fa-refresh"></i> </a>
+                        <a href="/admin/apply/limitdiscount/index" class="btn btn-success" title="返回" ><i class="fa fa-chevron-left"></i> 返回</a>
+                    </div>
+                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
+                           data-operate-join="{:$auth->check('apply/limitdiscount/join')}"
+                           width="100%">
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script id="categorytpl" type="text/html">
+    <select id="c-pid" class="form-control selectpicker" name="category_id">
+        {foreach name="parentList" item="vo"}
+        <option data-type="{$vo.name}" value="{$key}" {in name="key" value=""}selected{/in}>{$vo.name}</option>
+        {/foreach}
+    </select>
+</script>

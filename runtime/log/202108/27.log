@@ -1,0 +1,1325 @@
+---------------------------------------------------------------
+[ 2021-08-27T04:39:52+08:00 ] 101.133.141.161 GET fywjd.jxsxkeji.com/
+[运行时间：0.020311s] [吞吐率：49.23req/s] [内存消耗：3,230.34kb] [文件加载：82]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001417s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000035s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000925s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 86400,
+)
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000054s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000457s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-08-27T04:39:52+08:00 ] 101.133.141.161 GET fywjd.jxsxkeji.com/admin/index/login
+[运行时间：0.025864s] [吞吐率：38.66req/s] [内存消耗：3,560.20kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001387s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000023s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000038s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000895s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 86400,
+)
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000449s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000445s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000021s ]
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/fywjd.jxsxkeji.com/application/admin/controller/Index.php ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbg\Loginbg @admin_login_init [ RunTime:0.000382s ]
+[ info ] [ VIEW ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'logo',
+  6 => 'back',
+  7 => 'title',
+  8 => 'background',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000046s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000043s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]ini_set(): A session is active. You cannot change the session module's ini settings at this time[/www/wwwroot/fywjd.jxsxkeji.com/thinkphp/library/think/Cookie.php:49]
+---------------------------------------------------------------
+[ 2021-08-27T10:18:58+08:00 ] 138.246.253.24 GET fywjd.jxsxkeji.com/robots.txt
+[运行时间：0.129597s] [吞吐率：7.72req/s] [内存消耗：2,452.56kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004286s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000027s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000045s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'robots.txt',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000041s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-08-27T20:19:15+08:00 ] 171.34.222.192 POST fywjd.jxsxkeji.com/api/common/getTemplateList
+[运行时间：0.212336s] [吞吐率：4.71req/s] [内存消耗：3,263.13kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004172s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000034s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'getTemplateList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '7',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+)
+[ info ] [ PARAM ] array (
+  'index' => '3',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002618s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000065s ]
+[ info ] [ RUN ] app\api\controller\Common->getTemplateList[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Common.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000074s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-08-27T20:19:15+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/Coupon/coupon_list?token=
+[运行时间：0.217952s] [吞吐率：4.59req/s] [内存消耗：3,755.93kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004150s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Coupon',
+    2 => 'coupon_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002242s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000056s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000355s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_user_token` [ RunTime:0.002528s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000196s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:19:15+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/index/index?token=&page=1&pagesize=10
+[运行时间：0.242689s] [吞吐率：4.12req/s] [内存消耗：4,581.71kb] [文件加载：104]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004172s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000034s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'page' => '1',
+  'pagesize' => '10',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002623s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000057s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000208s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\api\controller\Index::visit() should be compatible with app\common\controller\Api::visit($uid, $goods_id)[/www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php:18]
+[ error ] [8]Trying to get property 'end_time' of non-object[/www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php:267]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000240s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_cms_block` [ RunTime:0.001304s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`image`,`cate_id`,`url`,`jump_status` FROM `jrkj_cms_block` WHERE  `status` = 'normal' ORDER BY `weigh` ASC [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_cms_archives` [ RunTime:0.001331s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `jrkj_cms_archives` WHERE (  `status` = 'normal'  AND `channel_id` = 26 ) AND `jrkj_cms_archives`.`deletetime` IS NULL [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_limit_discount` [ RunTime:0.001093s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_limit_discount` WHERE  `status` = 1  AND `start_time` < 1630066755  AND `end_time` > 1630066755 LIMIT 1 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods` [ RunTime:0.001277s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_price`,`goods_name`,`image`,`vip_level`,`poster` FROM `jrkj_litestore_goods` WHERE  `is_recommend` = 1  AND `goods_status` = '10'  AND `is_delete` = '0' [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `is_delete` = '0'  AND `is_marketing` = 0  AND `vip_level` = 0  AND `status` = '20'  AND `is_new` <> '2'  AND `is_school` = 10  AND `goods_status` = '10' ORDER BY `goods_sort` DESC LIMIT 0,10 [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods_spec` [ RunTime:0.001209s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 409 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 9 LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_category` [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`image`,`classification_image` FROM `jrkj_litestore_category` WHERE  `recommendation` = '1' ORDER BY `weigh` DESC,`weigh` DESC,`id` DESC LIMIT 10 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 50  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 1  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 12  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 9  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 4  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 6  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 3  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 10  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 8  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 5  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 473 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 473 LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 480 LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 480 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 479 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 479 LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 478 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 478 LIMIT 1 [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 440 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 440 LIMIT 1 [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 407 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 407 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 406 LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 406 LIMIT 1 [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `is_new` = '2' [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_coupon` [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_litestore_coupon` WHERE  `is_index` = 1 LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_coupon_data` [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jrkj_litestore_coupon_data` WHERE  `user_id` = null  AND `litestore_coupon_id` = 41 LIMIT 1 [ RunTime:0.000135s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:19:25+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/index/keyword_list?token=
+[运行时间：0.027448s] [吞吐率：36.43req/s] [内存消耗：4,395.75kb] [文件加载：98]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001425s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000025s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'keyword_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000918s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000028s ]
+[ info ] [ RUN ] app\api\controller\Index->keyword_list[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000064s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\api\controller\Index::visit() should be compatible with app\common\controller\Api::visit($uid, $goods_id)[/www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php:18]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000283s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_search_record` [ RunTime:0.001101s ]
+[ sql ] [ SQL ] SELECT `search_name` FROM `jrkj_search_record` WHERE  `serch_type` = 0  AND `type` = 2 ORDER BY `ordid` DESC LIMIT 10 [ RunTime:0.000167s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:19:39+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/item/getItemLists?page=1&pagesize=10&sales_order=&price_order=&comprehensive_order=1&keyword=%E5%81%87%E6%9C%9F%E5%A4%A9%E5%A4%A9%E7%BB%83
+[运行时间：0.032639s] [吞吐率：30.64req/s] [内存消耗：4,496.23kb] [文件加载：95]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001403s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000025s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'item',
+    2 => 'getItemLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'pagesize' => '10',
+  'sales_order' => '',
+  'price_order' => '',
+  'comprehensive_order' => '1',
+  'keyword' => '假期天天练',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000909s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000029s ]
+[ info ] [ RUN ] app\api\controller\Item->getItemLists[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Item.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000048s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000293s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_category` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `pid` IS NULL  AND `status` = 10 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `status` = 10 [ RunTime:0.000086s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 0  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` IS NULL  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods` [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT `goods_price`,`goods_id`,`goods_name`,`image`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `goods_name` LIKE '%假期天天练%'  AND `is_marketing` = 0  AND `is_new` <> '2'  AND `is_school` = 10  AND `goods_status` = '10'  AND `is_delete` = '0' ORDER BY `goods_sort` DESC LIMIT 0,10 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT `classification_image` FROM `jrkj_litestore_category` WHERE  `id` IS NULL ORDER BY `weigh` DESC LIMIT 1 [ RunTime:0.000415s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:19:40+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/index/keyword_list?token=
+[运行时间：0.026660s] [吞吐率：37.51req/s] [内存消耗：4,395.75kb] [文件加载：98]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001412s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000025s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'keyword_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000942s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000027s ]
+[ info ] [ RUN ] app\api\controller\Index->keyword_list[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000062s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\api\controller\Index::visit() should be compatible with app\common\controller\Api::visit($uid, $goods_id)[/www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php:18]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000301s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_search_record` [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT `search_name` FROM `jrkj_search_record` WHERE  `serch_type` = 0  AND `type` = 2 ORDER BY `ordid` DESC LIMIT 10 [ RunTime:0.000156s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:19:41+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/Coupon/coupon_list?token=
+[运行时间：0.022875s] [吞吐率：43.72req/s] [内存消耗：3,755.93kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001397s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000025s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Coupon',
+    2 => 'coupon_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000891s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000037s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000274s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_user_token` [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000173s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:19:41+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/index/index?token=&page=1&pagesize=10
+[运行时间：0.038524s] [吞吐率：25.96req/s] [内存消耗：4,581.71kb] [文件加载：104]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001437s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000024s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'page' => '1',
+  'pagesize' => '10',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000894s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000027s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000186s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\api\controller\Index::visit() should be compatible with app\common\controller\Api::visit($uid, $goods_id)[/www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php:18]
+[ error ] [8]Trying to get property 'end_time' of non-object[/www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php:267]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000225s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_cms_block` [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`image`,`cate_id`,`url`,`jump_status` FROM `jrkj_cms_block` WHERE  `status` = 'normal' ORDER BY `weigh` ASC [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_cms_archives` [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `jrkj_cms_archives` WHERE (  `status` = 'normal'  AND `channel_id` = 26 ) AND `jrkj_cms_archives`.`deletetime` IS NULL [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_limit_discount` [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_limit_discount` WHERE  `status` = 1  AND `start_time` < 1630066781  AND `end_time` > 1630066781 LIMIT 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_price`,`goods_name`,`image`,`vip_level`,`poster` FROM `jrkj_litestore_goods` WHERE  `is_recommend` = 1  AND `goods_status` = '10'  AND `is_delete` = '0' [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `is_delete` = '0'  AND `is_marketing` = 0  AND `vip_level` = 0  AND `status` = '20'  AND `is_new` <> '2'  AND `is_school` = 10  AND `goods_status` = '10' ORDER BY `goods_sort` DESC LIMIT 0,10 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods_spec` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 409 LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 9 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_category` [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`image`,`classification_image` FROM `jrkj_litestore_category` WHERE  `recommendation` = '1' ORDER BY `weigh` DESC,`weigh` DESC,`id` DESC LIMIT 10 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 50  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 1  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 12  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 9  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 4  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 6  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 3  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 10  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 8  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 5  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 473 LIMIT 1 [ RunTime:0.000084s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 473 LIMIT 1 [ RunTime:0.000072s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 480 LIMIT 1 [ RunTime:0.000070s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 480 LIMIT 1 [ RunTime:0.000068s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 479 LIMIT 1 [ RunTime:0.000067s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 479 LIMIT 1 [ RunTime:0.000064s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 478 LIMIT 1 [ RunTime:0.000068s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 478 LIMIT 1 [ RunTime:0.000073s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 440 LIMIT 1 [ RunTime:0.000067s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 440 LIMIT 1 [ RunTime:0.000070s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 407 LIMIT 1 [ RunTime:0.000067s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 407 LIMIT 1 [ RunTime:0.000065s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 406 LIMIT 1 [ RunTime:0.000067s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 406 LIMIT 1 [ RunTime:0.000066s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `is_new` = '2' [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_coupon` [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_litestore_coupon` WHERE  `is_index` = 1 LIMIT 1 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_coupon_data` [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jrkj_litestore_coupon_data` WHERE  `user_id` = null  AND `litestore_coupon_id` = 41 LIMIT 1 [ RunTime:0.000103s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:19:52+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/item/getItemLists?token=&page=1&pagesize=6&category_id=&second_cate_id=0&sales_order=&price_order=&comprehensive_order=&keyword=
+[运行时间：0.032785s] [吞吐率：30.50req/s] [内存消耗：4,509.11kb] [文件加载：95]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001405s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000026s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'item',
+    2 => 'getItemLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'page' => '1',
+  'pagesize' => '6',
+  'category_id' => '',
+  'second_cate_id' => '0',
+  'sales_order' => '',
+  'price_order' => '',
+  'comprehensive_order' => '',
+  'keyword' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000910s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000029s ]
+[ info ] [ RUN ] app\api\controller\Item->getItemLists[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Item.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000160s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000301s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_category` [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `pid` = 0  AND `status` = 10 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `status` = 10 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 0  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 0  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods` [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT `goods_price`,`goods_id`,`goods_name`,`image`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` IN (1,3,4,5,6,8,9,10,11,12,17,18,19,20,21,22,23,24,25,26,28,29,30,31,32,34,35,36,37,38,41,42,43,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,77,78,80,81,82)  AND `is_marketing` = 0  AND `is_new` <> '2'  AND `is_school` = 10  AND `goods_status` = '10'  AND `is_delete` = '0' ORDER BY `goods_sort` DESC LIMIT 0,6 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods_spec` [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 553 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 551 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 551 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 551 LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 550 LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 550 LIMIT 1 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 550 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 549 LIMIT 1 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 549 LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 549 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 548 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `classification_image` FROM `jrkj_litestore_category` WHERE  `id` = 0 ORDER BY `weigh` DESC LIMIT 1 [ RunTime:0.000119s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:19:57+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/item/getItemLists?token=&page=1&pagesize=6&category_id=5&second_cate_id=0&sales_order=&price_order=&comprehensive_order=&keyword=
+[运行时间：0.031479s] [吞吐率：31.77req/s] [内存消耗：4,505.59kb] [文件加载：95]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001456s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000026s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000044s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'item',
+    2 => 'getItemLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'page' => '1',
+  'pagesize' => '6',
+  'category_id' => '5',
+  'second_cate_id' => '0',
+  'sales_order' => '',
+  'price_order' => '',
+  'comprehensive_order' => '',
+  'keyword' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000938s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000038s ]
+[ info ] [ RUN ] app\api\controller\Item->getItemLists[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Item.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000175s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000395s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_category` [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `pid` = 5  AND `status` = 10 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `status` = 10 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 0  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 5  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT `goods_price`,`goods_id`,`goods_name`,`image`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` IN (23,24,25,26,47)  AND `is_marketing` = 0  AND `is_new` <> '2'  AND `is_school` = 10  AND `goods_status` = '10'  AND `is_delete` = '0' ORDER BY `goods_sort` DESC LIMIT 0,6 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods_spec` [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 515 LIMIT 1 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 514 LIMIT 1 [ RunTime:0.000087s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 513 LIMIT 1 [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 512 LIMIT 1 [ RunTime:0.000070s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 511 LIMIT 1 [ RunTime:0.000072s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 510 LIMIT 1 [ RunTime:0.000069s ]
+[ sql ] [ SQL ] SELECT `classification_image` FROM `jrkj_litestore_category` WHERE  `id` = 5 ORDER BY `weigh` DESC LIMIT 1 [ RunTime:0.000078s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:19:58+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/item/getItemLists?token=&page=1&pagesize=6&category_id=8&second_cate_id=0&sales_order=&price_order=&comprehensive_order=&keyword=
+[运行时间：0.032089s] [吞吐率：31.16req/s] [内存消耗：4,504.27kb] [文件加载：95]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001537s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000026s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'item',
+    2 => 'getItemLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'page' => '1',
+  'pagesize' => '6',
+  'category_id' => '8',
+  'second_cate_id' => '0',
+  'sales_order' => '',
+  'price_order' => '',
+  'comprehensive_order' => '',
+  'keyword' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001008s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000029s ]
+[ info ] [ RUN ] app\api\controller\Item->getItemLists[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Item.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000163s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000311s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_category` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `pid` = 8  AND `status` = 10 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `status` = 10 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 0  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 8  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods` [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT `goods_price`,`goods_id`,`goods_name`,`image`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` IN (28,29,30,31,32,65,66,67,68,72,73,74,75)  AND `is_marketing` = 0  AND `is_new` <> '2'  AND `is_school` = 10  AND `goods_status` = '10'  AND `is_delete` = '0' ORDER BY `goods_sort` DESC LIMIT 0,6 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods_spec` [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 538 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 538 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 538 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `classification_image` FROM `jrkj_litestore_category` WHERE  `id` = 8 ORDER BY `weigh` DESC LIMIT 1 [ RunTime:0.000116s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:19:59+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/item/getItemLists?token=&page=1&pagesize=6&category_id=17&second_cate_id=0&sales_order=&price_order=&comprehensive_order=&keyword=
+[运行时间：0.032058s] [吞吐率：31.19req/s] [内存消耗：4,504.46kb] [文件加载：95]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001532s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000024s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'item',
+    2 => 'getItemLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'page' => '1',
+  'pagesize' => '6',
+  'category_id' => '17',
+  'second_cate_id' => '0',
+  'sales_order' => '',
+  'price_order' => '',
+  'comprehensive_order' => '',
+  'keyword' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000984s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000029s ]
+[ info ] [ RUN ] app\api\controller\Item->getItemLists[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Item.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000162s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000321s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_category` [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `pid` = 17  AND `status` = 10 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `status` = 10 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 0  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000091s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 17  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT `goods_price`,`goods_id`,`goods_name`,`image`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` IN (35,36,37,38,60,80)  AND `is_marketing` = 0  AND `is_new` <> '2'  AND `is_school` = 10  AND `goods_status` = '10'  AND `is_delete` = '0' ORDER BY `goods_sort` DESC LIMIT 0,6 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods_spec` [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 543 LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 543 LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 543 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 520 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT `classification_image` FROM `jrkj_litestore_category` WHERE  `id` = 17 ORDER BY `weigh` DESC LIMIT 1 [ RunTime:0.000129s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:20:00+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/item/getItemLists?token=&page=1&pagesize=6&category_id=11&second_cate_id=0&sales_order=&price_order=&comprehensive_order=&keyword=
+[运行时间：0.031524s] [吞吐率：31.72req/s] [内存消耗：4,504.20kb] [文件加载：95]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001546s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000024s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'item',
+    2 => 'getItemLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'page' => '1',
+  'pagesize' => '6',
+  'category_id' => '11',
+  'second_cate_id' => '0',
+  'sales_order' => '',
+  'price_order' => '',
+  'comprehensive_order' => '',
+  'keyword' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001001s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000026s ]
+[ info ] [ RUN ] app\api\controller\Item->getItemLists[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Item.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000156s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000327s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_category` [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `pid` = 11  AND `status` = 10 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `status` = 10 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 0  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 11  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT `goods_price`,`goods_id`,`goods_name`,`image`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 11  AND `is_marketing` = 0  AND `is_new` <> '2'  AND `is_school` = 10  AND `goods_status` = '10'  AND `is_delete` = '0' ORDER BY `goods_sort` DESC LIMIT 0,6 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods_spec` [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 551 LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 551 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 551 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `classification_image` FROM `jrkj_litestore_category` WHERE  `id` = 11 ORDER BY `weigh` DESC LIMIT 1 [ RunTime:0.000166s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:20:03+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/item/getItemLists?token=&page=1&pagesize=6&category_id=62&second_cate_id=0&sales_order=&price_order=&comprehensive_order=&keyword=
+[运行时间：0.031049s] [吞吐率：32.21req/s] [内存消耗：4,504.46kb] [文件加载：95]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001405s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000025s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'item',
+    2 => 'getItemLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'page' => '1',
+  'pagesize' => '6',
+  'category_id' => '62',
+  'second_cate_id' => '0',
+  'sales_order' => '',
+  'price_order' => '',
+  'comprehensive_order' => '',
+  'keyword' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000912s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000027s ]
+[ info ] [ RUN ] app\api\controller\Item->getItemLists[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Item.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000160s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000304s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_category` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `pid` = 62  AND `status` = 10 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `status` = 10 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 0  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 62  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods` [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT `goods_price`,`goods_id`,`goods_name`,`image`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` IN (69,70,71,81,82)  AND `is_marketing` = 0  AND `is_new` <> '2'  AND `is_school` = 10  AND `goods_status` = '10'  AND `is_delete` = '0' ORDER BY `goods_sort` DESC LIMIT 0,6 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods_spec` [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 553 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 544 LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 544 LIMIT 1 [ RunTime:0.000071s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 382 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT `classification_image` FROM `jrkj_litestore_category` WHERE  `id` = 62 ORDER BY `weigh` DESC LIMIT 1 [ RunTime:0.000122s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:20:05+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/item/getItemLists?token=&page=2&pagesize=6&category_id=62&second_cate_id=0&sales_order=&price_order=&comprehensive_order=&keyword=
+[运行时间：0.031505s] [吞吐率：31.74req/s] [内存消耗：4,504.15kb] [文件加载：95]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001431s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000025s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'item',
+    2 => 'getItemLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'page' => '2',
+  'pagesize' => '6',
+  'category_id' => '62',
+  'second_cate_id' => '0',
+  'sales_order' => '',
+  'price_order' => '',
+  'comprehensive_order' => '',
+  'keyword' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000910s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000028s ]
+[ info ] [ RUN ] app\api\controller\Item->getItemLists[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Item.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000146s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000313s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_category` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `pid` = 62  AND `status` = 10 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `status` = 10 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 0  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 62  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT `goods_price`,`goods_id`,`goods_name`,`image`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` IN (69,70,71,81,82)  AND `is_marketing` = 0  AND `is_new` <> '2'  AND `is_school` = 10  AND `goods_status` = '10'  AND `is_delete` = '0' ORDER BY `goods_sort` DESC LIMIT 6,6 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods_spec` [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 379 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 378 LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 377 LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT `classification_image` FROM `jrkj_litestore_category` WHERE  `id` = 62 ORDER BY `weigh` DESC LIMIT 1 [ RunTime:0.000131s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:20:05+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/item/getItemLists?token=&page=3&pagesize=6&category_id=62&second_cate_id=0&sales_order=&price_order=&comprehensive_order=&keyword=
+[运行时间：0.030054s] [吞吐率：33.27req/s] [内存消耗：4,496.70kb] [文件加载：95]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001558s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000025s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'item',
+    2 => 'getItemLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand0 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'page' => '3',
+  'pagesize' => '6',
+  'category_id' => '62',
+  'second_cate_id' => '0',
+  'sales_order' => '',
+  'price_order' => '',
+  'comprehensive_order' => '',
+  'keyword' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001002s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000027s ]
+[ info ] [ RUN ] app\api\controller\Item->getItemLists[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Item.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000107s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000295s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_category` [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `pid` = 62  AND `status` = 10 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jrkj_litestore_category` WHERE  `status` = 10 [ RunTime:0.000091s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 0  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `jrkj_litestore_category` WHERE  `pid` = 62  AND `status` = 10 ORDER BY `weigh` DESC [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods` [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT `goods_price`,`goods_id`,`goods_name`,`image`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` IN (69,70,71,81,82)  AND `is_marketing` = 0  AND `is_new` <> '2'  AND `is_school` = 10  AND `goods_status` = '10'  AND `is_delete` = '0' ORDER BY `goods_sort` DESC LIMIT 12,6 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT `classification_image` FROM `jrkj_litestore_category` WHERE  `id` = 62 ORDER BY `weigh` DESC LIMIT 1 [ RunTime:0.000106s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:50:46+08:00 ] 171.34.222.192 POST fywjd.jxsxkeji.com/api/common/getTemplateList
+[运行时间：0.028017s] [吞吐率：35.69req/s] [内存消耗：3,263.13kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002222s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000041s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000063s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'getTemplateList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand1 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '7',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+)
+[ info ] [ PARAM ] array (
+  'index' => '3',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001476s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000039s ]
+[ info ] [ RUN ] app\api\controller\Common->getTemplateList[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Common.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000045s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-08-27T20:50:46+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/Coupon/coupon_list?token=
+[运行时间：0.031158s] [吞吐率：32.09req/s] [内存消耗：3,755.93kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002249s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000041s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000064s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Coupon',
+    2 => 'coupon_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand1 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001608s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000037s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000234s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_user_token` [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000152s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:50:46+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/index/index?token=&page=1&pagesize=10
+[运行时间：0.040201s] [吞吐率：24.88req/s] [内存消耗：4,581.71kb] [文件加载：104]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001400s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000024s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand1 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'page' => '1',
+  'pagesize' => '10',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000911s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000030s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000181s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\api\controller\Index::visit() should be compatible with app\common\controller\Api::visit($uid, $goods_id)[/www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php:18]
+[ error ] [8]Trying to get property 'end_time' of non-object[/www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php:267]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000288s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_cms_block` [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`image`,`cate_id`,`url`,`jump_status` FROM `jrkj_cms_block` WHERE  `status` = 'normal' ORDER BY `weigh` ASC [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_cms_archives` [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `jrkj_cms_archives` WHERE (  `status` = 'normal'  AND `channel_id` = 26 ) AND `jrkj_cms_archives`.`deletetime` IS NULL [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_limit_discount` [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_limit_discount` WHERE  `status` = 1  AND `start_time` < 1630068646  AND `end_time` > 1630068646 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_price`,`goods_name`,`image`,`vip_level`,`poster` FROM `jrkj_litestore_goods` WHERE  `is_recommend` = 1  AND `goods_status` = '10'  AND `is_delete` = '0' [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `is_delete` = '0'  AND `is_marketing` = 0  AND `vip_level` = 0  AND `status` = '20'  AND `is_new` <> '2'  AND `is_school` = 10  AND `goods_status` = '10' ORDER BY `goods_sort` DESC LIMIT 0,10 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods_spec` [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 409 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 9 LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_category` [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`image`,`classification_image` FROM `jrkj_litestore_category` WHERE  `recommendation` = '1' ORDER BY `weigh` DESC,`weigh` DESC,`id` DESC LIMIT 10 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 50  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 1  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 12  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 9  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 4  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 6  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 3  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 10  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 8  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 5  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 473 LIMIT 1 [ RunTime:0.000075s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 473 LIMIT 1 [ RunTime:0.000068s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 480 LIMIT 1 [ RunTime:0.000071s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 480 LIMIT 1 [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 479 LIMIT 1 [ RunTime:0.000069s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 479 LIMIT 1 [ RunTime:0.000064s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 478 LIMIT 1 [ RunTime:0.000067s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 478 LIMIT 1 [ RunTime:0.000065s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 440 LIMIT 1 [ RunTime:0.000066s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 440 LIMIT 1 [ RunTime:0.000066s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 407 LIMIT 1 [ RunTime:0.000073s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 407 LIMIT 1 [ RunTime:0.000066s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 406 LIMIT 1 [ RunTime:0.000074s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 406 LIMIT 1 [ RunTime:0.000067s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `is_new` = '2' [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_coupon` [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_litestore_coupon` WHERE  `is_index` = 1 LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_coupon_data` [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jrkj_litestore_coupon_data` WHERE  `user_id` = null  AND `litestore_coupon_id` = 41 LIMIT 1 [ RunTime:0.000119s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:50:59+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/Coupon/coupon_list?token=
+[运行时间：0.033345s] [吞吐率：29.99req/s] [内存消耗：3,755.93kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002114s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000033s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Coupon',
+    2 => 'coupon_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand1 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001399s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000047s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000339s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_user_token` [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000174s ]
+---------------------------------------------------------------
+[ 2021-08-27T20:50:59+08:00 ] 171.34.222.192 GET fywjd.jxsxkeji.com/api/index/index?token=&page=1&pagesize=10
+[运行时间：0.049875s] [吞吐率：20.05req/s] [内存消耗：4,581.71kb] [文件加载：104]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002234s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000032s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx1163fe026e41396c/12/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2004J7AC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3117 MMWEBSDK/20210601 Mobile Safari/537.36 MMWEBID/2995 MicroMessenger/8.0.10.1960(0x28000A3D) Process/appbrand1 WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'connection' => 'keep-alive',
+  'host' => 'fywjd.jxsxkeji.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'page' => '1',
+  'pagesize' => '10',
+)
+[ info ] [ LANG ] /www/wwwroot/fywjd.jxsxkeji.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001490s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000035s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ /www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000180s ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Declaration of app\api\controller\Index::visit() should be compatible with app\common\controller\Api::visit($uid, $goods_id)[/www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php:18]
+[ error ] [8]Trying to get property 'end_time' of non-object[/www/wwwroot/fywjd.jxsxkeji.com/application/api/controller/Index.php:267]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000262s ] mysql:host=127.0.0.1;dbname=fywjd_jxsxkeji_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_cms_block` [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`image`,`cate_id`,`url`,`jump_status` FROM `jrkj_cms_block` WHERE  `status` = 'normal' ORDER BY `weigh` ASC [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_cms_archives` [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `jrkj_cms_archives` WHERE (  `status` = 'normal'  AND `channel_id` = 26 ) AND `jrkj_cms_archives`.`deletetime` IS NULL [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_limit_discount` [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_limit_discount` WHERE  `status` = 1  AND `start_time` < 1630068659  AND `end_time` > 1630068659 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_price`,`goods_name`,`image`,`vip_level`,`poster` FROM `jrkj_litestore_goods` WHERE  `is_recommend` = 1  AND `goods_status` = '10'  AND `is_delete` = '0' [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `is_delete` = '0'  AND `is_marketing` = 0  AND `vip_level` = 0  AND `status` = '20'  AND `is_new` <> '2'  AND `is_school` = 10  AND `goods_status` = '10' ORDER BY `goods_sort` DESC LIMIT 0,10 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_goods_spec` [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 409 LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT `goods_spec_id` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 9 LIMIT 1 [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_category` [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`image`,`classification_image` FROM `jrkj_litestore_category` WHERE  `recommendation` = '1' ORDER BY `weigh` DESC,`weigh` DESC,`id` DESC LIMIT 10 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 50  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 1  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 12  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 9  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 4  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 6  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 3  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 10  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 8  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`is_marketing`,`marketing_id`,`is_news` FROM `jrkj_litestore_goods` WHERE  `category_id` = 5  AND `is_new` <> '2'  AND `goods_status` = '10' ORDER BY `goods_id` DESC LIMIT 6 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 473 LIMIT 1 [ RunTime:0.000087s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 473 LIMIT 1 [ RunTime:0.000087s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 480 LIMIT 1 [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 480 LIMIT 1 [ RunTime:0.000087s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 479 LIMIT 1 [ RunTime:0.000067s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 479 LIMIT 1 [ RunTime:0.000063s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 478 LIMIT 1 [ RunTime:0.000067s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 478 LIMIT 1 [ RunTime:0.000065s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 440 LIMIT 1 [ RunTime:0.000065s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 440 LIMIT 1 [ RunTime:0.000064s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 407 LIMIT 1 [ RunTime:0.000068s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 407 LIMIT 1 [ RunTime:0.000064s ]
+[ sql ] [ SQL ] SELECT `new_price` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 406 LIMIT 1 [ RunTime:0.000069s ]
+[ sql ] [ SQL ] SELECT `nums` FROM `jrkj_litestore_goods_spec` WHERE  `goods_id` = 406 LIMIT 1 [ RunTime:0.000065s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name`,`image`,`goods_price`,`line_price`,`marketing_goods_price`,`is_marketing`,`marketing_id`,`spec_type`,`vip_price`,`is_news` FROM `jrkj_litestore_goods` WHERE  `is_new` = '2' [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_coupon` [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT * FROM `jrkj_litestore_coupon` WHERE  `is_index` = 1 LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jrkj_litestore_coupon_data` [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jrkj_litestore_coupon_data` WHERE  `user_id` = null  AND `litestore_coupon_id` = 41 LIMIT 1 [ RunTime:0.000102s ]

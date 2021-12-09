@@ -1,0 +1,71 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-title" class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-title" data-rule="required" class="form-control" name="row[title]" type="text" value="{$row.title}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-coupon_price" class="control-label col-xs-12 col-sm-2">{:__('Couponprice')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-coupon_price" data-rule="required" class="form-control" name="row[coupon_price]" type="text" value="{$row.coupon_price}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-condition" class="control-label col-xs-12 col-sm-2">{:__('Condition')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-condition" data-rule="required" class="form-control" name="row[condition]" type="text" value="{$row.condition}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-number" class="control-label col-xs-12 col-sm-2">{:__('Number')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-number" data-rule="" class="form-control" name="row[number]" type="text" value="{$row.number}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-receive_number" class="control-label col-xs-12 col-sm-2">{:__('Receivenumber')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-receive_number" data-rule="" class="form-control" name="row[receive_number]" type="text" value="{$row.receive_number}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-complete_number" class="control-label col-xs-12 col-sm-2">{:__('Completenumber')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-complete_number" data-rule="required" class="form-control" name="row[complete_number]" type="number" value="{$row.complete_number}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label  for="c-starttime"  class="control-label col-xs-12 col-sm-2">{:__('Starttime')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-starttime" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[starttime]" type="text" value="{$row.starttime|datetime}">
+        </div>
+    </div>
+
+
+        <div class="form-group">
+            <label for="c-endtime" class="control-label col-xs-12 col-sm-2">{:__('Endtime')}:</label>
+            <div class="col-xs-12 col-sm-4">
+                <input id="c-endtime" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[endtime]" type="text" value="{$row.endtime|datetime}">
+            </div>
+        </div>
+
+
+    <div class="form-group">
+        <label for="content" class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[status]', ['1'=>__('Normal'), '2'=>__('Hidden')], $row['status'])}
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

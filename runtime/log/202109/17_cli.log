@@ -1,0 +1,64 @@
+[ 2021-09-17T10:36:18+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000185s ]
+[ info ] [ LOG ] INIT File
+[ 2021-09-17T10:36:18+08:00 ][ info ] [ CACHE ] INIT File
+[ 2021-09-17T10:36:18+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.007632s ]
+[ 2021-09-17T10:36:18+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000136s ]
+[ 2021-09-17T10:36:18+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001057s ]
+[ 2021-09-17T10:36:18+08:00 ][ info ] [ DB ] INIT mysql
+[ 2021-09-17T10:36:18+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.052236s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ 2021-09-17T10:36:18+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'msjt_users_users' [ RunTime:0.034801s ]
+[ 2021-09-17T10:36:18+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'jrkj_msjt_users_users' [ RunTime:0.035049s ]
+[ 2021-09-17T10:37:02+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000208s ]
+[ info ] [ LOG ] INIT File
+[ 2021-09-17T10:37:02+08:00 ][ info ] [ CACHE ] INIT File
+[ 2021-09-17T10:37:02+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006317s ]
+[ 2021-09-17T10:37:02+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000164s ]
+[ 2021-09-17T10:37:02+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000837s ]
+[ 2021-09-17T10:37:02+08:00 ][ info ] [ DB ] INIT mysql
+[ 2021-09-17T10:37:02+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.052321s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ 2021-09-17T10:37:02+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'msjt_users_users' [ RunTime:0.034810s ]
+[ 2021-09-17T10:37:02+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'jrkj_msjt_users_users' [ RunTime:0.034631s ]
+[ 2021-09-17T10:37:03+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'msjt' AND table_name = 'jrkj_msjt_users_users' ORDER BY ORDINAL_POSITION [ RunTime:0.035306s ]
+[ 2021-09-17T10:49:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000242s ]
+[ info ] [ LOG ] INIT File
+[ 2021-09-17T10:49:40+08:00 ][ info ] [ CACHE ] INIT File
+[ 2021-09-17T10:49:40+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006119s ]
+[ 2021-09-17T10:49:40+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000150s ]
+[ 2021-09-17T10:49:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000847s ]
+[ 2021-09-17T10:49:40+08:00 ][ info ] [ DB ] INIT mysql
+[ 2021-09-17T10:49:40+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.057892s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ 2021-09-17T10:49:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'msjt_users_balance' [ RunTime:0.039005s ]
+[ 2021-09-17T10:49:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'jrkj_msjt_users_balance' [ RunTime:0.040034s ]
+[ 2021-09-17T10:50:04+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000172s ]
+[ info ] [ LOG ] INIT File
+[ 2021-09-17T10:50:04+08:00 ][ info ] [ CACHE ] INIT File
+[ 2021-09-17T10:50:04+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006149s ]
+[ 2021-09-17T10:50:04+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000163s ]
+[ 2021-09-17T10:50:04+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000826s ]
+[ 2021-09-17T10:50:04+08:00 ][ info ] [ DB ] INIT mysql
+[ 2021-09-17T10:50:04+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.051787s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ 2021-09-17T10:50:04+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'msjt_users_order_balance' [ RunTime:0.037424s ]
+[ 2021-09-17T10:50:04+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'jrkj_msjt_users_order_balance' [ RunTime:0.035419s ]
+[ 2021-09-17T10:50:04+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'msjt' AND table_name = 'jrkj_msjt_users_order_balance' ORDER BY ORDINAL_POSITION [ RunTime:0.038710s ]
+[ 2021-09-17T16:02:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000232s ]
+[ info ] [ LOG ] INIT File
+[ 2021-09-17T16:02:57+08:00 ][ info ] [ CACHE ] INIT File
+[ 2021-09-17T16:02:57+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.008132s ]
+[ 2021-09-17T16:02:57+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000230s ]
+[ 2021-09-17T16:02:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001095s ]
+[ 2021-09-17T16:02:57+08:00 ][ info ] [ DB ] INIT mysql
+[ 2021-09-17T16:02:57+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.056673s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ 2021-09-17T16:02:57+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'msjt_users_order_agency' [ RunTime:0.039813s ]
+[ 2021-09-17T16:02:57+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'jrkj_msjt_users_order_agency' [ RunTime:0.043564s ]
+[ 2021-09-17T16:02:57+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'msjt' AND table_name = 'jrkj_msjt_users_order_agency' ORDER BY ORDINAL_POSITION [ RunTime:0.053928s ]
+[ 2021-09-17T18:16:23+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000233s ]
+[ info ] [ LOG ] INIT File
+[ 2021-09-17T18:16:23+08:00 ][ info ] [ CACHE ] INIT File
+[ 2021-09-17T18:16:23+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.007179s ]
+[ 2021-09-17T18:16:23+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000254s ]
+[ 2021-09-17T18:16:23+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001195s ]
+[ 2021-09-17T18:16:23+08:00 ][ info ] [ DB ] INIT mysql
+[ 2021-09-17T18:16:23+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.053323s ] mysql:host=8.136.133.24;dbname=msjt;charset=utf8
+[ 2021-09-17T18:16:23+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'msjt_users_withdraw' [ RunTime:0.035133s ]
+[ 2021-09-17T18:16:23+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'jrkj_msjt_users_withdraw' [ RunTime:0.034101s ]
+[ 2021-09-17T18:16:23+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'msjt' AND table_name = 'jrkj_msjt_users_withdraw' ORDER BY ORDINAL_POSITION [ RunTime:0.033287s ]

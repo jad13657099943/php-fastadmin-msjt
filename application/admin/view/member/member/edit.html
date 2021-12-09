@@ -1,0 +1,40 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-joinip" class="control-label col-xs-12 col-sm-2">{:__('Joinip')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-joinip" data-rule="required" class="form-control" name="row[id]" type="text"
+                   value="{$row.id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-joinip" class="control-label col-xs-12 col-sm-2">{:__('Joinip')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-joinip" data-rule="required" class="form-control" name="row[title]" type="text"
+                   value="{$row.title}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-joinip" class="control-label col-xs-12 col-sm-2">{:__('Joinip')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-joinip" data-rule="required" class="form-control" name="row[name]" type="text"
+                   value="{$row.name}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-add_time" class="control-label col-xs-12 col-sm-2">{:__('Jointime')}:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-add_time" data-rule="required" class="form-control datetimepicker"
+                   data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[add_time]" type="text"
+                   value="{$row.add_time|datetime}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

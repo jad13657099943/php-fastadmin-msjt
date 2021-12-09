@@ -1,0 +1,225 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Store_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-store_name" class="form-control" name="row[store_name]" type="text" value="{$row.store_name}">
+        </div>
+    </div>
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Uid')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-uid" data-rule="required" class="form-control" name="row[uid]" type="number" value="{$row.uid}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Identity_front')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-identity_front" data-rule="required" class="form-control" name="row[identity_front]" type="text" value="{$row.identity_front}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Identity_front')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <div class="input-group">-->
+<!--                <input id="c-images" data-rule="required" class="form-control form-control" size="50"-->
+<!--                       name="row[identity_front]" type="text" value="{$row.identity_front}">-->
+<!--                <div class="input-group-addon no-border no-padding">-->
+<!--                        <span><button type="button" id="plupload-images" class="btn btn-danger plupload cropper"-->
+<!--                                      data-input-id="c-images"-->
+<!--                                      data-mimetype="video/mp4,image/gif,image/jpeg,image/png,image/jpg,image/bmp"-->
+<!--                                      data-multiple="true" data-preview-id="p-images"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>-->
+<!--                    <span><button type="button" id="fachoose-images" class="btn btn-primary fachoose"-->
+<!--                                  data-input-id="c-images" data-mimetype="image/*,video/mp4" data-multiple="true"><i-->
+<!--                            class="fa fa-list"></i> {:__('Choose')}</button></span>-->
+<!--                </div>-->
+<!--                <span class="msg-box n-right" for="c-images"></span>-->
+<!--            </div>-->
+<!--            <ul class="row list-inline plupload-preview" id="p-images"></ul>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+
+<!--    <div class="form-group">-->
+<!--        <label for="c-avatar" class="control-label col-xs-12 col-sm-2">{:__('Identity_reverse')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <div class="input-group">-->
+<!--                <input id="c-avatar" data-rule="" class="form-control" size="50" name="row[identity_reverse]" type="text" value="{$row.identity_reverse}">-->
+<!--                <div class="input-group-addon no-border no-padding">-->
+<!--                    <span><button type="button" id="plupload-avatar" class="btn btn-danger plupload" data-input-id="c-avatar" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-avatar"><i class="fa fa-upload"></i> 上传</button></span>-->
+<!--                    <span><button type="button" id="fachoose-avatar" class="btn btn-primary fachoose" data-input-id="c-avatar" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> 选择</button></span>-->
+<!--                </div>-->
+<!--                <span class="msg-box n-right" for="c-avatar"></span>-->
+<!--            </div>-->
+<!--            <ul class="row list-inline plupload-preview" id="p-avatar"></ul>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+
+
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Identity_reverse')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-identity_reverse" data-rule="required" class="form-control" name="row[identity_reverse]" type="text" value="{$row.identity_reverse}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-status" data-rule="required" class="form-control" name="row[status]" type="number" value="{$row.status}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Create_time')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-create_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[create_time]" type="text" value="{$row.create_time|datetime}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Msg')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-msg" class="form-control" name="row[msg]" type="text" value="{$row.msg}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Review_time')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-review_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[review_time]" type="text" value="{$row.review_time|datetime}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Username')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-username" class="form-control" name="row[username]" type="text" value="{$row.username}">-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Mobile')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-mobile" class="form-control" name="row[mobile]" type="text" value="{$row.mobile}">
+        </div>
+    </div>
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Latitude')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-latitude" data-rule="required" class="form-control" name="row[latitude]" type="text" value="{$row.latitude}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Longitude')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-longitude" data-rule="required" class="form-control" name="row[longitude]" type="text" value="{$row.longitude}">-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Address')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-address" class="form-control" name="row[address]" type="text" value="{$row.address}">
+        </div>
+    </div>
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Business_license')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-business_license" class="form-control" name="row[business_license]" type="text" value="{$row.business_license}">-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Store_status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-store_status" class="form-control" name="row[store_status]" type="number" value="{$row.store_status}">
+        </div>
+    </div>
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Id_card')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-id_card" class="form-control" name="row[id_card]" type="text" value="{$row.id_card}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Business_hours')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-business_hours" class="form-control" name="row[business_hours]" type="text" value="{$row.business_hours}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Site')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-site" class="form-control" name="row[site]" type="text" value="{$row.site}">-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Opening_hours')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-opening_hours" class="form-control" name="row[opening_hours]" type="text" value="{$row.opening_hours}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Closing_hours')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-closing_hours" class="form-control" name="row[closing_hours]" type="text" value="{$row.closing_hours}">
+        </div>
+    </div>
+
+
+
+<!--    <div class="form-group">-->
+<!--        <label for="c-holding_id_card" class="control-label col-xs-12 col-sm-2">{:__('Holding_id_card')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <div class="input-group">-->
+<!--                <input id="c-holding_id_card" data-rule="" class="form-control" size="50" name="row[holding_id_card]" type="text" value="{$row.holding_id_card}">-->
+<!--                <div class="input-group-addon no-border no-padding">-->
+<!--                    <span><button type="button" id="plupload-holding_id_card" class="btn btn-danger plupload" data-input-id="c-holding_id_card" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-holding_id_card"><i class="fa fa-upload"></i> 上传</button></span>-->
+<!--                    <span><button type="button" id="fachoose-holding_id_card" class="btn btn-primary fachoose" data-input-id="c-holding_id_card" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> 选择</button></span>-->
+<!--                </div>-->
+<!--                <span class="msg-box n-right" for="c-holding_id_card"></span>-->
+<!--            </div>-->
+<!--            <ul class="row list-inline plupload-preview" id="p-holding_id_card"></ul> v-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Holding_id_card')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-holding_id_card" class="form-control" name="row[holding_id_card]" type="text" value="{$row.holding_id_card}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Apply_money')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-apply_money" class="form-control" step="0.01" name="row[apply_money]" type="number" value="{$row.apply_money}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Pay_money')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-pay_money" class="form-control" step="0.01" name="row[pay_money]" type="number" value="{$row.pay_money}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Order_no')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-order_no" class="form-control" name="row[order_no]" type="text" value="{$row.order_no}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Pay_time')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-pay_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[pay_time]" type="text" value="{$row.pay_time|datetime}">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label class="control-label col-xs-12 col-sm-2">{:__('Is_message')}:</label>-->
+<!--        <div class="col-xs-12 col-sm-8">-->
+<!--            <input id="c-is_message" data-rule="required" class="form-control" name="row[is_message]" type="number" value="{$row.is_message}">-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,80 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <!--<div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Curriculum_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-curriculum_id" data-rule="required" data-source="curriculum/index" class="form-control selectpage" name="row[curriculum_id]" type="text" value="">
+        </div>
+    </div>-->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-title" class="form-control" name="row[title]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Urlfile')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-urlfile" data-rule="required" class="form-control" size="50" name="row[urlfile]" type="text" value="">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-urlfile" class="btn btn-danger plupload" data-input-id="c-urlfile" data-url="/qny/upload" data-multiple="false" data-preview-id="p-urlfile"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-urlfile" class="btn btn-primary fachoose" data-input-id="c-urlfile" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-urlfile"></span>
+            </div>
+            <!--<ul class="row list-inline plupload-preview" id="p-urlfile"></ul>-->
+        </div>
+    </div>
+
+   <!-- <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Freedate')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-freedate" data-rule="required" class="form-control selectpicker" name="row[freedate]">
+                {foreach name="freedateList" item="vo"}
+                    <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>-->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            
+            <div class="radio">
+            {foreach name="statusList" item="vo"}
+            <label for="row[status]-{$key}"><input id="row[status]-{$key}" name="row[status]" type="radio" value="{$key}" {in name="key" value="1"}checked{/in} /> {$vo}</label> 
+            {/foreach}
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Weigh')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-weigh" data-rule="required" class="form-control" name="row[weigh]" type="number" value="0">
+        </div>
+    </div>
+   <!-- <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Isvipdate')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-isVipdate" class="form-control selectpicker" name="row[isVipdate]">
+                {foreach name="isvipdateList" item="vo"}
+                    <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>-->
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
